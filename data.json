@@ -1,7 +1,7 @@
 {
   "pool": 1500000,
   "floor": 50000,
-  "generated": "2026-07-02T12:00:00-06:00",
+  "generated": "2026-07-02T14:05:00-06:00",
   "source": "HubSpot RQF pipelines: EMD, POF, Stack, Double Close, Echo",
   "notes": "Amount = Wired Amount when funded (>0), else Requested Amount. Sure = confirmed stages 03/04. Prob adds 02-Approved only (00 On Hold excluded). EMD window = Signed & Funded (or tomorrow if blank) to Due Diligence Period Expiry. Same-day types use Close of Escrow +/-1 day. f=true means Wired Amount>0 (funded/live).",
   "deals": [
@@ -9,118 +9,145 @@
       "n": "5779 Legends Braselton GA",
       "t": "EMD",
       "l": "confirmed",
+      "f": true,
       "a": 20000,
       "s": "2026-06-02",
-      "e": "2026-07-03",
-      "f": true
+      "e": "2026-07-03"
     },
     {
       "n": "7455 Beaverton OR",
       "t": "Stack",
       "l": "probable",
+      "f": false,
       "a": 1000000,
       "s": "2026-08-13",
-      "e": "2026-08-15",
-      "f": false
+      "e": "2026-08-15"
+    },
+    {
+      "n": "15196 Dandelion Fontana CA",
+      "t": "Stack",
+      "l": "probable",
+      "f": false,
+      "a": 275000,
+      "s": "2026-07-07",
+      "e": "2026-07-09"
     },
     {
       "n": "10655 Camarillo LA",
       "t": "DC",
       "l": "confirmed",
+      "f": true,
       "a": 524694,
       "s": "2026-06-28",
-      "e": "2026-06-30",
-      "f": true
+      "e": "2026-06-30"
     },
     {
       "n": "18410 FM1314 Conroe TX",
       "t": "EMD",
       "l": "confirmed",
+      "f": true,
       "a": 20000,
       "s": "2026-06-28",
-      "e": "2026-07-14",
-      "f": true
+      "e": "2026-07-14"
     },
     {
       "n": "601 E Beach Galveston TX",
       "t": "EMD",
       "l": "confirmed",
+      "f": false,
       "a": 50000,
       "s": "2026-07-02",
-      "e": "2026-07-16",
-      "f": false
+      "e": "2026-07-16"
     },
     {
       "n": "5213-17 Collier Jefferson City",
       "t": "EMD",
       "l": "probable",
+      "f": false,
       "a": 10000,
       "s": "2026-06-25",
-      "e": "2026-06-27",
-      "f": false
+      "e": "2026-06-27"
+    },
+    {
+      "n": "6127 W Wagoner Glendale AZ",
+      "t": "Stack",
+      "l": "probable",
+      "f": false,
+      "a": 300000,
+      "s": "2026-07-30",
+      "e": "2026-08-01"
+    },
+    {
+      "n": "2022 N Pacey Phoenix AZ",
+      "t": "Stack",
+      "l": "probable",
+      "f": false,
+      "a": 225000,
+      "s": "2026-06-29",
+      "e": "2026-07-01"
     },
     {
       "n": "801 Westheimer Houston TX",
       "t": "EMD",
       "l": "confirmed",
+      "f": false,
       "a": 15000,
       "s": "2026-06-16",
-      "e": "2026-07-21",
-      "f": false
+      "e": "2026-07-21"
     },
     {
       "n": "2203 Lawton OK (DC)",
       "t": "DC",
       "l": "probable",
+      "f": false,
       "a": 72000,
       "s": "2026-06-28",
-      "e": "2026-06-30",
-      "f": false
+      "e": "2026-06-30"
     },
     {
       "n": "307 North St Fremont WI",
       "t": "DC",
       "l": "probable",
+      "f": false,
       "a": 1250000,
       "s": "2026-06-29",
-      "e": "2026-07-01",
-      "f": false
+      "e": "2026-07-01"
     },
     {
       "n": "450 Aerospace Nashville TN",
       "t": "EMD",
       "l": "confirmed",
+      "f": true,
       "a": 10000,
       "s": "2026-05-17",
-      "e": "2026-06-16",
-      "f": true
+      "e": "2026-06-16"
     },
     {
       "n": "1274 Murfreesboro Nashville TN",
       "t": "EMD",
       "l": "confirmed",
+      "f": true,
       "a": 10000,
       "s": "2026-05-17",
-      "e": "2026-06-16",
-      "f": true
+      "e": "2026-06-16"
     },
     {
       "n": "921 N Rush Rush Springs OK",
       "t": "Stack",
       "l": "probable",
+      "f": false,
       "a": 220000,
       "s": "2026-07-15",
-      "e": "2026-07-17",
-      "f": false
+      "e": "2026-07-17"
     },
     {
       "n": "415 N Liberty Harrisonburg VA",
       "t": "EMD",
       "l": "confirmed",
+      "f": true,
       "a": 39000,
       "s": "2026-04-19",
-      "e": "2026-07-04",
-      "f": true
+      "e": "2026-07-04"
     }
   ]
 }
