@@ -3,7 +3,7 @@
   "floor": 50000,
   "generated": "2026-07-02T12:00:00-06:00",
   "source": "HubSpot RQF pipelines: EMD, POF, Stack, Double Close, Echo",
-  "notes": "Amount = Wired Amount when funded (>0), else Requested Amount. Sure = confirmed stages 03/04. Prob adds 02-Approved only (00 On Hold excluded). EMD window = Signed & Funded (or tomorrow if blank) to Due Diligence Period Expiry. Same-day types use Close of Escrow +/-1 day.",
+  "notes": "Amount = Wired Amount when funded (>0), else Requested Amount. Sure = confirmed stages 03/04. Prob adds 02-Approved only (00 On Hold excluded). EMD window = Signed & Funded (or tomorrow if blank) to Due Diligence Period Expiry. Same-day types use Close of Escrow +/-1 day. f=true means Wired Amount>0 (funded/live).",
   "deals": [
     {
       "n": "5779 Legends Braselton GA",
@@ -11,7 +11,8 @@
       "l": "confirmed",
       "a": 20000,
       "s": "2026-06-02",
-      "e": "2026-07-03"
+      "e": "2026-07-03",
+      "f": true
     },
     {
       "n": "7455 Beaverton OR",
@@ -19,7 +20,8 @@
       "l": "probable",
       "a": 1000000,
       "s": "2026-08-13",
-      "e": "2026-08-15"
+      "e": "2026-08-15",
+      "f": false
     },
     {
       "n": "10655 Camarillo LA",
@@ -27,7 +29,8 @@
       "l": "confirmed",
       "a": 524694,
       "s": "2026-06-28",
-      "e": "2026-06-30"
+      "e": "2026-06-30",
+      "f": true
     },
     {
       "n": "18410 FM1314 Conroe TX",
@@ -35,7 +38,8 @@
       "l": "confirmed",
       "a": 20000,
       "s": "2026-06-28",
-      "e": "2026-07-14"
+      "e": "2026-07-14",
+      "f": true
     },
     {
       "n": "601 E Beach Galveston TX",
@@ -43,7 +47,8 @@
       "l": "confirmed",
       "a": 50000,
       "s": "2026-07-02",
-      "e": "2026-07-16"
+      "e": "2026-07-16",
+      "f": false
     },
     {
       "n": "5213-17 Collier Jefferson City",
@@ -51,7 +56,8 @@
       "l": "probable",
       "a": 10000,
       "s": "2026-06-25",
-      "e": "2026-06-27"
+      "e": "2026-06-27",
+      "f": false
     },
     {
       "n": "801 Westheimer Houston TX",
@@ -59,7 +65,8 @@
       "l": "confirmed",
       "a": 15000,
       "s": "2026-06-16",
-      "e": "2026-07-21"
+      "e": "2026-07-21",
+      "f": false
     },
     {
       "n": "2203 Lawton OK (DC)",
@@ -67,7 +74,8 @@
       "l": "probable",
       "a": 72000,
       "s": "2026-06-28",
-      "e": "2026-06-30"
+      "e": "2026-06-30",
+      "f": false
     },
     {
       "n": "307 North St Fremont WI",
@@ -75,7 +83,8 @@
       "l": "probable",
       "a": 1250000,
       "s": "2026-06-29",
-      "e": "2026-07-01"
+      "e": "2026-07-01",
+      "f": false
     },
     {
       "n": "450 Aerospace Nashville TN",
@@ -83,7 +92,8 @@
       "l": "confirmed",
       "a": 10000,
       "s": "2026-05-17",
-      "e": "2026-06-16"
+      "e": "2026-06-16",
+      "f": true
     },
     {
       "n": "1274 Murfreesboro Nashville TN",
@@ -91,7 +101,8 @@
       "l": "confirmed",
       "a": 10000,
       "s": "2026-05-17",
-      "e": "2026-06-16"
+      "e": "2026-06-16",
+      "f": true
     },
     {
       "n": "921 N Rush Rush Springs OK",
@@ -99,7 +110,8 @@
       "l": "probable",
       "a": 220000,
       "s": "2026-07-15",
-      "e": "2026-07-17"
+      "e": "2026-07-17",
+      "f": false
     },
     {
       "n": "415 N Liberty Harrisonburg VA",
@@ -107,7 +119,8 @@
       "l": "confirmed",
       "a": 39000,
       "s": "2026-04-19",
-      "e": "2026-07-04"
+      "e": "2026-07-04",
+      "f": true
     }
   ]
 }
