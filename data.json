@@ -1,10 +1,90 @@
 {
   "pool": 1500000,
   "floor": 50000,
-  "generated": "2026-07-02T14:05:00-06:00",
+  "generated": "2026-07-02T14:30:00-06:00",
   "source": "HubSpot RQF pipelines: EMD, POF, Stack, Double Close, Echo",
-  "notes": "Amount = Wired Amount when funded (>0), else Requested Amount. Sure = confirmed stages 03/04. Prob adds 02-Approved only (00 On Hold excluded). EMD window = Signed & Funded (or tomorrow if blank) to Due Diligence Period Expiry. Same-day types use Close of Escrow +/-1 day. f=true means Wired Amount>0 (funded/live).",
+  "notes": "Amount=Wired when funded(>0) else Requested. confirmed=stages03/04(Sure). probable=02-approved(Prob). onhold=00 On Hold/01/other (Pipeline watch; NOT in Sure/Prob math, only in stress view). EMD window=Signed&Funded(or tomorrow) to DD Expiry. Same-day uses COE +/-1. c=landing date. f=Wired>0.",
   "deals": [
+    {
+      "n": "4816 Dabney Houston TX",
+      "t": "DC",
+      "l": "onhold",
+      "f": false,
+      "a": 144000,
+      "s": "2026-07-08",
+      "e": "2026-07-10",
+      "c": "2026-07-09"
+    },
+    {
+      "n": "1034 Paso Hondo San Antonio",
+      "t": "EMD",
+      "l": "onhold",
+      "f": false,
+      "a": 3000,
+      "s": "2026-07-01",
+      "e": "2026-07-03",
+      "c": "2026-07-17"
+    },
+    {
+      "n": "7800 FM 3180 Baytown TX",
+      "t": "EMD",
+      "l": "onhold",
+      "f": false,
+      "a": 35000,
+      "s": "2026-07-02",
+      "e": "2026-07-04",
+      "c": "2026-08-02"
+    },
+    {
+      "n": "358 W Stockton Sonora CA",
+      "t": "EMD",
+      "l": "onhold",
+      "f": false,
+      "a": 10000,
+      "s": "2026-07-02",
+      "e": "2026-08-11",
+      "c": "2026-09-24"
+    },
+    {
+      "n": "Several HUD Houston TX",
+      "t": "EMD",
+      "l": "onhold",
+      "f": false,
+      "a": 1500000,
+      "s": "2026-07-02",
+      "e": "2026-07-04",
+      "c": "2026-07-01"
+    },
+    {
+      "n": "1072 Davenport Grantsville UT",
+      "t": "Echo",
+      "l": "onhold",
+      "f": false,
+      "a": 580000,
+      "s": "2026-07-16",
+      "e": "2026-07-18",
+      "c": "2026-07-17"
+    },
+    {
+      "n": "10515 Rocca Place Bel Air",
+      "t": "DC",
+      "l": "onhold",
+      "f": false,
+      "a": 2449050,
+      "s": "2026-07-29",
+      "e": "2026-07-31",
+      "c": "2026-07-30"
+    },
+    {
+      "n": "10515 Rocca Pl LA",
+      "t": "EMD",
+      "l": "onhold",
+      "f": false,
+      "a": 75000,
+      "s": "2026-07-02",
+      "e": "2026-07-14",
+      "c": "2026-07-30"
+    },
     {
       "n": "5779 Legends Braselton GA",
       "t": "EMD",
@@ -12,7 +92,8 @@
       "f": true,
       "a": 20000,
       "s": "2026-06-02",
-      "e": "2026-07-03"
+      "e": "2026-07-03",
+      "c": "2026-08-04"
     },
     {
       "n": "7455 Beaverton OR",
@@ -21,7 +102,18 @@
       "f": false,
       "a": 1000000,
       "s": "2026-08-13",
-      "e": "2026-08-15"
+      "e": "2026-08-15",
+      "c": "2026-08-14"
+    },
+    {
+      "n": "426 Euclid Miami Beach",
+      "t": "DC",
+      "l": "onhold",
+      "f": false,
+      "a": 3300000,
+      "s": "2026-07-30",
+      "e": "2026-08-01",
+      "c": "2026-07-31"
     },
     {
       "n": "15196 Dandelion Fontana CA",
@@ -30,7 +122,8 @@
       "f": false,
       "a": 275000,
       "s": "2026-07-07",
-      "e": "2026-07-09"
+      "e": "2026-07-09",
+      "c": "2026-07-08"
     },
     {
       "n": "10655 Camarillo LA",
@@ -39,7 +132,28 @@
       "f": true,
       "a": 524694,
       "s": "2026-06-28",
-      "e": "2026-06-30"
+      "e": "2026-06-30",
+      "c": "2026-06-29"
+    },
+    {
+      "n": "1022 Villard Dickinson ND",
+      "t": "EMD",
+      "l": "onhold",
+      "f": false,
+      "a": 50000,
+      "s": "2026-07-02",
+      "e": "2026-08-09",
+      "c": "2026-08-01"
+    },
+    {
+      "n": "220 Bay St Fairburn GA",
+      "t": "Stack",
+      "l": "onhold",
+      "f": false,
+      "a": 1200000,
+      "s": "2026-12-30",
+      "e": "2027-01-01",
+      "c": "2026-12-31"
     },
     {
       "n": "18410 FM1314 Conroe TX",
@@ -48,7 +162,8 @@
       "f": true,
       "a": 20000,
       "s": "2026-06-28",
-      "e": "2026-07-14"
+      "e": "2026-07-14",
+      "c": "2026-08-12"
     },
     {
       "n": "601 E Beach Galveston TX",
@@ -57,7 +172,18 @@
       "f": false,
       "a": 50000,
       "s": "2026-07-02",
-      "e": "2026-07-16"
+      "e": "2026-07-16",
+      "c": "2026-08-11"
+    },
+    {
+      "n": "1222 Lawrence Ellwood City PA",
+      "t": "Stack",
+      "l": "onhold",
+      "f": false,
+      "a": 1320000,
+      "s": "2026-07-08",
+      "e": "2026-07-10",
+      "c": "2026-07-09"
     },
     {
       "n": "5213-17 Collier Jefferson City",
@@ -66,7 +192,18 @@
       "f": false,
       "a": 10000,
       "s": "2026-06-25",
-      "e": "2026-06-27"
+      "e": "2026-06-27",
+      "c": "2026-07-20"
+    },
+    {
+      "n": "9971 E Chicago Jerome MI",
+      "t": "Stack",
+      "l": "onhold",
+      "f": false,
+      "a": 214500,
+      "s": "2026-08-11",
+      "e": "2026-08-13",
+      "c": "2026-08-12"
     },
     {
       "n": "6127 W Wagoner Glendale AZ",
@@ -75,7 +212,8 @@
       "f": false,
       "a": 300000,
       "s": "2026-07-30",
-      "e": "2026-08-01"
+      "e": "2026-08-01",
+      "c": "2026-07-31"
     },
     {
       "n": "2022 N Pacey Phoenix AZ",
@@ -84,7 +222,28 @@
       "f": false,
       "a": 225000,
       "s": "2026-06-29",
-      "e": "2026-07-01"
+      "e": "2026-07-01",
+      "c": "2026-06-30"
+    },
+    {
+      "n": "374 Broadway Wasco CA",
+      "t": "Stack",
+      "l": "onhold",
+      "f": false,
+      "a": 125000,
+      "s": "2026-07-09",
+      "e": "2026-07-11",
+      "c": "2026-07-10"
+    },
+    {
+      "n": "4245 Hialeah FL",
+      "t": "EMD",
+      "l": "onhold",
+      "f": false,
+      "a": 85000,
+      "s": "2026-07-02",
+      "e": "2026-08-08",
+      "c": "2026-09-05"
     },
     {
       "n": "801 Westheimer Houston TX",
@@ -93,7 +252,8 @@
       "f": false,
       "a": 15000,
       "s": "2026-06-16",
-      "e": "2026-07-21"
+      "e": "2026-07-21",
+      "c": "2026-07-20"
     },
     {
       "n": "2203 Lawton OK (DC)",
@@ -102,7 +262,48 @@
       "f": false,
       "a": 72000,
       "s": "2026-06-28",
-      "e": "2026-06-30"
+      "e": "2026-06-30",
+      "c": "2026-06-29"
+    },
+    {
+      "n": "145 Echelon Voorhees NJ",
+      "t": "EMD",
+      "l": "onhold",
+      "f": false,
+      "a": 40000,
+      "s": "2026-06-17",
+      "e": "2026-06-19",
+      "c": "2026-06-30"
+    },
+    {
+      "n": "116 Lindsey Bay City TX",
+      "t": "DC",
+      "l": "onhold",
+      "f": false,
+      "a": 100000,
+      "s": "2026-06-28",
+      "e": "2026-06-30",
+      "c": "2026-06-29"
+    },
+    {
+      "n": "1629 River Rd Missoula MT",
+      "t": "DC",
+      "l": "onhold",
+      "f": false,
+      "a": 1400000,
+      "s": "2026-07-28",
+      "e": "2026-07-30",
+      "c": "2026-07-29"
+    },
+    {
+      "n": "Deuces Wild Waynoka OK",
+      "t": "Stack",
+      "l": "onhold",
+      "f": false,
+      "a": 400000,
+      "s": "2026-07-18",
+      "e": "2026-07-20",
+      "c": "2026-07-19"
     },
     {
       "n": "307 North St Fremont WI",
@@ -111,7 +312,8 @@
       "f": false,
       "a": 1250000,
       "s": "2026-06-29",
-      "e": "2026-07-01"
+      "e": "2026-07-01",
+      "c": "2026-06-30"
     },
     {
       "n": "450 Aerospace Nashville TN",
@@ -120,7 +322,8 @@
       "f": true,
       "a": 10000,
       "s": "2026-05-17",
-      "e": "2026-06-16"
+      "e": "2026-06-16",
+      "c": "2026-07-31"
     },
     {
       "n": "1274 Murfreesboro Nashville TN",
@@ -129,7 +332,28 @@
       "f": true,
       "a": 10000,
       "s": "2026-05-17",
-      "e": "2026-06-16"
+      "e": "2026-06-16",
+      "c": "2026-07-31"
+    },
+    {
+      "n": "707 George St Belleville IL",
+      "t": "DC",
+      "l": "onhold",
+      "f": false,
+      "a": 4000000,
+      "s": "2026-07-30",
+      "e": "2026-08-01",
+      "c": "2026-07-31"
+    },
+    {
+      "n": "109 1st Ave Buckeye AZ",
+      "t": "Stack",
+      "l": "onhold",
+      "f": false,
+      "a": 200000,
+      "s": "2026-06-29",
+      "e": "2026-07-01",
+      "c": "2026-06-30"
     },
     {
       "n": "921 N Rush Rush Springs OK",
@@ -138,7 +362,8 @@
       "f": false,
       "a": 220000,
       "s": "2026-07-15",
-      "e": "2026-07-17"
+      "e": "2026-07-17",
+      "c": "2026-07-16"
     },
     {
       "n": "415 N Liberty Harrisonburg VA",
@@ -147,7 +372,8 @@
       "f": true,
       "a": 39000,
       "s": "2026-04-19",
-      "e": "2026-07-04"
+      "e": "2026-07-04",
+      "c": "2026-07-03"
     }
   ]
 }

@@ -11,6 +11,7 @@
     --green-bg:#eaf3de; --green-tx:#3b6d11;
     --amber-bg:#faeeda; --amber-tx:#854f0b;
     --red-bg:#fcebeb; --red-tx:#a32d2d;
+    --hold-bg:#eeedf2; --hold-tx:#5b5772;
     --accent:#185fa5;
   }
   @media (prefers-color-scheme: dark){
@@ -20,6 +21,7 @@
       --green-bg:#27500a; --green-tx:#c0dd97;
       --amber-bg:#633806; --amber-tx:#fac775;
       --red-bg:#791f1f; --red-tx:#f7c1c1;
+      --hold-bg:#33313d; --hold-tx:#c9c6d6;
       --accent:#85b7eb;
     }
   }
@@ -29,11 +31,20 @@
   h1{font-size:20px;font-weight:600;margin:0;}
   .sub{font-size:13px;color:var(--muted);margin-top:2px;}
   .pool{font-size:22px;font-weight:600;margin-top:8px;}
-  .head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-start;gap:12px;margin-bottom:20px;}
+  .head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-start;gap:12px;margin-bottom:18px;}
   .nav{display:flex;align-items:center;gap:10px;}
   .nav button{background:var(--surface);border:1px solid var(--border);color:var(--text);border-radius:8px;width:34px;height:34px;font-size:16px;cursor:pointer;}
   .nav button:hover{background:var(--surface-2);}
   .nav .mlabel{font-size:15px;font-weight:600;min-width:150px;text-align:center;}
+  .watch{background:var(--hold-bg);border:1px solid var(--border);border-radius:12px;padding:12px 14px;margin-bottom:16px;}
+  .watch .wtop{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:10px;}
+  .watch .wlabel{font-size:13px;font-weight:600;color:var(--hold-tx);}
+  .watch .wsub{font-size:12px;color:var(--muted);margin-top:1px;}
+  .pills{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px;}
+  .pill{background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:4px 12px;font-size:12px;color:var(--text);}
+  .pill b{color:var(--hold-tx);}
+  .stressbtn{border:1px solid var(--border);background:var(--surface);color:var(--text);border-radius:8px;padding:7px 12px;font-size:13px;cursor:pointer;white-space:nowrap;}
+  .stressbtn.on{background:var(--red-bg);border-color:var(--red-tx);color:var(--red-tx);font-weight:600;}
   .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:12px;margin-bottom:16px;}
   .card{background:var(--surface-2);border-radius:8px;padding:12px 14px;}
   .card .l{font-size:12px;color:var(--muted);}
@@ -44,17 +55,18 @@
   .dow{display:grid;grid-template-columns:repeat(7,1fr);gap:5px;margin-bottom:5px;}
   .dow div{font-size:11px;color:var(--faint);text-align:center;}
   .grid{display:grid;grid-template-columns:repeat(7,1fr);gap:5px;}
-  .cell{min-height:92px;border-radius:8px;padding:7px 9px;border:1px solid var(--border);cursor:pointer;display:flex;flex-direction:column;gap:1px;}
+  .cell{min-height:92px;border-radius:8px;padding:7px 9px;border:1px solid var(--border);cursor:pointer;display:flex;flex-direction:column;gap:1px;position:relative;}
   .cell:hover{outline:2px solid var(--accent);}
   .cell .dn{font-size:11px;color:var(--faint);text-align:right;line-height:1.1;}
   .cell .cap{font-size:11px;color:var(--faint);}
   .cell .sure{font-size:16px;font-weight:600;}
   .cell .prob{font-size:11px;}
+  .cell .hd{position:absolute;left:7px;top:6px;font-size:10px;color:var(--hold-tx);}
   .cell.empty{border:none;background:transparent;cursor:default;}
   .cell.empty:hover{outline:none;}
   .detail{margin-top:18px;background:var(--surface-2);border-radius:12px;padding:14px 18px;font-size:13px;color:var(--muted);}
   .detail table{width:100%;border-collapse:collapse;font-size:12px;margin-top:4px;}
-  .detail td{padding:3px 8px 3px 0;}
+  .detail td{padding:2px 10px 2px 0;}
   .foot{margin-top:14px;font-size:11px;color:var(--faint);line-height:1.6;}
   .gen{font-size:12px;color:var(--muted);}
 </style>
@@ -75,6 +87,8 @@
     </div>
   </div>
 
+  <div class="watch" id="watch"></div>
+
   <div class="cards" id="cards"></div>
   <div id="alertBox"></div>
 
@@ -93,82 +107,113 @@
 </div>
 
 <script>
-let CFG={pool:1500000,floor:50000,deals:[]};
-let cur=new Date(); cur=new Date(cur.getFullYear(),cur.getMonth(),1);
-const MN=["January","February","March","April","May","June","July","August","September","October","November","December"];
+var CFG={pool:1500000,floor:50000,deals:[]};
+var cur=new Date(); cur=new Date(cur.getFullYear(),cur.getMonth(),1);
+var stress=false;
+var MN=["January","February","March","April","May","June","July","August","September","October","November","December"];
+function pd(s){var p=s.split("-");return new Date(+p[0],+p[1]-1,+p[2]);}
+function fmtBig(n){var a=Math.abs(n),s=n<0?"-":"";if(a>=1e6)return s+"$"+(a/1e6).toFixed(2)+"M";if(a>=1e3)return s+"$"+Math.round(a/1e3)+"k";return s+"$"+Math.round(a);}
+function fmtK(n){var a=Math.abs(n);if(a>=1e6)return "$"+(a/1e6).toFixed(2)+"M";return "$"+Math.round(a/1e3)+"k";}
+function activeOn(d,day){return d._s<=day&&day<=d._e;}
+function dep(day,layers){var t=0;for(var i=0;i<CFG.deals.length;i++){var d=CFG.deals[i];if(layers.indexOf(d.l)>=0&&activeOn(d,day))t+=d.a;}return t;}
 
-function pd(s){const p=s.split("-");return new Date(+p[0],+p[1]-1,+p[2]);}
-function fmtBig(n){const a=Math.abs(n),s=n<0?"-":"";if(a>=1e6)return s+"$"+(a/1e6).toFixed(2)+"M";if(a>=1e3)return s+"$"+Math.round(a/1e3)+"k";return s+"$"+Math.round(a);}
-function fmtK(n){const a=Math.abs(n);if(a>=1e6)return "$"+(a/1e6).toFixed(2)+"M";return "$"+Math.round(a/1e3)+"k";}
-function dealsFor(day){return CFG.deals.filter(d=>d._s<=day&&day<=d._e);}
+function renderWatch(){
+  var oh=CFG.deals.filter(function(d){return d.l==="onhold";});
+  var total=oh.reduce(function(s,d){return s+d.a;},0);
+  var by={};
+  oh.forEach(function(d){var k=d.c.slice(0,7);if(!by[k])by[k]=[0,0];by[k][0]+=d.a;by[k][1]+=1;});
+  var pills=Object.keys(by).sort().map(function(k){
+    var mn=MN[parseInt(k.slice(5,7),10)-1].slice(0,3);
+    return "<span class='pill'>"+mn+" <b>"+fmtK(by[k][0])+"</b> · "+by[k][1]+"</span>";
+  }).join("");
+  document.getElementById("watch").innerHTML=
+    "<div class='wtop'><div><div class='wlabel'>Pipeline watch — On Hold, not committed</div>"
+    +"<div class='wsub'>"+fmtK(total)+" across "+oh.length+" deals · not in the numbers below</div></div>"
+    +"<button class='stressbtn"+(stress?" on":"")+"' id='stressBtn'>"+(stress?"Stress test: ON":"Stress test: off")+"</button></div>"
+    +"<div class='pills'>"+pills+"</div>";
+  document.getElementById("stressBtn").onclick=function(){stress=!stress;render();};
+}
 
 function render(){
-  const y=cur.getFullYear(),m=cur.getMonth();
+  renderWatch();
+  var y=cur.getFullYear(),m=cur.getMonth();
   document.getElementById("mlabel").textContent=MN[m]+" "+y;
-  const grid=document.getElementById("grid");grid.innerHTML="";
-  const offset=new Date(y,m,1).getDay();
-  const dim=new Date(y,m+1,0).getDate();
-  for(let i=0;i<offset;i++){const e=document.createElement("div");e.className="cell empty";grid.appendChild(e);}
-  const pool=CFG.pool,floor=CFG.floor;
-  let minSure=Infinity,minProb=Infinity,red=0,yellow=0;
-  for(let day=1;day<=dim;day++){
-    const dt=new Date(y,m,day);
-    const ds=dealsFor(dt);
-    const sureDep=ds.filter(x=>x.l==="confirmed").reduce((s,x)=>s+x.a,0);
-    const allDep=ds.reduce((s,x)=>s+x.a,0);
-    const sureRem=pool-sureDep, probRem=pool-allDep;
+  var grid=document.getElementById("grid");grid.innerHTML="";
+  var offset=new Date(y,m,1).getDay();
+  var dim=new Date(y,m+1,0).getDate();
+  for(var i=0;i<offset;i++){var e=document.createElement("div");e.className="cell empty";grid.appendChild(e);}
+  var pool=CFG.pool,floor=CFG.floor;
+  var minSure=Infinity,minBottom=Infinity,red=0,yellow=0,minBottomDay=1;
+  for(var day=1;day<=dim;day++){
+    var dt=new Date(y,m,day);
+    var sureDep=dep(dt,["confirmed"]);
+    var probDep=dep(dt,["confirmed","probable"]);
+    var holdDep=dep(dt,["onhold"]);
+    var sureRem=pool-sureDep;
+    var bottomDep=stress?(probDep+holdDep):probDep;
+    var bottomRem=pool-bottomDep;
     if(sureRem<minSure)minSure=sureRem;
-    if(probRem<minProb)minProb=probRem;
-    let bg,btx;
+    if(bottomRem<minBottom){minBottom=bottomRem;minBottomDay=day;}
+    var bg,btx;
     if(sureRem<floor){bg="var(--red-bg)";btx="var(--red-tx)";red++;}
-    else if(probRem<floor){bg="var(--amber-bg)";btx="var(--amber-tx)";yellow++;}
+    else if(bottomRem<floor){bg="var(--amber-bg)";btx="var(--amber-tx)";yellow++;}
     else{bg="var(--green-bg)";btx="var(--green-tx)";}
-    const c=document.createElement("div");c.className="cell";c.style.background=bg;
-    c.innerHTML='<div class="dn">'+day+'</div>'+
-      '<div class="cap">Cap '+fmtBig(pool)+'</div>'+
-      '<div class="sure" style="color:'+(sureRem<floor?'var(--red-tx)':'var(--text)')+'">'+fmtBig(sureRem)+'</div>'+
-      '<div class="prob" style="color:'+btx+'">Prob '+fmtBig(probRem)+'</div>';
-    c.onclick=function(){showDay(dt,ds,sureRem,probRem,allDep);};
+    var lblB=stress?"Stress":"Prob";
+    var hold=holdDep>0?"<div class='hd'>+"+fmtK(holdDep)+" hold</div>":"";
+    var c=document.createElement("div");c.className="cell";c.style.background=bg;
+    c.innerHTML=hold+"<div class='dn'>"+day+"</div>"+
+      "<div class='cap'>Cap "+fmtBig(pool)+"</div>"+
+      "<div class='sure' style='color:"+(sureRem<floor?"var(--red-tx)":"var(--text)")+"'>"+fmtBig(sureRem)+"</div>"+
+      "<div class='prob' style='color:"+btx+"'>"+lblB+" "+fmtBig(bottomRem)+"</div>";
+    (function(dt){c.onclick=function(){showDay(dt);};})(dt);
     grid.appendChild(c);
   }
   document.getElementById("cards").innerHTML=
     card("Total capital",fmtBig(pool))+
     card("Lowest Sure",fmtBig(minSure),minSure<floor)+
-    card("Lowest Prob",fmtBig(minProb),minProb<floor)+
-    card("Red / Yellow days",red+" / "+yellow,red>0);
-  const ab=document.getElementById("alertBox");
-  if(red>0){ab.innerHTML=alertHTML("var(--red-bg)","var(--red-tx)",red+" red day"+(red>1?"s":"")+" — your Sure line falls under the $"+Math.round(floor/1000)+"k floor. That's committed capital you can't cover.");}
-  else if(yellow>0){ab.innerHTML=alertHTML("var(--amber-bg)","var(--amber-tx)",yellow+" yellow day"+(yellow>1?"s":"")+" — Prob dips under the floor but your Sure line holds. Watch the timing.");}
-  else{ab.innerHTML=alertHTML("var(--green-bg)","var(--green-tx)","All clear — both Sure and Prob stay above the floor this month.");}
+    card(stress?"Lowest Stress":"Lowest Prob",fmtBig(minBottom),minBottom<floor)+
+    card("On-hold pipeline",fmtBig(CFG.deals.filter(function(d){return d.l==="onhold";}).reduce(function(s,d){return s+d.a;},0)));
+  var ab=document.getElementById("alertBox");
+  if(red>0){ab.innerHTML=al("var(--red-bg)","var(--red-tx)",red+" red day"+(red>1?"s":"")+" — your Sure line drops under the $"+Math.round(floor/1000)+"k floor. That's committed capital you can't cover.");}
+  else if(stress&&yellow>0){ab.innerHTML=al("var(--red-bg)","var(--red-tx)","Stress test ON — if every On Hold deal activates on schedule, "+yellow+" day"+(yellow>1?"s":"")+" go under the floor, low point "+fmtBig(minBottom)+" on "+MN[m].slice(0,3)+" "+minBottomDay+". Your committed (Sure) line still holds.");}
+  else if(yellow>0){ab.innerHTML=al("var(--amber-bg)","var(--amber-tx)",yellow+" yellow day"+(yellow>1?"s":"")+" — Prob dips under the floor but your Sure line holds. Watch the timing.");}
+  else{ab.innerHTML=al("var(--green-bg)","var(--green-tx)","All clear — both Sure and Prob stay above the floor this month.");}
 }
-function card(l,v,danger){return '<div class="card"><div class="l">'+l+'</div><div class="v" style="'+(danger?'color:var(--red-tx)':'')+'">'+v+'</div></div>';}
-function alertHTML(bg,tx,msg){return '<div class="alert" style="background:'+bg+';color:'+tx+'">'+msg+'</div>';}
+function card(l,v,danger){return "<div class='card'><div class='l'>"+l+"</div><div class='v' style='"+(danger?"color:var(--red-tx)":"")+"'>"+v+"</div></div>";}
+function al(bg,tx,msg){return "<div class='alert' style='background:"+bg+";color:"+tx+"'>"+msg+"</div>";}
+
 function grp(title,color,arr){
   if(!arr.length) return "";
   var sub=arr.reduce(function(s,x){return s+x.a;},0);
   var rows=arr.slice().sort(function(a,b){return b.a-a.a;}).map(function(x){
-    return "<tr><td style='color:var(--text);padding:2px 10px 2px 0'>"+x.n+"</td><td style='color:var(--muted);padding:2px 10px'>"+x.t+"</td><td style='text-align:right;color:var(--text);padding:2px 0;white-space:nowrap'>"+fmtK(x.a)+"</td></tr>";
+    return "<tr><td style='color:var(--text)'>"+x.n+"</td><td style='color:var(--muted)'>"+x.t+"</td><td style='text-align:right;color:var(--text);white-space:nowrap'>"+fmtK(x.a)+"</td></tr>";
   }).join("");
-  return "<div style='margin-top:12px'><div style='font-size:12px;font-weight:600;color:"+color+";margin-bottom:2px'>"+title+" — "+fmtK(sub)+" · "+arr.length+" deal"+(arr.length>1?"s":"")+"</div><table style='width:100%;border-collapse:collapse;font-size:12px'>"+rows+"</table></div>";
+  return "<div style='margin-top:12px'><div style='font-size:12px;font-weight:600;color:"+color+";margin-bottom:2px'>"+title+" — "+fmtK(sub)+" · "+arr.length+" deal"+(arr.length>1?"s":"")+"</div><table>"+rows+"</table></div>";
 }
-function showDay(dt,ds,sureRem,probRem,allDep){
-  const det=document.getElementById("detail");
-  const lbl=MN[dt.getMonth()].slice(0,3)+" "+dt.getDate();
-  if(!ds.length){det.innerHTML="<b style='color:var(--text)'>"+lbl+"</b> — no capital reserved. Full "+fmtBig(CFG.pool)+" available.";return;}
+function showDay(dt){
+  var det=document.getElementById("detail");
+  var lbl=MN[dt.getMonth()].slice(0,3)+" "+dt.getDate();
+  var ds=CFG.deals.filter(function(d){return activeOn(d,dt);});
   var funded=ds.filter(function(x){return x.f;});
   var sure=ds.filter(function(x){return x.l==="confirmed"&&!x.f;});
   var prob=ds.filter(function(x){return x.l==="probable";});
+  var hold=ds.filter(function(x){return x.l==="onhold";});
+  var sureRem=CFG.pool-dep(dt,["confirmed"]);
+  var probRem=CFG.pool-dep(dt,["confirmed","probable"]);
+  if(!funded.length&&!sure.length&&!prob.length&&!hold.length){
+    det.innerHTML="<b style='color:var(--text)'>"+lbl+"</b> — no capital reserved. Full "+fmtBig(CFG.pool)+" available.";return;}
   det.innerHTML="<div style='font-size:14px;color:var(--text)'><b>"+lbl+"</b> — Cap "+fmtBig(CFG.pool)+" &middot; Sure "+fmtBig(sureRem)+" &middot; Prob "+fmtBig(probRem)+(probRem<CFG.floor?" (under floor)":"")+"</div>"
     +grp("Funded — wired &amp; live","var(--green-tx)",funded)
     +grp("Sure — committed, not yet wired","var(--text)",sure)
-    +grp("Probable — 02 approved","var(--amber-tx)",prob);
+    +grp("Probable — 02 approved","var(--amber-tx)",prob)
+    +grp("On Hold — pipeline, not committed","var(--hold-tx)",hold);
 }
 document.getElementById("prev").onclick=function(){cur=new Date(cur.getFullYear(),cur.getMonth()-1,1);render();};
 document.getElementById("next").onclick=function(){cur=new Date(cur.getFullYear(),cur.getMonth()+1,1);render();};
 
 fetch("./data.json?_="+Date.now()).then(function(r){return r.json();}).then(function(j){
   CFG.pool=j.pool||1500000; CFG.floor=j.floor||50000;
-  CFG.deals=(j.deals||[]).map(function(d){d._s=pd(d.s);d._e=pd(d.e);return d;});
+  CFG.deals=(j.deals||[]).map(function(d){d._s=pd(d.s);d._e=pd(d.e);if(!d.c)d.c=d.e;return d;});
   document.getElementById("poolLine").textContent=fmtBig(CFG.pool)+" pool";
   if(j.generated){var g=new Date(j.generated);document.getElementById("genLine").textContent="Updated "+g.toLocaleString();}
   document.getElementById("foot").textContent=j.notes||"";
