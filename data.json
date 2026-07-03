@@ -1,12 +1,12 @@
 {
   "pool": 1500000,
   "floor": 50000,
-  "generated": "2026-07-02T14:30:00-06:00",
+  "generated": "2026-07-02T23:09:18-06:00",
   "source": "HubSpot RQF pipelines: EMD, POF, Stack, Double Close, Echo",
   "notes": "Amount=Wired when funded(>0) else Requested. confirmed=stages03/04(Sure). probable=02-approved(Prob). onhold=00 On Hold/01/other (Pipeline watch; NOT in Sure/Prob math, only in stress view). EMD window=Signed&Funded(or tomorrow) to DD Expiry. Same-day uses COE +/-1. c=landing date. f=Wired>0.",
   "deals": [
     {
-      "n": "4816 Dabney Houston TX",
+      "n": "4816 Dabney Houston Texas 77026",
       "t": "DC",
       "l": "onhold",
       "f": false,
@@ -16,7 +16,7 @@
       "c": "2026-07-09"
     },
     {
-      "n": "1034 Paso Hondo San Antonio",
+      "n": "1034 Paso Hondo San Antonio Texas",
       "t": "EMD",
       "l": "onhold",
       "f": false,
@@ -26,7 +26,7 @@
       "c": "2026-07-17"
     },
     {
-      "n": "7800 FM 3180 Baytown TX",
+      "n": "7800 FM 3180 Rd Baytown TX",
       "t": "EMD",
       "l": "onhold",
       "f": false,
@@ -36,7 +36,7 @@
       "c": "2026-08-02"
     },
     {
-      "n": "358 W Stockton Sonora CA",
+      "n": "358 W Stockton Rd Sonora CA",
       "t": "EMD",
       "l": "onhold",
       "f": false,
@@ -46,7 +46,7 @@
       "c": "2026-09-24"
     },
     {
-      "n": "Several HUD Houston TX",
+      "n": "Several, see attached HUD Houston Texas",
       "t": "EMD",
       "l": "onhold",
       "f": false,
@@ -56,7 +56,7 @@
       "c": "2026-07-01"
     },
     {
-      "n": "1072 Davenport Grantsville UT",
+      "n": "1072 Davenport Dr Grantsville UT",
       "t": "Echo",
       "l": "onhold",
       "f": false,
@@ -66,7 +66,7 @@
       "c": "2026-07-17"
     },
     {
-      "n": "10515 Rocca Place Bel Air",
+      "n": "10515 Rocca Place Bel Air California 90077",
       "t": "DC",
       "l": "onhold",
       "f": false,
@@ -76,7 +76,7 @@
       "c": "2026-07-30"
     },
     {
-      "n": "10515 Rocca Pl LA",
+      "n": "10515 Rocca Pl Los Angeles, CA",
       "t": "EMD",
       "l": "onhold",
       "f": false,
@@ -86,7 +86,7 @@
       "c": "2026-07-30"
     },
     {
-      "n": "5779 Legends Braselton GA",
+      "n": "5779 Legends Club Cir Braselton GA",
       "t": "EMD",
       "l": "confirmed",
       "f": true,
@@ -96,7 +96,7 @@
       "c": "2026-08-04"
     },
     {
-      "n": "7455 Beaverton OR",
+      "n": "7455 SW 195th Ave Beaverton OR",
       "t": "Stack",
       "l": "probable",
       "f": false,
@@ -106,7 +106,7 @@
       "c": "2026-08-14"
     },
     {
-      "n": "426 Euclid Miami Beach",
+      "n": "426 Euclid Ave Miami Beach, FL",
       "t": "DC",
       "l": "onhold",
       "f": false,
@@ -116,7 +116,7 @@
       "c": "2026-07-31"
     },
     {
-      "n": "15196 Dandelion Fontana CA",
+      "n": "15196 Dandelion Ln Fontana CA",
       "t": "Stack",
       "l": "probable",
       "f": false,
@@ -126,7 +126,7 @@
       "c": "2026-07-08"
     },
     {
-      "n": "10655 Camarillo LA",
+      "n": "10655 Camarillo St LA",
       "t": "DC",
       "l": "confirmed",
       "f": true,
@@ -136,7 +136,7 @@
       "c": "2026-06-29"
     },
     {
-      "n": "1022 Villard Dickinson ND",
+      "n": "1022 Villard St W Dickinson ND",
       "t": "EMD",
       "l": "onhold",
       "f": false,
@@ -146,7 +146,7 @@
       "c": "2026-08-01"
     },
     {
-      "n": "220 Bay St Fairburn GA",
+      "n": "220 Bay St SE Fairburn GA",
       "t": "Stack",
       "l": "onhold",
       "f": false,
@@ -166,17 +166,17 @@
       "c": "2026-08-12"
     },
     {
-      "n": "601 E Beach Galveston TX",
+      "n": "601 E Beach Dr Galveston TX",
       "t": "EMD",
       "l": "confirmed",
-      "f": false,
+      "f": true,
       "a": 50000,
-      "s": "2026-07-02",
+      "s": "2026-07-01",
       "e": "2026-07-16",
       "c": "2026-08-11"
     },
     {
-      "n": "1222 Lawrence Ellwood City PA",
+      "n": "1222 Lawrence Ave Ellwood City PA",
       "t": "Stack",
       "l": "onhold",
       "f": false,
@@ -186,7 +186,7 @@
       "c": "2026-07-09"
     },
     {
-      "n": "5213-17 Collier Jefferson City",
+      "n": "5213, 5216 & 5217 Collier Ct Jefferson City MO",
       "t": "EMD",
       "l": "probable",
       "f": false,
@@ -196,7 +196,7 @@
       "c": "2026-07-20"
     },
     {
-      "n": "9971 E Chicago Jerome MI",
+      "n": "9971 E Chicago Rd Jerome MI",
       "t": "Stack",
       "l": "onhold",
       "f": false,
@@ -206,7 +206,7 @@
       "c": "2026-08-12"
     },
     {
-      "n": "6127 W Wagoner Glendale AZ",
+      "n": "6127 W Wagoner Rd Glendale AZ",
       "t": "Stack",
       "l": "probable",
       "f": false,
@@ -216,7 +216,7 @@
       "c": "2026-07-31"
     },
     {
-      "n": "2022 N Pacey Phoenix AZ",
+      "n": "2022 N Pacey Rd Phoenix AZ",
       "t": "Stack",
       "l": "probable",
       "f": false,
@@ -226,7 +226,7 @@
       "c": "2026-06-30"
     },
     {
-      "n": "374 Broadway Wasco CA",
+      "n": "374 Broadway St Wasco CA",
       "t": "Stack",
       "l": "onhold",
       "f": false,
@@ -236,7 +236,7 @@
       "c": "2026-07-10"
     },
     {
-      "n": "4245 Hialeah FL",
+      "n": "4245 E 8th Ave Hialeah FL",
       "t": "EMD",
       "l": "onhold",
       "f": false,
@@ -246,7 +246,7 @@
       "c": "2026-09-05"
     },
     {
-      "n": "801 Westheimer Houston TX",
+      "n": "801 Westheimer Rd Houston TX & 2515 Bartlett St Houston TX",
       "t": "EMD",
       "l": "confirmed",
       "f": false,
@@ -256,7 +256,7 @@
       "c": "2026-07-20"
     },
     {
-      "n": "2203 Lawton OK (DC)",
+      "n": "2203 NW 37th St Lawton OK",
       "t": "DC",
       "l": "probable",
       "f": false,
@@ -266,7 +266,7 @@
       "c": "2026-06-29"
     },
     {
-      "n": "145 Echelon Voorhees NJ",
+      "n": "145 Echelon Rd Voorhees Township NJ",
       "t": "EMD",
       "l": "onhold",
       "f": false,
@@ -276,7 +276,7 @@
       "c": "2026-06-30"
     },
     {
-      "n": "116 Lindsey Bay City TX",
+      "n": "116 Lindsey Ave Bay City TX",
       "t": "DC",
       "l": "onhold",
       "f": false,
@@ -286,7 +286,7 @@
       "c": "2026-06-29"
     },
     {
-      "n": "1629 River Rd Missoula MT",
+      "n": "1629 & 1631 River Rd Missoula MT (DC)",
       "t": "DC",
       "l": "onhold",
       "f": false,
@@ -296,7 +296,7 @@
       "c": "2026-07-29"
     },
     {
-      "n": "Deuces Wild Waynoka OK",
+      "n": "Deuces Wild Waynoka OK 73860",
       "t": "Stack",
       "l": "onhold",
       "f": false,
@@ -306,7 +306,7 @@
       "c": "2026-07-19"
     },
     {
-      "n": "307 North St Fremont WI",
+      "n": "307 North St Fremont WI 54940",
       "t": "DC",
       "l": "probable",
       "f": false,
@@ -316,7 +316,7 @@
       "c": "2026-06-30"
     },
     {
-      "n": "450 Aerospace Nashville TN",
+      "n": "450 Aerospace Way Nashville TN",
       "t": "EMD",
       "l": "confirmed",
       "f": true,
@@ -326,7 +326,7 @@
       "c": "2026-07-31"
     },
     {
-      "n": "1274 Murfreesboro Nashville TN",
+      "n": "1274 Murfreesboro Pike Nashville TN",
       "t": "EMD",
       "l": "confirmed",
       "f": true,
@@ -346,7 +346,7 @@
       "c": "2026-07-31"
     },
     {
-      "n": "109 1st Ave Buckeye AZ",
+      "n": "109 1st Ave W Buckeye AZ",
       "t": "Stack",
       "l": "onhold",
       "f": false,
@@ -356,7 +356,7 @@
       "c": "2026-06-30"
     },
     {
-      "n": "921 N Rush Rush Springs OK",
+      "n": "921 N Rush Ave Rush Springs OK",
       "t": "Stack",
       "l": "probable",
       "f": false,
@@ -366,7 +366,7 @@
       "c": "2026-07-16"
     },
     {
-      "n": "415 N Liberty Harrisonburg VA",
+      "n": "415 N Liberty St Harrisonburg VA",
       "t": "EMD",
       "l": "confirmed",
       "f": true,
