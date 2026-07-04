@@ -1,29 +1,19 @@
 {
   "pool": 1500000,
   "floor": 50000,
-  "generated": "2026-07-02T23:09:18-06:00",
+  "generated": "2026-07-03T23:08:51-06:00",
   "source": "HubSpot RQF pipelines: EMD, POF, Stack, Double Close, Echo",
   "notes": "Amount=Wired when funded(>0) else Requested. confirmed=stages03/04(Sure). probable=02-approved(Prob). onhold=00 On Hold/01/other (Pipeline watch; NOT in Sure/Prob math, only in stress view). EMD window=Signed&Funded(or tomorrow) to DD Expiry. Same-day uses COE +/-1. c=landing date. f=Wired>0.",
   "deals": [
     {
-      "n": "4816 Dabney Houston Texas 77026",
+      "n": "4816 Dabney St Houston TX",
       "t": "DC",
-      "l": "onhold",
+      "l": "probable",
       "f": false,
       "a": 144000,
       "s": "2026-07-08",
       "e": "2026-07-10",
       "c": "2026-07-09"
-    },
-    {
-      "n": "1034 Paso Hondo San Antonio Texas",
-      "t": "EMD",
-      "l": "onhold",
-      "f": false,
-      "a": 3000,
-      "s": "2026-07-01",
-      "e": "2026-07-03",
-      "c": "2026-07-17"
     },
     {
       "n": "7800 FM 3180 Rd Baytown TX",
@@ -41,7 +31,7 @@
       "l": "onhold",
       "f": false,
       "a": 10000,
-      "s": "2026-07-02",
+      "s": "2026-07-03",
       "e": "2026-08-11",
       "c": "2026-09-24"
     },
@@ -81,7 +71,7 @@
       "l": "onhold",
       "f": false,
       "a": 75000,
-      "s": "2026-07-02",
+      "s": "2026-07-03",
       "e": "2026-07-14",
       "c": "2026-07-30"
     },
@@ -126,22 +116,12 @@
       "c": "2026-07-08"
     },
     {
-      "n": "10655 Camarillo St LA",
-      "t": "DC",
-      "l": "confirmed",
-      "f": true,
-      "a": 524694,
-      "s": "2026-06-28",
-      "e": "2026-06-30",
-      "c": "2026-06-29"
-    },
-    {
       "n": "1022 Villard St W Dickinson ND",
       "t": "EMD",
       "l": "onhold",
       "f": false,
       "a": 50000,
-      "s": "2026-07-02",
+      "s": "2026-07-03",
       "e": "2026-08-09",
       "c": "2026-08-01"
     },
@@ -172,8 +152,8 @@
       "f": true,
       "a": 50000,
       "s": "2026-07-01",
-      "e": "2026-07-16",
-      "c": "2026-08-11"
+      "e": "2026-08-18",
+      "c": "2026-09-14"
     },
     {
       "n": "1222 Lawrence Ave Ellwood City PA",
@@ -241,7 +221,7 @@
       "l": "onhold",
       "f": false,
       "a": 85000,
-      "s": "2026-07-02",
+      "s": "2026-07-03",
       "e": "2026-08-08",
       "c": "2026-09-05"
     },
@@ -256,16 +236,6 @@
       "c": "2026-07-20"
     },
     {
-      "n": "2203 NW 37th St Lawton OK",
-      "t": "DC",
-      "l": "probable",
-      "f": false,
-      "a": 72000,
-      "s": "2026-06-28",
-      "e": "2026-06-30",
-      "c": "2026-06-29"
-    },
-    {
       "n": "145 Echelon Rd Voorhees Township NJ",
       "t": "EMD",
       "l": "onhold",
@@ -274,16 +244,6 @@
       "s": "2026-06-17",
       "e": "2026-06-19",
       "c": "2026-06-30"
-    },
-    {
-      "n": "116 Lindsey Ave Bay City TX",
-      "t": "DC",
-      "l": "onhold",
-      "f": false,
-      "a": 100000,
-      "s": "2026-06-28",
-      "e": "2026-06-30",
-      "c": "2026-06-29"
     },
     {
       "n": "1629 & 1631 River Rd Missoula MT (DC)",
