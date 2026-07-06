@@ -186,7 +186,8 @@ function grp(title,color,arr){
   if(!arr.length) return "";
   var sub=arr.reduce(function(s,x){return s+x.a;},0);
   var rows=arr.slice().sort(function(a,b){return b.a-a.a;}).map(function(x){
-    return "<tr><td style='color:var(--text)'>"+x.n+"</td><td style='color:var(--muted)'>"+x.t+"</td><td style='text-align:right;color:var(--text);white-space:nowrap'>"+fmtK(x.a)+"</td></tr>";
+    var warn=x.err?" <span title='"+(x.note||"HubSpot record needs review")+"' style='color:var(--amber-tx)'>&#9888;</span>":"";
+    return "<tr><td style='color:var(--text)'>"+x.n+warn+"</td><td style='color:var(--muted)'>"+x.t+"</td><td style='text-align:right;color:var(--text);white-space:nowrap'>"+fmtK(x.a)+"</td></tr>";
   }).join("");
   return "<div style='margin-top:12px'><div style='font-size:12px;font-weight:600;color:"+color+";margin-bottom:2px'>"+title+" — "+fmtK(sub)+" · "+arr.length+" deal"+(arr.length>1?"s":"")+"</div><table>"+rows+"</table></div>";
 }
