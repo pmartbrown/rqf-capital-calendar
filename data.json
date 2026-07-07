@@ -1,7 +1,7 @@
 {
   "pool": 1670000,
   "floor": 50000,
-  "generated": "2026-07-07T05:46:05-06:00",
+  "generated": "2026-07-07T08:25:12-06:00",
   "source": "HubSpot RQF pipelines: EMD, POF, Stack, Double Close, Echo, GAP",
   "notes": "Deployed(confirmed,f=true)=Wired Amount out, no Return Wire Amount logged (GAP only if Signed&Funded after 2026-03-01); out from Signed&Funded until returned. err=true: HubSpot record inconsistent but still counted until corrected. probable=02-approved + committed-not-yet-wired. onhold=00/01 pipeline watch (not in math).",
   "deals": [
@@ -16,18 +16,6 @@
       "c": "2025-05-06",
       "err": false,
       "note": ""
-    },
-    {
-      "n": "325 W Loma Ln Phoenix AZ",
-      "t": "EMD",
-      "l": "confirmed",
-      "f": true,
-      "a": 5000.0,
-      "s": "2025-07-24",
-      "e": "2027-12-31",
-      "c": "2025-07-24",
-      "err": true,
-      "note": "HubSpot: stage says returned/fell-through, no return amount"
     },
     {
       "n": "124 S Mockingbird Cir #A & B, Cedar Creek, Texas 78612",
@@ -54,18 +42,6 @@
       "note": ""
     },
     {
-      "n": "924-938 Skyline Blvd Cape Coral FL",
-      "t": "EMD",
-      "l": "confirmed",
-      "f": true,
-      "a": 5000.0,
-      "s": "2026-02-11",
-      "e": "2027-12-31",
-      "c": "2026-02-11",
-      "err": true,
-      "note": "HubSpot: stage says returned/fell-through, no return amount"
-    },
-    {
       "n": "415 N Liberty St Harrisonburg VA",
       "t": "EMD",
       "l": "confirmed",
@@ -76,18 +52,6 @@
       "c": "2026-04-20",
       "err": false,
       "note": ""
-    },
-    {
-      "n": "15708 Maplewood Ave Maple Heights OH",
-      "t": "GAP",
-      "l": "confirmed",
-      "f": true,
-      "a": 90274.74,
-      "s": "2026-04-29",
-      "e": "2027-12-31",
-      "c": "2026-04-29",
-      "err": true,
-      "note": "HubSpot: stage says returned/fell-through, no return amount"
     },
     {
       "n": "415 Clark St Saginaw MI",
@@ -122,20 +86,20 @@
       "s": "2026-06-04",
       "e": "2027-12-31",
       "c": "2026-06-04",
-      "err": true,
-      "note": "HubSpot: wired but stage still 02 Approved"
+      "err": false,
+      "note": ""
     },
     {
-      "n": "520 Old Cobblestone Dr Atlanta GA",
+      "n": "801 Westheimer Rd Houston TX & 2515 Bartlett St Houston TX",
       "t": "EMD",
       "l": "confirmed",
       "f": true,
-      "a": 20000.0,
-      "s": "2026-06-03",
+      "a": 15000.0,
+      "s": "2026-06-17",
       "e": "2027-12-31",
-      "c": "2026-06-03",
-      "err": true,
-      "note": "HubSpot: stage says returned/fell-through, no return amount"
+      "c": "2026-06-17",
+      "err": false,
+      "note": ""
     },
     {
       "n": "4147 E Presidio Rd Phoenix  Arizona",
@@ -174,26 +138,14 @@
       "note": ""
     },
     {
-      "n": "2747 Durban Dr Houston TX",
-      "t": "EMD",
-      "l": "confirmed",
-      "f": true,
-      "a": 4475.0,
-      "s": "2026-06-25",
-      "e": "2027-12-31",
-      "c": "2026-06-25",
-      "err": false,
-      "note": ""
-    },
-    {
       "n": "5779 Legends Club Cir Braselton GA",
       "t": "EMD",
       "l": "confirmed",
       "f": true,
       "a": 20000.0,
-      "s": "2026-06-03",
+      "s": "2026-06-30",
       "e": "2027-12-31",
-      "c": "2026-06-03",
+      "c": "2026-06-30",
       "err": false,
       "note": ""
     },
@@ -606,7 +558,7 @@
       "note": ""
     },
     {
-      "n": "2203 NW 37th St Lawton OK",
+      "n": "2203 NW 37th St Lawton OK (DC)",
       "t": "DC",
       "l": "probable",
       "f": false,
@@ -614,18 +566,6 @@
       "s": "2026-06-28",
       "e": "2026-06-30",
       "c": "2026-06-29",
-      "err": false,
-      "note": ""
-    },
-    {
-      "n": "801 Westheimer Rd Houston TX & 2515 Bartlett St Houston TX",
-      "t": "EMD",
-      "l": "probable",
-      "f": false,
-      "a": 15000.0,
-      "s": "2026-06-16",
-      "e": "2026-07-21",
-      "c": "2026-07-20",
       "err": false,
       "note": ""
     },
