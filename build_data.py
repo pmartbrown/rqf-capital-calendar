@@ -7,7 +7,7 @@ import os, json, sys, datetime, urllib.request
 TOKEN = os.environ.get("HUBSPOT_TOKEN")
 if not TOKEN:
     sys.exit("HUBSPOT_TOKEN not set")
-POOL, FLOOR = 1500000, 50000
+POOL, FLOOR = 1670000, 50000  # $150k fund + $1.42M Tree Line income + $100k Paulie Brown
 TODAY = datetime.date.today()
 FUND_END = "2027-12-31"
 GAP_CUTOFF = datetime.date(2026, 3, 1)

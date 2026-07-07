@@ -1,9 +1,9 @@
 {
-  "pool": 1500000,
+  "pool": 1670000,
   "floor": 50000,
-  "generated": "2026-07-06T15:00:00-06:00",
+  "generated": "2026-07-06T16:30:00-06:00",
   "source": "HubSpot RQF pipelines: EMD, POF, Stack, Double Close, Echo, GAP",
-  "notes": "Deployed(confirmed,f=true)=Wired Amount out, no Return Wire Amount logged (GAP only if Signed&Funded after 2026-03-01); out from Signed&Funded until returned. err=true means HubSpot record inconsistent but still counted as out until corrected. probable=02-approved + committed-not-yet-wired. onhold=00/01 pipeline watch (not in math).",
+  "notes": "Pool $1.67M = $150k fund + $1.42M Tree Line income + $100k Paulie Brown. Deployed(confirmed,f=true)=Wired Amount out, no Return Wire Amount logged (GAP only if Signed&Funded after 2026-03-01); out from Signed&Funded until returned. err=true means HubSpot record inconsistent but still counted as out until corrected. probable=02-approved + committed-not-yet-wired. onhold=00/01 pipeline watch (not in math).",
   "deals": [
     {
       "n": "5779 Legends Braselton GA",
