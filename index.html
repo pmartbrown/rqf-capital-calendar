@@ -11,7 +11,7 @@
     --green-bg:#eaf3de; --green-tx:#3b6d11;
     --amber-bg:#faeeda; --amber-tx:#854f0b;
     --red-bg:#fcebeb; --red-tx:#a32d2d;
-    --hold-bg:#eeedf2; --hold-tx:#5b5772;
+    --hold-bg:#eeedf2; --hold-tx:#5b5772; --past-bg:#e4e2dc; --past-tx:#9a998f;
     --accent:#185fa5;
   }
   @media (prefers-color-scheme: dark){
@@ -21,7 +21,7 @@
       --green-bg:#27500a; --green-tx:#c0dd97;
       --amber-bg:#633806; --amber-tx:#fac775;
       --red-bg:#791f1f; --red-tx:#f7c1c1;
-      --hold-bg:#33313d; --hold-tx:#c9c6d6;
+      --hold-bg:#33313d; --hold-tx:#c9c6d6; --past-bg:#242320; --past-tx:#75746d;
       --accent:#85b7eb;
     }
   }
@@ -143,6 +143,7 @@ function render(){
   var dim=new Date(y,m+1,0).getDate();
   for(var i=0;i<offset;i++){var e=document.createElement("div");e.className="cell empty";grid.appendChild(e);}
   var pool=CFG.pool,floor=CFG.floor;
+  var TODAY=new Date(); TODAY=new Date(TODAY.getFullYear(),TODAY.getMonth(),TODAY.getDate());
   var minSure=Infinity,minBottom=Infinity,red=0,yellow=0,minBottomDay=1;
   for(var day=1;day<=dim;day++){
     var dt=new Date(y,m,day);
@@ -152,18 +153,24 @@ function render(){
     var sureRem=pool-sureDep;
     var bottomDep=stress?(probDep+holdDep):probDep;
     var bottomRem=pool-bottomDep;
-    if(sureRem<minSure)minSure=sureRem;
-    if(bottomRem<minBottom){minBottom=bottomRem;minBottomDay=day;}
-    var bg,btx;
-    if(sureRem<floor){bg="var(--red-bg)";btx="var(--red-tx)";red++;}
-    else if(bottomRem<floor){bg="var(--amber-bg)";btx="var(--amber-tx)";yellow++;}
-    else{bg="var(--green-bg)";btx="var(--green-tx)";}
+    var isPast = dt < TODAY;
+    var bg,btx,sureCol;
+    if(isPast){
+      bg="var(--past-bg)";btx="var(--past-tx)";sureCol="var(--past-tx)";
+    }else{
+      if(sureRem<minSure)minSure=sureRem;
+      if(bottomRem<minBottom){minBottom=bottomRem;minBottomDay=day;}
+      if(sureRem<floor){bg="var(--red-bg)";btx="var(--red-tx)";red++;}
+      else if(bottomRem<floor){bg="var(--amber-bg)";btx="var(--amber-tx)";yellow++;}
+      else{bg="var(--green-bg)";btx="var(--green-tx)";}
+      sureCol=sureRem<floor?"var(--red-tx)":"var(--text)";
+    }
     var lblB=stress?"Stress":"Prob";
     var hold=holdDep>0?"<div class='hd'>+"+fmtK(holdDep)+" hold</div>":"";
     var c=document.createElement("div");c.className="cell";c.style.background=bg;
     c.innerHTML=hold+"<div class='dn'>"+day+"</div>"+
       "<div class='cap'>Cap "+fmtBig(pool)+"</div>"+
-      "<div class='sure' style='color:"+(sureRem<floor?"var(--red-tx)":"var(--text)")+"'>"+fmtBig(sureRem)+"</div>"+
+      "<div class='sure' style='color:"+sureCol+"'>"+fmtBig(sureRem)+"</div>"+
       "<div class='prob' style='color:"+btx+"'>"+lblB+" "+fmtBig(bottomRem)+"</div>";
     (function(dt){c.onclick=function(){showDay(dt);};})(dt);
     grid.appendChild(c);
