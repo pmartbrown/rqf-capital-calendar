@@ -37,6 +37,7 @@
   .nav button:hover{background:var(--surface-2);}
   .nav .mlabel{font-size:15px;font-weight:600;min-width:150px;text-align:center;}
   .navcol{display:flex;flex-direction:column;align-items:flex-end;gap:8px;}
+  .cell.selected{box-shadow:0 0 0 3px var(--accent);position:relative;z-index:1;}
   .watch{background:var(--hold-bg);border:1px solid var(--border);border-radius:12px;padding:12px 14px;margin-bottom:16px;}
   .watch .wtop{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:10px;}
   .watch .wlabel{font-size:13px;font-weight:600;color:var(--hold-tx);}
@@ -93,9 +94,9 @@
   <div class="cards" id="cards"></div>
 
   <div class="legend">
-    <span>Cell: <b>Cap</b> · <b>Sure</b> remaining · <b>Prob</b> remaining</span>
-    <span><span class="sw" style="background:var(--green-bg)"></span>Sure &amp; Prob &gt; floor</span>
-    <span><span class="sw" style="background:var(--amber-bg)"></span>Prob &lt; floor</span>
+    <span>Cell: <b>Sure</b> remaining · <b>Appr</b> remaining</span>
+    <span><span class="sw" style="background:var(--green-bg)"></span>Sure &amp; Appr &gt; floor</span>
+    <span><span class="sw" style="background:var(--amber-bg)"></span>Appr &lt; floor</span>
     <span><span class="sw" style="background:var(--red-bg)"></span>Sure &lt; floor</span>
   </div>
 
@@ -169,13 +170,13 @@ function render(){
       else{bg="var(--green-bg)";btx="var(--green-tx)";}
       sureCol=sureRem<floor?"var(--red-tx)":"var(--text)";
     }
-    var lblB=stress?"Stress":"Prob";
+    var lblB=stress?"Stress":"Appr";
     var hold=holdDep>0?"<div class='hd'>+"+fmtK(holdDep)+" hold</div>":"";
     var c=document.createElement("div");c.className="cell";c.style.background=bg;
     c.innerHTML=hold+"<div class='dn'>"+day+"</div>"+
       "<div class='sure' style='color:"+sureCol+"'>"+fmtBig(sureRem)+"</div>"+
       "<div class='prob' style='color:"+btx+"'>"+lblB+" "+fmtBig(bottomRem)+"</div>";
-    (function(dt){c.onclick=function(){showDay(dt);};})(dt);
+    (function(dt,cell){cell.onclick=function(){var s=document.querySelectorAll('.cell.selected');for(var q=0;q<s.length;q++)s[q].classList.remove('selected');cell.classList.add('selected');showDay(dt);};})(dt,c);
     grid.appendChild(c);
   }
   document.getElementById("cards").innerHTML=
@@ -208,10 +209,10 @@ function showDay(dt){
   var probRem=CFG.pool-dep(dt,["confirmed","probable"]);
   if(!funded.length&&!sure.length&&!prob.length&&!hold.length){
     det.innerHTML="<b style='color:var(--text)'>"+lbl+"</b> — no capital reserved. Full "+fmtBig(CFG.pool)+" available.";return;}
-  det.innerHTML="<div style='font-size:14px;color:var(--text)'><b>"+lbl+"</b> — Cap "+fmtBig(CFG.pool)+" &middot; Sure "+fmtBig(sureRem)+" &middot; Prob "+fmtBig(probRem)+(probRem<CFG.floor?" (under floor)":"")+"</div>"
+  det.innerHTML="<div style='font-size:14px;color:var(--text)'><b>"+lbl+"</b> — Cap "+fmtBig(CFG.pool)+" &middot; Sure "+fmtBig(sureRem)+" &middot; Appr "+fmtBig(probRem)+(probRem<CFG.floor?" (under floor)":"")+"</div>"
     +grp("Funded — wired &amp; live","var(--green-tx)",funded)
     +grp("Sure — committed, not yet wired","var(--text)",sure)
-    +grp("Probable — 02 approved","var(--amber-tx)",prob)
+    +grp("Approved — stage 02","var(--amber-tx)",prob)
     +grp("On Hold — pipeline, not committed","var(--hold-tx)",hold);
 }
 document.getElementById("prev").onclick=function(){cur=new Date(cur.getFullYear(),cur.getMonth()-1,1);render();};
