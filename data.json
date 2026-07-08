@@ -1,7 +1,7 @@
 {
   "pool": 1670000,
   "floor": 50000,
-  "generated": "2026-07-08T09:18:16-06:00",
+  "generated": "2026-07-08T11:26:08-06:00",
   "source": "HubSpot RQF pipelines: EMD, POF, Stack, Double Close, Echo, GAP",
   "notes": "Deployed(confirmed,f=true)=Wired Amount out, no Return Wire Amount logged (GAP only if Signed&Funded after 2026-03-01); out from Signed&Funded until returned. err=true: HubSpot record inconsistent but still counted until corrected. probable=02-approved + committed-not-yet-wired. onhold=00/01 pipeline watch (not in math).",
   "deals": [
@@ -870,7 +870,7 @@
       "note": ""
     },
     {
-      "n": "1027 Denver Blvd  San Antonio Texas",
+      "n": "1027 Denver Blvd San Antonio TX",
       "t": "EMD",
       "l": "onhold",
       "f": false,
@@ -894,9 +894,9 @@
       "note": ""
     },
     {
-      "n": "5700 S Agnew Ave Oklahoma City Oklahoma",
+      "n": "5700 S Agnew Ave Oklahoma City OK",
       "t": "EMD",
-      "l": "onhold",
+      "l": "probable",
       "f": false,
       "a": 32000.0,
       "s": "2026-06-26",
