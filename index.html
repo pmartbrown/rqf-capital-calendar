@@ -181,8 +181,8 @@ function render(){
   }
   document.getElementById("cards").innerHTML=
     card("Total capital",fmtBig(pool))+
-    card("Lowest Sure",fmtBig(minSure),minSure<floor)+
-    card(stress?"Lowest Stress":"Lowest Prob",fmtBig(minBottom),minBottom<floor)+
+    card("Lowest After Sure Bets",fmtBig(minSure),minSure<floor)+
+    card(stress?"Lowest After Sure, Approved &amp; Hold":"Lowest After Sure and Approved",fmtBig(minBottom),minBottom<floor)+
     card("On-hold pipeline",fmtBig(CFG.deals.filter(function(d){return d.l==="onhold";}).reduce(function(s,d){return s+d.a;},0)));
 }
 function card(l,v,danger){return "<div class='card'><div class='l'>"+l+"</div><div class='v' style='"+(danger?"color:var(--red-tx)":"")+"'>"+v+"</div></div>";}
