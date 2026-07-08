@@ -173,7 +173,6 @@ function render(){
     var hold=holdDep>0?"<div class='hd'>+"+fmtK(holdDep)+" hold</div>":"";
     var c=document.createElement("div");c.className="cell";c.style.background=bg;
     c.innerHTML=hold+"<div class='dn'>"+day+"</div>"+
-      "<div class='cap'>Cap "+fmtBig(pool)+"</div>"+
       "<div class='sure' style='color:"+sureCol+"'>"+fmtBig(sureRem)+"</div>"+
       "<div class='prob' style='color:"+btx+"'>"+lblB+" "+fmtBig(bottomRem)+"</div>";
     (function(dt){c.onclick=function(){showDay(dt);};})(dt);
