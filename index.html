@@ -36,6 +36,7 @@
   .nav button{background:var(--surface);border:1px solid var(--border);color:var(--text);border-radius:8px;width:34px;height:34px;font-size:16px;cursor:pointer;}
   .nav button:hover{background:var(--surface-2);}
   .nav .mlabel{font-size:15px;font-weight:600;min-width:150px;text-align:center;}
+  .navcol{display:flex;flex-direction:column;align-items:flex-end;gap:8px;}
   .watch{background:var(--hold-bg);border:1px solid var(--border);border-radius:12px;padding:12px 14px;margin-bottom:16px;}
   .watch .wtop{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:10px;}
   .watch .wlabel{font-size:13px;font-weight:600;color:var(--hold-tx);}
@@ -77,20 +78,19 @@
     <div>
       <h1>RQF Capital Planning Calendar</h1>
       <div class="sub">Transactional capital — live from HubSpot</div>
-      <div class="pool" id="poolLine">$1.50M pool</div>
       <div class="gen" id="genLine"></div>
     </div>
-    <div class="nav">
-      <button id="prev" aria-label="Previous month">&lsaquo;</button>
-      <div class="mlabel" id="mlabel">—</div>
-      <button id="next" aria-label="Next month">&rsaquo;</button>
+    <div class="navcol">
+      <div class="nav">
+        <button id="prev" aria-label="Previous month">&lsaquo;</button>
+        <div class="mlabel" id="mlabel">—</div>
+        <button id="next" aria-label="Next month">&rsaquo;</button>
+      </div>
+      <button class="stressbtn" id="stressBtn">Stress test: off</button>
     </div>
   </div>
 
-  <div class="watch" id="watch"></div>
-
   <div class="cards" id="cards"></div>
-  <div id="alertBox"></div>
 
   <div class="legend">
     <span>Cell: <b>Cap</b> · <b>Sure</b> remaining · <b>Prob</b> remaining</span>
@@ -101,6 +101,8 @@
 
   <div class="dow"><div>Sun</div><div>Mon</div><div>Tue</div><div>Wed</div><div>Thu</div><div>Fri</div><div>Sat</div></div>
   <div class="grid" id="grid"></div>
+
+  <div class="watch" id="watch" style="margin-top:16px;margin-bottom:0;"></div>
 
   <div class="detail" id="detail">Click a day to see the deals reserving capital that day.</div>
   <div class="foot" id="foot"></div>
@@ -127,11 +129,13 @@ function renderWatch(){
     return "<span class='pill'>"+mn+" <b>"+fmtK(by[k][0])+"</b> · "+by[k][1]+"</span>";
   }).join("");
   document.getElementById("watch").innerHTML=
-    "<div class='wtop'><div><div class='wlabel'>Pipeline watch — On Hold, not committed</div>"
-    +"<div class='wsub'>"+fmtK(total)+" across "+oh.length+" deals · not in the numbers below</div></div>"
-    +"<button class='stressbtn"+(stress?" on":"")+"' id='stressBtn'>"+(stress?"Stress test: ON":"Stress test: off")+"</button></div>"
+    "<div class='wlabel'>Pipeline watch — On Hold, not committed</div>"
+    +"<div class='wsub'>"+fmtK(total)+" across "+oh.length+" deals · not in the calendar math</div>"
     +"<div class='pills'>"+pills+"</div>";
-  document.getElementById("stressBtn").onclick=function(){stress=!stress;render();};
+  var sb=document.getElementById("stressBtn");
+  sb.textContent=stress?"Stress test: ON":"Stress test: off";
+  sb.className="stressbtn"+(stress?" on":"");
+  sb.onclick=function(){stress=!stress;render();};
 }
 
 function render(){
@@ -180,11 +184,6 @@ function render(){
     card("Lowest Sure",fmtBig(minSure),minSure<floor)+
     card(stress?"Lowest Stress":"Lowest Prob",fmtBig(minBottom),minBottom<floor)+
     card("On-hold pipeline",fmtBig(CFG.deals.filter(function(d){return d.l==="onhold";}).reduce(function(s,d){return s+d.a;},0)));
-  var ab=document.getElementById("alertBox");
-  if(red>0){ab.innerHTML=al("var(--red-bg)","var(--red-tx)",red+" red day"+(red>1?"s":"")+" — your Sure line drops under the $"+Math.round(floor/1000)+"k floor. That's committed capital you can't cover.");}
-  else if(stress&&yellow>0){ab.innerHTML=al("var(--red-bg)","var(--red-tx)","Stress test ON — if every On Hold deal activates on schedule, "+yellow+" day"+(yellow>1?"s":"")+" go under the floor, low point "+fmtBig(minBottom)+" on "+MN[m].slice(0,3)+" "+minBottomDay+". Your committed (Sure) line still holds.");}
-  else if(yellow>0){ab.innerHTML=al("var(--amber-bg)","var(--amber-tx)",yellow+" yellow day"+(yellow>1?"s":"")+" — Prob dips under the floor but your Sure line holds. Watch the timing.");}
-  else{ab.innerHTML=al("var(--green-bg)","var(--green-tx)","All clear — both Sure and Prob stay above the floor this month.");}
 }
 function card(l,v,danger){return "<div class='card'><div class='l'>"+l+"</div><div class='v' style='"+(danger?"color:var(--red-tx)":"")+"'>"+v+"</div></div>";}
 function al(bg,tx,msg){return "<div class='alert' style='background:"+bg+";color:"+tx+"'>"+msg+"</div>";}
@@ -222,7 +221,6 @@ document.getElementById("next").onclick=function(){cur=new Date(cur.getFullYear(
 fetch("./data.json?_="+Date.now()).then(function(r){return r.json();}).then(function(j){
   CFG.pool=j.pool||1500000; CFG.floor=j.floor||50000;
   CFG.deals=(j.deals||[]).map(function(d){d._s=pd(d.s);d._e=pd(d.e);if(!d.c)d.c=d.e;return d;});
-  document.getElementById("poolLine").textContent=fmtBig(CFG.pool)+" pool";
   if(j.generated){var g=new Date(j.generated);document.getElementById("genLine").textContent="Updated "+g.toLocaleString();}
   document.getElementById("foot").textContent=j.notes||"";
   render();
