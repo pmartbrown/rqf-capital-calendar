@@ -1,7 +1,7 @@
 {
   "pool": 1670000,
   "floor": 50000,
-  "generated": "2026-07-09T10:25:34-06:00",
+  "generated": "2026-07-09T12:48:16-06:00",
   "source": "HubSpot RQF pipelines: EMD, POF, Stack, Double Close, Echo, GAP",
   "notes": "Deployed(confirmed,f=true)=Wired Amount out, no Return Wire Amount logged (GAP only if Signed&Funded after 2026-03-01); out from Signed&Funded until returned. err=true: HubSpot record inconsistent but still counted until corrected. probable=02-approved + committed-not-yet-wired. onhold=00/01 pipeline watch (not in math).",
   "deals": [
@@ -974,6 +974,30 @@
       "s": "2026-08-24",
       "e": "2026-08-26",
       "c": "2026-08-25",
+      "err": false,
+      "note": ""
+    },
+    {
+      "n": "1407 Skyline Blvd Cape Coral FL",
+      "t": "EMD",
+      "l": "onhold",
+      "f": false,
+      "a": 2500.0,
+      "s": "2026-07-09",
+      "e": "2026-08-01",
+      "c": "2026-08-16",
+      "err": false,
+      "note": ""
+    },
+    {
+      "n": "Equity Carry Group  Knoxville Tennessee 37901",
+      "t": "Stack",
+      "l": "onhold",
+      "f": false,
+      "a": 2380000.0,
+      "s": "2026-09-08",
+      "e": "2026-09-10",
+      "c": "2026-09-09",
       "err": false,
       "note": ""
     }
