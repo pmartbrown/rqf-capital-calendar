@@ -1,7 +1,7 @@
 {
   "pool": 1670000,
   "floor": 50000,
-  "generated": "2026-07-09T18:01:38-06:00",
+  "generated": "2026-07-09T22:48:00-06:00",
   "source": "HubSpot RQF pipelines: EMD, POF, Stack, Double Close, Echo, GAP",
   "notes": "Deployed(confirmed,f=true)=Wired Amount out, no Return Wire Amount logged (GAP only if Signed&Funded after 2026-03-01); out from Signed&Funded until returned. err=true: HubSpot record inconsistent but still counted until corrected. probable=02-approved + committed-not-yet-wired. onhold=00/01 pipeline watch (not in math).",
   "deals": [
@@ -1022,6 +1022,18 @@
       "s": "2026-07-10",
       "e": "2026-07-23",
       "c": "2026-08-06",
+      "err": false,
+      "note": ""
+    },
+    {
+      "n": "11711 Memorial Drive Houston Texas 77024",
+      "t": "Echo",
+      "l": "onhold",
+      "f": false,
+      "a": 120000.0,
+      "s": "2026-07-17",
+      "e": "2026-07-19",
+      "c": "2026-07-18",
       "err": false,
       "note": ""
     }
