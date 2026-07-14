@@ -1,7 +1,7 @@
 {
   "pool": 1670000,
   "floor": 50000,
-  "generated": "2026-07-14T10:11:00-06:00",
+  "generated": "2026-07-14T11:59:05-06:00",
   "source": "HubSpot RQF pipelines: EMD, POF, Stack, Double Close, Echo, GAP",
   "notes": "Deployed(confirmed,f=true)=Wired Amount out, no Return Wire Amount logged (GAP only if Signed&Funded after 2026-03-01); out from Signed&Funded until returned. err=true: HubSpot record inconsistent but still counted until corrected. probable=02-approved + committed-not-yet-wired. onhold=00/01 pipeline watch (not in math).",
   "deals": [
@@ -882,7 +882,7 @@
       "note": ""
     },
     {
-      "n": "265 Kenolio Road Kihei Hawaii 96753",
+      "n": "265 Kenolio Rd Kihei HI",
       "t": "Stack",
       "l": "onhold",
       "f": false,
@@ -996,8 +996,8 @@
       "f": false,
       "a": 10000.0,
       "s": "2026-07-14",
-      "e": "2026-07-23",
-      "c": "2026-08-06",
+      "e": "2026-07-18",
+      "c": "2026-08-19",
       "err": false,
       "note": ""
     },
