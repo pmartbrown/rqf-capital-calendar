@@ -1,7 +1,7 @@
 {
   "pool": 1670000,
   "floor": 50000,
-  "generated": "2026-07-15T12:03:16-06:00",
+  "generated": "2026-07-15T14:05:27-06:00",
   "source": "HubSpot RQF pipelines: EMD, POF, Stack, Double Close, Echo, GAP",
   "notes": "Deployed(confirmed,f=true)=Wired Amount out, no Return Wire Amount logged (GAP only if Signed&Funded after 2026-03-01); out from Signed&Funded until returned. err=true: HubSpot record inconsistent but still counted until corrected. probable=02-approved + committed-not-yet-wired. onhold=00/01 pipeline watch (not in math).",
   "deals": [
@@ -206,18 +206,6 @@
       "s": "2026-01-25",
       "e": "2026-01-27",
       "c": "2026-01-26",
-      "err": false,
-      "note": ""
-    },
-    {
-      "n": "9620 Fuller Ave Cleveland OH",
-      "t": "Stack",
-      "l": "probable",
-      "f": false,
-      "a": 122523.88,
-      "s": "2026-06-07",
-      "e": "2026-06-09",
-      "c": "2026-06-08",
       "err": false,
       "note": ""
     },
@@ -726,18 +714,6 @@
       "note": ""
     },
     {
-      "n": "Several, see attached HUD Houston Texas",
-      "t": "EMD",
-      "l": "onhold",
-      "f": false,
-      "a": 1500000.0,
-      "s": "2026-07-02",
-      "e": "2026-07-04",
-      "c": "2026-07-01",
-      "err": false,
-      "note": ""
-    },
-    {
       "n": "4816 Dabney St Houston TX",
       "t": "DC",
       "l": "probable",
@@ -746,18 +722,6 @@
       "s": "2026-07-08",
       "e": "2026-07-10",
       "c": "2026-07-09",
-      "err": false,
-      "note": ""
-    },
-    {
-      "n": "2457 Everglade Pl Cincinnati OH",
-      "t": "EMD",
-      "l": "onhold",
-      "f": false,
-      "a": 500.0,
-      "s": "2026-07-12",
-      "e": "2026-07-14",
-      "c": "2026-07-24",
       "err": false,
       "note": ""
     },
