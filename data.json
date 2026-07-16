@@ -1,7 +1,7 @@
 {
   "pool": 1670000,
   "floor": 50000,
-  "generated": "2026-07-16T13:04:22-06:00",
+  "generated": "2026-07-16T14:53:51-06:00",
   "source": "HubSpot RQF pipelines: EMD, POF, Stack, Double Close, Echo, GAP",
   "notes": "Deployed(confirmed,f=true)=Wired Amount out, no Return Wire Amount logged (GAP only if Signed&Funded after 2026-03-01); out from Signed&Funded until returned. err=true: HubSpot record inconsistent but still counted until corrected. probable=02-approved + committed-not-yet-wired. onhold=00/01 pipeline watch (not in math).",
   "deals": [
@@ -870,19 +870,19 @@
       "note": ""
     },
     {
-      "n": "340 Womack Avenue Dallas Georgia 30157",
+      "n": "340 Womack Ave Dallas GA",
       "t": "EMD",
       "l": "onhold",
       "f": false,
       "a": 1930.0,
       "s": "2026-07-14",
       "e": "2026-07-16",
-      "c": "2026-07-17",
+      "c": "2026-07-16",
       "err": false,
       "note": ""
     },
     {
-      "n": "1701 East Walnut Avenue Victoria TX 77901",
+      "n": "1701 E Walnut Ave Victoria TX",
       "t": "EMD",
       "l": "onhold",
       "f": false,
@@ -894,7 +894,7 @@
       "note": ""
     },
     {
-      "n": "993 Southwest 37th Avenue Ocala FL 34474",
+      "n": "993 SW 37th Ave Ocala FL",
       "t": "Stack",
       "l": "onhold",
       "f": false,
@@ -906,7 +906,7 @@
       "note": ""
     },
     {
-      "n": "1134 Monroe Avenue Atlantic City New Jersey 08401",
+      "n": "1134 Monroe Ave Atlantic City NJ",
       "t": "EMD",
       "l": "onhold",
       "f": false,
@@ -914,6 +914,30 @@
       "s": "2026-07-16",
       "e": "2026-08-01",
       "c": "2026-08-07",
+      "err": false,
+      "note": ""
+    },
+    {
+      "n": "3408 Steiner Street Columbus OH 43231",
+      "t": "Echo",
+      "l": "onhold",
+      "f": false,
+      "a": 30000.0,
+      "s": "2026-07-23",
+      "e": "2026-07-25",
+      "c": "2026-07-24",
+      "err": false,
+      "note": ""
+    },
+    {
+      "n": "1000 County Road 78 Bremen AL 35033",
+      "t": "Stack",
+      "l": "onhold",
+      "f": false,
+      "a": 2000000.0,
+      "s": "2026-08-25",
+      "e": "2026-08-27",
+      "c": "2026-08-26",
       "err": false,
       "note": ""
     }
