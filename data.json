@@ -1,7 +1,7 @@
 {
   "pool": 1670000,
   "floor": 50000,
-  "generated": "2026-07-16T11:11:37-06:00",
+  "generated": "2026-07-16T13:04:22-06:00",
   "source": "HubSpot RQF pipelines: EMD, POF, Stack, Double Close, Echo, GAP",
   "notes": "Deployed(confirmed,f=true)=Wired Amount out, no Return Wire Amount logged (GAP only if Signed&Funded after 2026-03-01); out from Signed&Funded until returned. err=true: HubSpot record inconsistent but still counted until corrected. probable=02-approved + committed-not-yet-wired. onhold=00/01 pipeline watch (not in math).",
   "deals": [
@@ -854,6 +854,66 @@
       "s": "2026-07-16",
       "e": "2026-07-25",
       "c": "2026-07-24",
+      "err": false,
+      "note": ""
+    },
+    {
+      "n": "24660 Tehama Vina Road San Francisco California 94114",
+      "t": "Stack",
+      "l": "onhold",
+      "f": false,
+      "a": 800000.0,
+      "s": "2026-08-12",
+      "e": "2026-08-14",
+      "c": "2026-08-13",
+      "err": false,
+      "note": ""
+    },
+    {
+      "n": "340 Womack Avenue Dallas Georgia 30157",
+      "t": "EMD",
+      "l": "onhold",
+      "f": false,
+      "a": 1930.0,
+      "s": "2026-07-14",
+      "e": "2026-07-16",
+      "c": "2026-07-17",
+      "err": false,
+      "note": ""
+    },
+    {
+      "n": "1701 East Walnut Avenue Victoria TX 77901",
+      "t": "EMD",
+      "l": "onhold",
+      "f": false,
+      "a": 2000.0,
+      "s": "2026-07-16",
+      "e": "2026-07-21",
+      "c": "2026-08-10",
+      "err": false,
+      "note": ""
+    },
+    {
+      "n": "993 Southwest 37th Avenue Ocala FL 34474",
+      "t": "Stack",
+      "l": "onhold",
+      "f": false,
+      "a": 75000.0,
+      "s": "2026-07-29",
+      "e": "2026-07-31",
+      "c": "2026-07-30",
+      "err": false,
+      "note": ""
+    },
+    {
+      "n": "1134 Monroe Avenue Atlantic City New Jersey 08401",
+      "t": "EMD",
+      "l": "onhold",
+      "f": false,
+      "a": 20000.0,
+      "s": "2026-07-16",
+      "e": "2026-08-01",
+      "c": "2026-08-07",
       "err": false,
       "note": ""
     }
