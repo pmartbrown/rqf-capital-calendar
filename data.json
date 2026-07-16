@@ -1,7 +1,7 @@
 {
   "pool": 1670000,
   "floor": 50000,
-  "generated": "2026-07-16T14:53:51-06:00",
+  "generated": "2026-07-16T16:00:46-06:00",
   "source": "HubSpot RQF pipelines: EMD, POF, Stack, Double Close, Echo, GAP",
   "notes": "Deployed(confirmed,f=true)=Wired Amount out, no Return Wire Amount logged (GAP only if Signed&Funded after 2026-03-01); out from Signed&Funded until returned. err=true: HubSpot record inconsistent but still counted until corrected. probable=02-approved + committed-not-yet-wired. onhold=00/01 pipeline watch (not in math).",
   "deals": [
@@ -170,6 +170,18 @@
       "s": "2026-07-01",
       "e": "2027-12-31",
       "c": "2026-07-01",
+      "err": false,
+      "note": ""
+    },
+    {
+      "n": "4 Granary Ct Columbia SC",
+      "t": "EMD",
+      "l": "confirmed",
+      "f": true,
+      "a": 500.0,
+      "s": "2026-07-16",
+      "e": "2027-12-31",
+      "c": "2026-07-16",
       "err": false,
       "note": ""
     },
@@ -822,18 +834,6 @@
       "note": ""
     },
     {
-      "n": "4 Granary Ct Columbia SC",
-      "t": "EMD",
-      "l": "probable",
-      "f": false,
-      "a": 10000.0,
-      "s": "2026-07-16",
-      "e": "2026-07-18",
-      "c": "2026-08-19",
-      "err": false,
-      "note": ""
-    },
-    {
       "n": "1337 & 1341 Walker St Harrisonburg VA",
       "t": "EMD",
       "l": "onhold",
@@ -918,7 +918,7 @@
       "note": ""
     },
     {
-      "n": "3408 Steiner Street Columbus OH 43231",
+      "n": "3408 Steiner St Columbus OH",
       "t": "Echo",
       "l": "onhold",
       "f": false,
@@ -930,7 +930,7 @@
       "note": ""
     },
     {
-      "n": "1000 County Road 78 Bremen AL 35033",
+      "n": "1000 County Rd 78 Bremen AL",
       "t": "Stack",
       "l": "onhold",
       "f": false,
