@@ -1,7 +1,7 @@
 {
   "pool": 1670000,
   "floor": 50000,
-  "generated": "2026-07-17T10:12:07-06:00",
+  "generated": "2026-07-17T12:02:52-06:00",
   "source": "HubSpot RQF pipelines: EMD, POF, Stack, Double Close, Echo, GAP",
   "notes": "Deployed(confirmed,f=true)=Wired Amount out, no Return Wire Amount logged (GAP only if Signed&Funded after 2026-03-01); out from Signed&Funded until returned. err=true: HubSpot record inconsistent but still counted until corrected. probable=02-approved + committed-not-yet-wired. onhold=00/01 pipeline watch (not in math).",
   "deals": [
@@ -342,18 +342,6 @@
       "note": ""
     },
     {
-      "n": "2324 Boulder Way Sevierville TN",
-      "t": "Echo",
-      "l": "onhold",
-      "f": false,
-      "a": 260984.61,
-      "s": "2026-05-26",
-      "e": "2026-05-28",
-      "c": "2026-05-27",
-      "err": false,
-      "note": ""
-    },
-    {
       "n": "17 E 62nd Pl N Tulsa OK",
       "t": "DC",
       "l": "onhold",
@@ -470,18 +458,6 @@
       "s": "2026-06-28",
       "e": "2026-06-30",
       "c": "2026-06-29",
-      "err": false,
-      "note": ""
-    },
-    {
-      "n": "1734 Summit View Way Sevierville TN",
-      "t": "Echo",
-      "l": "onhold",
-      "f": false,
-      "a": 179000.0,
-      "s": "2026-06-03",
-      "e": "2026-06-05",
-      "c": "2026-06-04",
       "err": false,
       "note": ""
     },
@@ -938,6 +914,18 @@
       "s": "2026-09-30",
       "e": "2026-10-02",
       "c": "2026-10-01",
+      "err": false,
+      "note": ""
+    },
+    {
+      "n": "11 Astor Lane Port Washington NY 11050",
+      "t": "EMD",
+      "l": "onhold",
+      "f": false,
+      "a": 175000.0,
+      "s": "2026-07-16",
+      "e": "2026-07-18",
+      "c": "2026-07-17",
       "err": false,
       "note": ""
     }
