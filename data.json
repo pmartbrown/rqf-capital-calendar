@@ -1,7 +1,7 @@
 {
   "pool": 1670000,
   "floor": 50000,
-  "generated": "2026-07-20T06:17:50-06:00",
+  "generated": "2026-07-20T09:08:49-06:00",
   "source": "HubSpot RQF pipelines: EMD, POF, Stack, Double Close, Echo, GAP",
   "notes": "Deployed(confirmed,f=true)=Wired Amount out, no Return Wire Amount logged (GAP only if Signed&Funded after 2026-03-01); out from Signed&Funded until returned. err=true: HubSpot record inconsistent but still counted until corrected. probable=02-approved + committed-not-yet-wired. onhold=00/01 pipeline watch (not in math).",
   "deals": [
@@ -218,6 +218,18 @@
       "s": "2026-04-16",
       "e": "2026-04-18",
       "c": "2026-04-17",
+      "err": false,
+      "note": ""
+    },
+    {
+      "n": "4407 Millwood Rd Spring Hill FL",
+      "t": "Stack",
+      "l": "probable",
+      "f": false,
+      "a": 593557.29,
+      "s": "2026-07-19",
+      "e": "2026-07-21",
+      "c": "2026-07-20",
       "err": false,
       "note": ""
     },
