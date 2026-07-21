@@ -1,7 +1,7 @@
 {
   "pool": 1670000,
   "floor": 50000,
-  "generated": "2026-07-21T07:40:26-06:00",
+  "generated": "2026-07-21T09:40:28-06:00",
   "source": "HubSpot RQF pipelines: EMD, POF, Stack, Double Close, Echo, GAP",
   "notes": "Deployed(confirmed,f=true)=Wired Amount out, no Return Wire Amount logged (GAP only if Signed&Funded after 2026-03-01); out from Signed&Funded until returned. err=true: HubSpot record inconsistent but still counted until corrected. probable=02-approved + committed-not-yet-wired. onhold=00/01 pipeline watch (not in math).",
   "deals": [
@@ -902,6 +902,30 @@
       "s": "2026-09-21",
       "e": "2026-09-23",
       "c": "2026-09-22",
+      "err": false,
+      "note": ""
+    },
+    {
+      "n": "112 Alice Street Pensacola Florida 32505",
+      "t": "Stack",
+      "l": "onhold",
+      "f": false,
+      "a": 40000.0,
+      "s": "2026-08-14",
+      "e": "2026-08-16",
+      "c": "2026-08-15",
+      "err": false,
+      "note": ""
+    },
+    {
+      "n": "1504 Katy Lane Kerrville TX 78028",
+      "t": "Echo",
+      "l": "onhold",
+      "f": false,
+      "a": 5000.0,
+      "s": "2026-08-05",
+      "e": "2026-08-07",
+      "c": "2026-08-06",
       "err": false,
       "note": ""
     }
