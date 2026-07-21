@@ -1,7 +1,7 @@
 {
   "pool": 1670000,
   "floor": 50000,
-  "generated": "2026-07-21T15:04:38-06:00",
+  "generated": "2026-07-21T16:52:41-06:00",
   "source": "HubSpot RQF pipelines: EMD, POF, Stack, Double Close, Echo, GAP",
   "notes": "Deployed(confirmed,f=true)=Wired Amount out, no Return Wire Amount logged (GAP only if Signed&Funded after 2026-03-01); out from Signed&Funded until returned. err=true: HubSpot record inconsistent but still counted until corrected. probable=02-approved + committed-not-yet-wired. onhold=00/01 pipeline watch (not in math).",
   "deals": [
@@ -50,8 +50,8 @@
       "s": "2026-07-21",
       "e": "2027-12-31",
       "c": "2026-07-21",
-      "err": true,
-      "note": "HubSpot: wired but stage still 02 Approved"
+      "err": false,
+      "note": ""
     },
     {
       "n": "415 Clark St Saginaw MI",
@@ -962,6 +962,18 @@
       "s": "2026-07-31",
       "e": "2026-08-02",
       "c": "2026-08-01",
+      "err": false,
+      "note": ""
+    },
+    {
+      "n": "616 North Edgewood Street Philadelphia PA 19151",
+      "t": "EMD",
+      "l": "onhold",
+      "f": false,
+      "a": 2500.0,
+      "s": "2026-07-21",
+      "e": "2026-07-25",
+      "c": "2026-08-06",
       "err": false,
       "note": ""
     }
