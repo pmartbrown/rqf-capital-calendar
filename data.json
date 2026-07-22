@@ -1,7 +1,7 @@
 {
   "pool": 1670000,
   "floor": 50000,
-  "generated": "2026-07-22T13:10:26-06:00",
+  "generated": "2026-07-22T15:12:34-06:00",
   "source": "HubSpot RQF pipelines: EMD, POF, Stack, Double Close, Echo, GAP",
   "notes": "Deployed(confirmed,f=true)=Wired Amount out, no Return Wire Amount logged (GAP only if Signed&Funded after 2026-03-01); out from Signed&Funded until returned. err=true: HubSpot record inconsistent but still counted until corrected. probable=02-approved + committed-not-yet-wired. onhold=00/01 pipeline watch (not in math).",
   "deals": [
@@ -38,18 +38,6 @@
       "s": "2025-11-14",
       "e": "2027-12-31",
       "c": "2025-11-14",
-      "err": false,
-      "note": ""
-    },
-    {
-      "n": "4407 Millwood Rd Spring Hill FL",
-      "t": "Stack",
-      "l": "confirmed",
-      "f": true,
-      "a": 595556.02,
-      "s": "2026-07-21",
-      "e": "2027-12-31",
-      "c": "2026-07-21",
       "err": false,
       "note": ""
     },
@@ -215,9 +203,9 @@
       "l": "probable",
       "f": false,
       "a": 220000.0,
-      "s": "2026-07-15",
-      "e": "2026-07-17",
-      "c": "2026-07-16",
+      "s": "2026-07-28",
+      "e": "2026-07-30",
+      "c": "2026-07-29",
       "err": false,
       "note": ""
     },
@@ -290,18 +278,6 @@
       "s": "2026-06-25",
       "e": "2026-06-27",
       "c": "2026-06-26",
-      "err": false,
-      "note": ""
-    },
-    {
-      "n": "106 S Roney St Carl Junction MO",
-      "t": "Stack",
-      "l": "onhold",
-      "f": false,
-      "a": 160000.0,
-      "s": "2026-05-14",
-      "e": "2026-05-16",
-      "c": "2026-05-15",
       "err": false,
       "note": ""
     },
@@ -482,18 +458,6 @@
       "s": "2026-06-24",
       "e": "2026-06-26",
       "c": "2026-06-25",
-      "err": false,
-      "note": ""
-    },
-    {
-      "n": "220 Bay St SE Fairburn GA",
-      "t": "Stack",
-      "l": "onhold",
-      "f": false,
-      "a": 1200000.0,
-      "s": "2026-12-30",
-      "e": "2027-01-01",
-      "c": "2026-12-31",
       "err": false,
       "note": ""
     },
