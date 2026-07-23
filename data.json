@@ -1,7 +1,7 @@
 {
   "pool": 1670000,
   "floor": 50000,
-  "generated": "2026-07-22T18:05:55-06:00",
+  "generated": "2026-07-22T22:12:40-06:00",
   "source": "HubSpot RQF pipelines: EMD, POF, Stack, Double Close, Echo, GAP",
   "notes": "Deployed(confirmed,f=true)=Wired Amount out, no Return Wire Amount logged (GAP only if Signed&Funded after 2026-03-01); out from Signed&Funded until returned. err=true: HubSpot record inconsistent but still counted until corrected. probable=02-approved + committed-not-yet-wired. onhold=00/01 pipeline watch (not in math).",
   "deals": [
@@ -74,18 +74,6 @@
       "s": "2026-06-04",
       "e": "2027-12-31",
       "c": "2026-06-04",
-      "err": false,
-      "note": ""
-    },
-    {
-      "n": "4147 E Presidio Rd Phoenix  Arizona",
-      "t": "GAP",
-      "l": "confirmed",
-      "f": true,
-      "a": 115000.0,
-      "s": "2026-06-11",
-      "e": "2027-12-31",
-      "c": "2026-06-11",
       "err": false,
       "note": ""
     },
@@ -890,6 +878,54 @@
       "s": "2026-06-09",
       "e": "2026-06-11",
       "c": "2026-06-10",
+      "err": false,
+      "note": ""
+    },
+    {
+      "n": "1527 South Wilton Place Los Angeles CA 90019",
+      "t": "EMD",
+      "l": "onhold",
+      "f": false,
+      "a": 70000.0,
+      "s": "2026-07-23",
+      "e": "2026-08-08",
+      "c": "2026-08-14",
+      "err": false,
+      "note": ""
+    },
+    {
+      "n": "5234 Hermosa Ave Los Angeles Ca 90041",
+      "t": "EMD",
+      "l": "onhold",
+      "f": false,
+      "a": 70000.0,
+      "s": "2026-07-21",
+      "e": "2026-07-23",
+      "c": "2026-08-07",
+      "err": false,
+      "note": ""
+    },
+    {
+      "n": "931 South Holt Avenue Los Angeles CA 90035",
+      "t": "EMD",
+      "l": "onhold",
+      "f": false,
+      "a": 70000.0,
+      "s": "2026-07-23",
+      "e": "2026-08-08",
+      "c": "2026-08-14",
+      "err": false,
+      "note": ""
+    },
+    {
+      "n": "2976 Claymille Boulevard Nashville Tennessee 37207",
+      "t": "EMD",
+      "l": "onhold",
+      "f": false,
+      "a": 30000.0,
+      "s": "2026-07-23",
+      "e": "2026-08-05",
+      "c": "2026-07-24",
       "err": false,
       "note": ""
     }
