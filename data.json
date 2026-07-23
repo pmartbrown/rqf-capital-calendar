@@ -1,7 +1,7 @@
 {
   "pool": 1670000,
   "floor": 50000,
-  "generated": "2026-07-23T09:06:29-06:00",
+  "generated": "2026-07-23T11:17:36-06:00",
   "source": "HubSpot RQF pipelines: EMD, POF, Stack, Double Close, Echo, GAP",
   "notes": "Deployed(confirmed,f=true)=Wired Amount out, no Return Wire Amount logged (GAP only if Signed&Funded after 2026-03-01); out from Signed&Funded until returned. err=true: HubSpot record inconsistent but still counted until corrected. probable=02-approved + committed-not-yet-wired. onhold=00/01 pipeline watch (not in math).",
   "deals": [
@@ -882,7 +882,7 @@
       "note": ""
     },
     {
-      "n": "1527 South Wilton Place Los Angeles CA 90019",
+      "n": "1527 S Wilton Pl Los Angeles CA",
       "t": "EMD",
       "l": "onhold",
       "f": false,
@@ -894,7 +894,7 @@
       "note": ""
     },
     {
-      "n": "5234 Hermosa Ave Los Angeles Ca 90041",
+      "n": "5234 Hermosa Ave Eagle Rock CA",
       "t": "EMD",
       "l": "onhold",
       "f": false,
@@ -906,7 +906,7 @@
       "note": ""
     },
     {
-      "n": "931 South Holt Avenue Los Angeles CA 90035",
+      "n": "931 S Holt Ave Los Angeles CA",
       "t": "EMD",
       "l": "onhold",
       "f": false,
@@ -918,7 +918,7 @@
       "note": ""
     },
     {
-      "n": "2976 Claymille Boulevard Nashville Tennessee 37207",
+      "n": "2976 Claymille Blvd Nashville TN",
       "t": "EMD",
       "l": "onhold",
       "f": false,
@@ -930,11 +930,11 @@
       "note": ""
     },
     {
-      "n": "211 Marbauch Avenue San Antonio Texas 78237",
+      "n": "211 Marbauch Ave San Antonio TX",
       "t": "EMD",
       "l": "onhold",
       "f": false,
-      "a": 20000.0,
+      "a": 4080.05,
       "s": "2026-07-22",
       "e": "2026-07-24",
       "c": "2026-08-21",
