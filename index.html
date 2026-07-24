@@ -93,6 +93,8 @@
 
   <div class="cards" id="cards"></div>
 
+  <div class="watch" id="ledger" style="display:none;"></div>
+
   <div class="watch" id="odradar" style="display:none;border-color:var(--red-tx);"></div>
 
   <div class="legend">
@@ -141,6 +143,22 @@ function renderWatch(){
   sb.onclick=function(){stress=!stress;render();};
 }
 
+function renderLedger(){
+  var box=document.getElementById("ledger");
+  var ev=(CFG.capitalEvents||[]).slice();
+  if(!ev.length){box.style.display="none";return;}
+  box.style.display="";
+  var cin=CFG.capitalIn||0,cret=CFG.capitalReturned||0;
+  var recent=ev.sort(function(a,b){return a.date<b.date?1:(a.date>b.date?-1:0);}).slice(0,6).map(function(e){
+    var amt=+e.amount,neg=amt<0,col=neg?"var(--red-tx)":"var(--green-tx)";
+    var md=e.date.slice(5,7)+"/"+e.date.slice(8,10);
+    return "<span class='pill'>"+md+" · "+(e.who||e.type)+" · <b style='color:"+col+"'>"+(neg?"−":"+")+fmtK(Math.abs(amt))+"</b></span>";
+  }).join("");
+  box.innerHTML=
+    "<div class='wlabel'>Capital ledger</div>"
+    +"<div class='wsub'>"+fmtK(cin)+" contributed · "+fmtK(cret)+" returned to investors · net "+fmtK(cin-cret)+" — this drives Total capital</div>"
+    +"<div class='pills'>"+recent+"</div>";
+}
 function renderOverdue(){
   var box=document.getElementById("odradar");
   var od=CFG.deals.filter(function(d){return d.f&&d.od;});
@@ -158,6 +176,7 @@ function renderOverdue(){
 }
 function render(){
   renderWatch();
+  renderLedger();
   renderOverdue();
   var y=cur.getFullYear(),m=cur.getMonth();
   document.getElementById("mlabel").textContent=MN[m]+" "+y;
@@ -238,6 +257,7 @@ document.getElementById("next").onclick=function(){cur=new Date(cur.getFullYear(
 
 fetch("./data.json?_="+Date.now()).then(function(r){return r.json();}).then(function(j){
   CFG.pool=j.pool||1500000; CFG.floor=j.floor||50000;
+  CFG.capitalEvents=j.capital_events||[]; CFG.capitalIn=j.capital_in||0; CFG.capitalReturned=j.capital_returned||0;
   CFG.deals=(j.deals||[]).map(function(d){d._s=pd(d.s);d._e=pd(d.e);if(!d.c)d.c=d.e;return d;});
   if(j.generated){var g=new Date(j.generated);document.getElementById("genLine").textContent="Updated "+g.toLocaleString();}
   document.getElementById("foot").textContent=j.notes||"";

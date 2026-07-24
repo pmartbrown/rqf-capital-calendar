@@ -1,0 +1,9 @@
+{
+  "_doc": "RQF capital ledger. Total capital = running sum of amounts dated on/before today. Contributions are positive; capital RETURNED to investors is negative. build_data.py reads this to set the pool, so the calendar's Total Capital tracks real capital in/out instead of a fixed number. Append a new row when capital comes in or is returned.",
+  "events": [
+    {"date": "2026-01-01", "type": "contribution", "who": "RQF operating fund", "amount": 150000, "note": "seed capital (opening balance)"},
+    {"date": "2026-01-01", "type": "contribution", "who": "Tree Line income", "amount": 1420000, "note": "retained profit deployed as capital (opening balance)"},
+    {"date": "2026-01-01", "type": "contribution", "who": "Paulie Brown", "amount": 100000, "note": "opening balance"},
+    {"date": "2026-07-24", "type": "contribution", "who": "New capital (confirm source)", "amount": 350000, "note": "received 7/24/2026"}
+  ]
+}

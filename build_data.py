@@ -61,6 +61,29 @@ def d1(dt, n):
     return (dt + datetime.timedelta(days=n)).isoformat()
 
 
+def load_capital(default_pool):
+    """Pool = running sum of the capital ledger (contributions +, returns -) as of today.
+    Falls back to the constant if the ledger file is missing/unreadable, so the hourly
+    job never breaks on a partial deploy."""
+    try:
+        with open("capital_events.json") as f:
+            ev = json.load(f).get("events", [])
+    except (OSError, ValueError):
+        return default_pool, [], 0.0, 0.0
+    total = cin = cret = 0.0
+    for e in ev:
+        d = pd(e.get("date"))
+        amt = num(e.get("amount"))
+        if not d or d > TODAY:
+            continue
+        total += amt
+        if amt >= 0:
+            cin += amt
+        else:
+            cret += -amt
+    return (total if total > 0 else default_pool), ev, cin, cret
+
+
 deals, seen = [], set()
 
 # ---- STEP 1: DEPLOYED (wired>0, no return amount; GAP only if Signed&Funded after 2026-03-01) ----
@@ -144,12 +167,16 @@ for p in fwd:
                   "s": d1(start, -1), "e": d1(end, 1), "c": land.isoformat(),
                   "err": False, "note": ""})
 
-out = {"pool": POOL, "floor": FLOOR,
+pool_now, cap_events, cap_in, cap_ret = load_capital(POOL)
+
+out = {"pool": pool_now, "floor": FLOOR,
+       "capital_events": cap_events, "capital_in": round(cap_in, 2), "capital_returned": round(cap_ret, 2),
        "generated": datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=-6))).isoformat(timespec="seconds"),
        "source": "HubSpot RQF pipelines: EMD, POF, Stack, Double Close, Echo, GAP",
-       "notes": "Deployed(confirmed,f=true)=Wired Amount out, no Return Wire Amount logged (GAP only if Signed&Funded after 2026-03-01); out from Signed&Funded until returned. err=true: HubSpot record inconsistent but still counted until corrected. probable=02-approved + committed-not-yet-wired. onhold=00/01 pipeline watch (not in math).",
+       "notes": "Pool = capital ledger (capital_events.json) summed to today: contributions in minus returns to investors. Deployed(confirmed,f=true)=Wired Amount out, no Return Wire Amount logged (GAP only if Signed&Funded after 2026-03-01); out from Signed&Funded until returned. err=true: HubSpot record inconsistent but still counted until corrected. probable=02-approved + committed-not-yet-wired. onhold=00/01 pipeline watch (not in math).",
        "deals": deals}
 with open("data.json", "w") as f:
     json.dump(out, f, indent=2)
 dep = sum(d["a"] for d in deals if d["l"] == "confirmed")
-print("deals={} deployed=${:,.0f} available=${:,.0f}".format(len(deals), dep, POOL - dep))
+print("pool=${:,.0f} (in ${:,.0f} / returned ${:,.0f}) deals={} deployed=${:,.0f} available=${:,.0f}".format(
+    pool_now, cap_in, cap_ret, len(deals), dep, pool_now - dep))
