@@ -33,7 +33,7 @@
   ],
   "capital_in": 2020000.0,
   "capital_returned": 0.0,
-  "generated": "2026-07-24T11:38:04-06:00",
+  "generated": "2026-07-24T13:19:31-06:00",
   "source": "HubSpot RQF pipelines: EMD, POF, Stack, Double Close, Echo, GAP",
   "notes": "Pool = capital ledger (capital_events.json) summed to today: contributions in minus returns to investors. Deployed(confirmed,f=true)=Wired Amount out, no Return Wire Amount logged (GAP only if Signed&Funded after 2026-03-01); out from Signed&Funded until returned. err=true: HubSpot record inconsistent but still counted until corrected. probable=02-approved + committed-not-yet-wired. onhold=00/01 pipeline watch (not in math).",
   "deals": [
@@ -214,6 +214,18 @@
       "s": "2025-08-10",
       "e": "2025-08-12",
       "c": "2025-08-29",
+      "err": false,
+      "note": ""
+    },
+    {
+      "n": "244 Eureka Dr NE Atlanta GA",
+      "t": "Echo",
+      "l": "onhold",
+      "f": false,
+      "a": 697559.94,
+      "s": "2026-01-29",
+      "e": "2026-01-31",
+      "c": "2026-01-30",
       "err": false,
       "note": ""
     },
@@ -1006,6 +1018,18 @@
       "s": "2026-08-13",
       "e": "2026-08-15",
       "c": "2026-08-14",
+      "err": false,
+      "note": ""
+    },
+    {
+      "n": "1142 Appleland Drive Wenatchee Washington 98801",
+      "t": "DC",
+      "l": "onhold",
+      "f": false,
+      "a": 260000.0,
+      "s": "2026-08-25",
+      "e": "2026-08-27",
+      "c": "2026-08-26",
       "err": false,
       "note": ""
     }
