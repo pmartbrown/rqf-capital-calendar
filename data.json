@@ -1,7 +1,7 @@
 {
   "pool": 1670000,
   "floor": 50000,
-  "generated": "2026-07-24T09:22:59-06:00",
+  "generated": "2026-07-24T09:50:33-06:00",
   "source": "HubSpot RQF pipelines: EMD, POF, Stack, Double Close, Echo, GAP",
   "notes": "Deployed(confirmed,f=true)=Wired Amount out, no Return Wire Amount logged (GAP only if Signed&Funded after 2026-03-01); out from Signed&Funded until returned. err=true: HubSpot record inconsistent but still counted until corrected. probable=02-approved + committed-not-yet-wired. onhold=00/01 pipeline watch (not in math).",
   "deals": [
@@ -15,7 +15,9 @@
       "e": "2027-12-31",
       "c": "2025-05-06",
       "err": false,
-      "note": ""
+      "note": "",
+      "od": true,
+      "odd": 417
     },
     {
       "n": "124 S Mockingbird Cir #A & B, Cedar Creek, Texas 78612",
@@ -27,7 +29,9 @@
       "e": "2027-12-31",
       "c": "2026-07-24",
       "err": true,
-      "note": "HubSpot: stage says returned/fell-through, no return amount"
+      "note": "HubSpot: stage says returned/fell-through, no return amount",
+      "od": true,
+      "odd": 378
     },
     {
       "n": "1717 Crimson Cir Memphis TN",
@@ -39,7 +43,9 @@
       "e": "2027-12-31",
       "c": "2025-11-14",
       "err": false,
-      "note": ""
+      "note": "",
+      "od": true,
+      "odd": 217
     },
     {
       "n": "415 Clark St Saginaw MI",
@@ -51,7 +57,9 @@
       "e": "2027-12-31",
       "c": "2026-05-04",
       "err": false,
-      "note": ""
+      "note": "",
+      "od": false,
+      "odd": 0
     },
     {
       "n": "11813 NW 38th Ave Vancouver WA",
@@ -63,7 +71,9 @@
       "e": "2027-12-31",
       "c": "2026-05-06",
       "err": false,
-      "note": ""
+      "note": "",
+      "od": true,
+      "odd": 69
     },
     {
       "n": "2909 N 3rd Way Ridgefield WA",
@@ -75,7 +85,9 @@
       "e": "2027-12-31",
       "c": "2026-06-04",
       "err": false,
-      "note": ""
+      "note": "",
+      "od": true,
+      "odd": 40
     },
     {
       "n": "5213, 5216 & 5217 Collier Ct Jefferson City MO (EMD)",
@@ -87,7 +99,9 @@
       "e": "2027-12-31",
       "c": "2026-07-10",
       "err": false,
-      "note": ""
+      "note": "",
+      "od": false,
+      "odd": 0
     },
     {
       "n": "601 E Beach Dr Galveston TX",
@@ -99,7 +113,9 @@
       "e": "2027-12-31",
       "c": "2026-07-02",
       "err": false,
-      "note": ""
+      "note": "",
+      "od": false,
+      "odd": 0
     },
     {
       "n": "18410 FM1314 Conroe TX",
@@ -111,7 +127,9 @@
       "e": "2027-12-31",
       "c": "2026-06-29",
       "err": false,
-      "note": ""
+      "note": "",
+      "od": true,
+      "odd": 8
     },
     {
       "n": "5779 Legends Club Cir Braselton GA",
@@ -123,7 +141,9 @@
       "e": "2027-12-31",
       "c": "2026-06-30",
       "err": false,
-      "note": ""
+      "note": "",
+      "od": true,
+      "odd": 22
     },
     {
       "n": "2909 N 3rd Way Ridgefield WA (clone)",
@@ -135,7 +155,9 @@
       "e": "2027-12-31",
       "c": "2026-07-01",
       "err": false,
-      "note": ""
+      "note": "",
+      "od": false,
+      "odd": 0
     },
     {
       "n": "4 Granary Ct Columbia SC",
@@ -147,7 +169,9 @@
       "e": "2027-12-31",
       "c": "2026-07-16",
       "err": false,
-      "note": ""
+      "note": "",
+      "od": false,
+      "odd": 0
     },
     {
       "n": "256 Yellow Snapdragon Davenport FL",
