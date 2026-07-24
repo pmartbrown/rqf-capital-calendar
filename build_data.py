@@ -90,11 +90,23 @@ for p in funded:
     end = pd(p.get("return_wire_date")) or datetime.date.fromisoformat(FUND_END)
     if start > end:
         start = end
+    # Overdue radar: funded, no return logged, past its expected return window.
+    # Expected window by product (days from Signed & Funded); EMD uses DD-expiry if present.
+    EXP = {"Stack": 10, "DC": 10, "Echo": 10, "POF": 7, "EMD": 30, "GAP": 90}
+    t = PIPES[pipe]
+    od, odd = False, 0
+    if not pd(p.get("return_wire_date")):
+        if t == "EMD":
+            exp = pd(p.get("due_diligence_period_expiry_date")) or (start + datetime.timedelta(days=EXP["EMD"]))
+        else:
+            exp = start + datetime.timedelta(days=EXP.get(t, 30))
+        odd = (TODAY - exp).days
+        od = odd > 0
     name = (p.get("dealname") or "Deal").strip()
     seen.add(name)
     deals.append({"n": name, "t": PIPES[pipe], "l": "confirmed", "f": True, "a": round(amt, 2),
                   "s": start.isoformat(), "e": end.isoformat(), "c": start.isoformat(),
-                  "err": err, "note": note})
+                  "err": err, "note": note, "od": od, "odd": max(odd, 0)})
 
 # ---- STEP 2: FORWARD pipeline (open, transactional, not already deployed) ----
 fwd = search([{"filters": [{"propertyName": "pipeline", "operator": "IN", "values": TRANSACTIONAL},

@@ -93,6 +93,8 @@
 
   <div class="cards" id="cards"></div>
 
+  <div class="watch" id="odradar" style="display:none;border-color:var(--red-tx);"></div>
+
   <div class="legend">
     <span>Cell: <b>Sure</b> remaining · <b>Appr</b> remaining</span>
     <span><span class="sw" style="background:var(--green-bg)"></span>Sure &amp; Appr &gt; floor</span>
@@ -139,8 +141,24 @@ function renderWatch(){
   sb.onclick=function(){stress=!stress;render();};
 }
 
+function renderOverdue(){
+  var box=document.getElementById("odradar");
+  var od=CFG.deals.filter(function(d){return d.f&&d.od;});
+  if(!od.length){box.style.display="none";return;}
+  box.style.display="";
+  var total=od.reduce(function(s,d){return s+d.a;},0);
+  var rows=od.slice().sort(function(a,b){return b.odd-a.odd;}).map(function(d){
+    var nm=d.n.length>34?d.n.slice(0,32)+"…":d.n;
+    return "<span class='pill' style='border-color:var(--red-tx)'>"+nm+" · <b style='color:var(--red-tx)'>"+fmtK(d.a)+"</b> · "+d.odd+"d</span>";
+  }).join("");
+  box.innerHTML=
+    "<div class='wlabel' style='color:var(--red-tx)'>Overdue radar — funded, past expected return, no return logged</div>"
+    +"<div class='wsub'>"+fmtK(total)+" across "+od.length+" deal"+(od.length>1?"s":"")+" still counted as out — chase HubSpot cleanup</div>"
+    +"<div class='pills'>"+rows+"</div>";
+}
 function render(){
   renderWatch();
+  renderOverdue();
   var y=cur.getFullYear(),m=cur.getMonth();
   document.getElementById("mlabel").textContent=MN[m]+" "+y;
   var grid=document.getElementById("grid");grid.innerHTML="";
