@@ -33,7 +33,7 @@
   ],
   "capital_in": 2020000.0,
   "capital_returned": 0.0,
-  "generated": "2026-07-29T08:01:53-06:00",
+  "generated": "2026-07-29T10:18:34-06:00",
   "source": "HubSpot RQF pipelines: EMD, POF, Stack, Double Close, Echo, GAP",
   "notes": "Pool = capital ledger (capital_events.json) summed to today: contributions in minus returns to investors. Deployed(confirmed,f=true)=Wired Amount out, no Return Wire Amount logged (GAP only if Signed&Funded after 2026-03-01); out from Signed&Funded until returned. err=true: HubSpot record inconsistent but still counted until corrected. probable=02-approved + committed-not-yet-wired. onhold=00/01 pipeline watch (not in math).",
   "deals": [
@@ -1084,11 +1084,11 @@
       "note": ""
     },
     {
-      "n": "350 Montauk Avenue Brooklyn  New York 11208",
+      "n": "350 Montauk Ave Brooklyn NY",
       "t": "EMD",
       "l": "onhold",
       "f": false,
-      "a": 39533.0,
+      "a": 39532.5,
       "s": "2026-07-27",
       "e": "2026-07-29",
       "c": "2026-08-29",
@@ -1116,6 +1116,30 @@
       "s": "2026-08-11",
       "e": "2026-08-13",
       "c": "2026-08-12",
+      "err": false,
+      "note": ""
+    },
+    {
+      "n": "2405 Northlake Court Irving TX 75038",
+      "t": "Stack",
+      "l": "onhold",
+      "f": false,
+      "a": 110000.0,
+      "s": "2026-07-30",
+      "e": "2026-08-01",
+      "c": "2026-07-31",
+      "err": false,
+      "note": ""
+    },
+    {
+      "n": "2405 Northlake Court Irving TX 75038",
+      "t": "Stack",
+      "l": "onhold",
+      "f": false,
+      "a": 44800.0,
+      "s": "2026-07-30",
+      "e": "2026-08-01",
+      "c": "2026-07-31",
       "err": false,
       "note": ""
     }
