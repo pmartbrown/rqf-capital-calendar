@@ -33,7 +33,7 @@
   ],
   "capital_in": 2020000.0,
   "capital_returned": 0.0,
-  "generated": "2026-07-31T14:17:01-06:00",
+  "generated": "2026-07-31T16:01:33-06:00",
   "source": "HubSpot RQF pipelines: EMD, POF, Stack, Double Close, Echo, GAP",
   "notes": "Pool = capital ledger (capital_events.json) summed to today: contributions in minus returns to investors. Deployed(confirmed,f=true)=Wired Amount out, no Return Wire Amount logged (GAP only if Signed&Funded after 2026-03-01); out from Signed&Funded until returned. err=true: HubSpot record inconsistent but still counted until corrected. probable=02-approved + committed-not-yet-wired. onhold=00/01 pipeline watch (not in math).",
   "deals": [
@@ -1072,7 +1072,7 @@
       "note": ""
     },
     {
-      "n": "1717 9th Street Oakland California 94607",
+      "n": "1717 9th Street Oakland CA",
       "t": "Stack",
       "l": "onhold",
       "f": false,
@@ -1096,7 +1096,7 @@
       "note": ""
     },
     {
-      "n": "7914 Nixon Avenue Southwest Lakewood Washington 98498",
+      "n": "7914 Nixon Ave Southwest Lakewood WA",
       "t": "Echo",
       "l": "onhold",
       "f": false,
@@ -1114,13 +1114,13 @@
       "f": false,
       "a": 50000.0,
       "s": "2026-07-31",
-      "e": "2026-08-26",
-      "c": "2026-09-03",
+      "e": "2026-08-07",
+      "c": "2026-08-24",
       "err": false,
       "note": ""
     },
     {
-      "n": "210 Gold St Buffalo, NY 14206 New York Ny 14206",
+      "n": "210 Gold St Buffalo NY (DC)",
       "t": "DC",
       "l": "onhold",
       "f": false,
@@ -1132,14 +1132,14 @@
       "note": ""
     },
     {
-      "n": "210 Gold St Buffalo NY",
+      "n": "210 Gold St Buffalo NY (EMD)",
       "t": "EMD",
       "l": "onhold",
       "f": false,
-      "a": 1900.0,
+      "a": 2000.0,
       "s": "2026-07-31",
       "e": "2026-08-04",
-      "c": "2026-08-03",
+      "c": "2026-08-07",
       "err": false,
       "note": ""
     },
