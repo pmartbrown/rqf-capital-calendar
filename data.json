@@ -33,7 +33,7 @@
   ],
   "capital_in": 2020000.0,
   "capital_returned": 0.0,
-  "generated": "2026-08-03T07:37:57-06:00",
+  "generated": "2026-08-03T10:20:40-06:00",
   "source": "HubSpot RQF pipelines: EMD, POF, Stack, Double Close, Echo, GAP",
   "notes": "Pool = capital ledger (capital_events.json) summed to today: contributions in minus returns to investors. Deployed(confirmed,f=true)=Wired Amount out, no Return Wire Amount logged (GAP only if Signed&Funded after 2026-03-01); out from Signed&Funded until returned. err=true: HubSpot record inconsistent but still counted until corrected. probable=02-approved + committed-not-yet-wired. onhold=00/01 pipeline watch (not in math).",
   "deals": [
@@ -652,18 +652,6 @@
       "note": ""
     },
     {
-      "n": "1337 & 1341 Walker St Harrisonburg VA",
-      "t": "EMD",
-      "l": "onhold",
-      "f": false,
-      "a": 15000.0,
-      "s": "2026-07-30",
-      "e": "2026-08-01",
-      "c": "2026-07-31",
-      "err": false,
-      "note": ""
-    },
-    {
       "n": "6305 Antoine Dr Houston TX (EMD2)",
       "t": "EMD",
       "l": "onhold",
@@ -684,18 +672,6 @@
       "s": "2026-08-12",
       "e": "2026-08-14",
       "c": "2026-08-13",
-      "err": false,
-      "note": ""
-    },
-    {
-      "n": "340 Womack Ave Dallas GA",
-      "t": "EMD",
-      "l": "onhold",
-      "f": false,
-      "a": 1930.0,
-      "s": "2026-07-14",
-      "e": "2026-07-16",
-      "c": "2026-07-16",
       "err": false,
       "note": ""
     },
@@ -744,18 +720,6 @@
       "s": "2026-09-30",
       "e": "2026-10-02",
       "c": "2026-10-01",
-      "err": false,
-      "note": ""
-    },
-    {
-      "n": "11 Astor Ln Port Washington NY",
-      "t": "EMD",
-      "l": "onhold",
-      "f": false,
-      "a": 175000.0,
-      "s": "2026-07-16",
-      "e": "2026-07-18",
-      "c": "2026-07-17",
       "err": false,
       "note": ""
     },
