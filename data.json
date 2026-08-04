@@ -33,7 +33,7 @@
   ],
   "capital_in": 2020000.0,
   "capital_returned": 0.0,
-  "generated": "2026-08-04T09:27:58-06:00",
+  "generated": "2026-08-04T11:43:48-06:00",
   "source": "HubSpot RQF pipelines: EMD, POF, Stack, Double Close, Echo, GAP",
   "notes": "Pool = capital ledger (capital_events.json) summed to today: contributions in minus returns to investors. Deployed(confirmed,f=true)=Wired Amount out, no Return Wire Amount logged (GAP only if Signed&Funded after 2026-03-01); out from Signed&Funded until returned. err=true: HubSpot record inconsistent but still counted until corrected. probable=02-approved + committed-not-yet-wired. onhold=00/01 pipeline watch (not in math).",
   "deals": [
@@ -700,18 +700,6 @@
       "note": ""
     },
     {
-      "n": "481 Kenwood Dr Euclid OH",
-      "t": "EMD",
-      "l": "onhold",
-      "f": false,
-      "a": 35000.0,
-      "s": "2026-08-04",
-      "e": "2026-08-07",
-      "c": "2026-08-21",
-      "err": false,
-      "note": ""
-    },
-    {
       "n": "21855 ID-75 Clayton ID",
       "t": "Stack",
       "l": "onhold",
@@ -957,8 +945,8 @@
       "l": "onhold",
       "f": false,
       "a": 39532.5,
-      "s": "2026-07-27",
-      "e": "2026-07-29",
+      "s": "2026-08-04",
+      "e": "2026-08-20",
       "c": "2026-08-29",
       "err": false,
       "note": ""
@@ -1126,8 +1114,8 @@
       "f": false,
       "a": 7500.0,
       "s": "2026-08-04",
-      "e": "2026-08-15",
-      "c": "2026-08-14",
+      "e": "2026-08-08",
+      "c": "2026-08-07",
       "err": false,
       "note": ""
     },
