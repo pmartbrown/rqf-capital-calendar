@@ -33,7 +33,7 @@
   ],
   "capital_in": 2020000.0,
   "capital_returned": 0.0,
-  "generated": "2026-08-05T10:38:41-06:00",
+  "generated": "2026-08-05T12:18:12-06:00",
   "source": "HubSpot RQF pipelines: EMD, POF, Stack, Double Close, Echo, GAP",
   "notes": "Pool = capital ledger (capital_events.json) summed to today: contributions in minus returns to investors. Deployed(confirmed,f=true)=Wired Amount out, no Return Wire Amount logged (GAP only if Signed&Funded after 2026-03-01); out from Signed&Funded until returned. err=true: HubSpot record inconsistent but still counted until corrected. probable=02-approved + committed-not-yet-wired. onhold=00/01 pipeline watch (not in math).",
   "deals": [
@@ -952,18 +952,6 @@
       "note": ""
     },
     {
-      "n": "47967 Meadowlark St Harrisburg SD (EMD2)",
-      "t": "EMD",
-      "l": "onhold",
-      "f": false,
-      "a": 250000.0,
-      "s": "2026-08-05",
-      "e": "2026-08-08",
-      "c": "2026-08-07",
-      "err": false,
-      "note": ""
-    },
-    {
       "n": "304 S. Jones Blvd. Suite 5065 Las Vegas NV 89107-2623",
       "t": "Stack",
       "l": "onhold",
@@ -1068,18 +1056,6 @@
       "s": "2026-08-02",
       "e": "2026-08-04",
       "c": "2026-08-03",
-      "err": false,
-      "note": ""
-    },
-    {
-      "n": "47967 Meadowlark Street Harrisburg SD",
-      "t": "EMD",
-      "l": "onhold",
-      "f": false,
-      "a": 250000.0,
-      "s": "2026-08-05",
-      "e": "2026-08-08",
-      "c": "2026-08-07",
       "err": false,
       "note": ""
     },
@@ -1200,6 +1176,18 @@
       "s": "2026-08-05",
       "e": "2026-08-07",
       "c": "2027-01-02",
+      "err": false,
+      "note": ""
+    },
+    {
+      "n": "663 West 5th Street San Pedro CA 90071",
+      "t": "Stack",
+      "l": "onhold",
+      "f": false,
+      "a": 1.0,
+      "s": "2026-09-20",
+      "e": "2026-09-22",
+      "c": "2026-09-21",
       "err": false,
       "note": ""
     }
