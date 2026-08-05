@@ -33,7 +33,7 @@
   ],
   "capital_in": 2020000.0,
   "capital_returned": 0.0,
-  "generated": "2026-08-05T14:23:37-06:00",
+  "generated": "2026-08-05T16:09:24-06:00",
   "source": "HubSpot RQF pipelines: EMD, POF, Stack, Double Close, Echo, GAP",
   "notes": "Pool = capital ledger (capital_events.json) summed to today: contributions in minus returns to investors. Deployed(confirmed,f=true)=Wired Amount out, no Return Wire Amount logged (GAP only if Signed&Funded after 2026-03-01); out from Signed&Funded until returned. err=true: HubSpot record inconsistent but still counted until corrected. probable=02-approved + committed-not-yet-wired. onhold=00/01 pipeline watch (not in math).",
   "deals": [
@@ -828,42 +828,6 @@
       "s": "2026-06-09",
       "e": "2026-06-11",
       "c": "2026-06-10",
-      "err": false,
-      "note": ""
-    },
-    {
-      "n": "1527 S Wilton Pl Los Angeles CA",
-      "t": "EMD",
-      "l": "onhold",
-      "f": false,
-      "a": 70000.0,
-      "s": "2026-08-05",
-      "e": "2026-08-08",
-      "c": "2026-08-14",
-      "err": false,
-      "note": ""
-    },
-    {
-      "n": "5234 Hermosa Ave Eagle Rock CA (EMD)",
-      "t": "EMD",
-      "l": "onhold",
-      "f": false,
-      "a": 70000.0,
-      "s": "2026-07-21",
-      "e": "2026-07-23",
-      "c": "2026-08-07",
-      "err": false,
-      "note": ""
-    },
-    {
-      "n": "931 S Holt Ave Los Angeles CA",
-      "t": "EMD",
-      "l": "onhold",
-      "f": false,
-      "a": 70000.0,
-      "s": "2026-08-05",
-      "e": "2026-08-08",
-      "c": "2026-08-14",
       "err": false,
       "note": ""
     },
