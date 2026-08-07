@@ -33,7 +33,7 @@
   ],
   "capital_in": 2020000.0,
   "capital_returned": 0.0,
-  "generated": "2026-08-07T13:50:15-06:00",
+  "generated": "2026-08-07T14:36:43-06:00",
   "source": "HubSpot RQF pipelines: EMD, POF, Stack, Double Close, Echo, GAP",
   "notes": "Pool = capital ledger (capital_events.json) summed to today: contributions in minus returns to investors. Deployed(confirmed,f=true)=Wired Amount out, no Return Wire Amount logged (GAP only if Signed&Funded after 2026-03-01); out from Signed&Funded until returned. err=true: HubSpot record inconsistent but still counted until corrected. probable=02-approved + committed-not-yet-wired. onhold=00/01 pipeline watch (not in math).",
   "deals": [
@@ -1180,6 +1180,18 @@
       "s": "2026-08-07",
       "e": "2026-08-14",
       "c": "2026-08-31",
+      "err": false,
+      "note": ""
+    },
+    {
+      "n": "5830 North Carolina 209 Hot Springs NC 28743",
+      "t": "Stack",
+      "l": "onhold",
+      "f": false,
+      "a": 550000.0,
+      "s": "2026-08-26",
+      "e": "2026-08-28",
+      "c": "2026-08-27",
       "err": false,
       "note": ""
     }
