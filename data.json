@@ -33,7 +33,7 @@
   ],
   "capital_in": 2020000.0,
   "capital_returned": 0.0,
-  "generated": "2026-08-07T19:17:44-06:00",
+  "generated": "2026-08-07T21:21:50-06:00",
   "source": "HubSpot RQF pipelines: EMD, POF, Stack, Double Close, Echo, GAP",
   "notes": "Pool = capital ledger (capital_events.json) summed to today: contributions in minus returns to investors. Deployed(confirmed,f=true)=Wired Amount out, no Return Wire Amount logged (GAP only if Signed&Funded after 2026-03-01); out from Signed&Funded until returned. err=true: HubSpot record inconsistent but still counted until corrected. probable=02-approved + committed-not-yet-wired. onhold=00/01 pipeline watch (not in math).",
   "deals": [
@@ -1204,6 +1204,18 @@
       "s": "2026-09-13",
       "e": "2026-09-15",
       "c": "2026-09-14",
+      "err": false,
+      "note": ""
+    },
+    {
+      "n": "149 Luluka Place Kihei HI 96753",
+      "t": "Stack",
+      "l": "onhold",
+      "f": false,
+      "a": 200000.0,
+      "s": "2026-08-13",
+      "e": "2026-08-15",
+      "c": "2026-08-14",
       "err": false,
       "note": ""
     }
