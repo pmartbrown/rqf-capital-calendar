@@ -33,7 +33,7 @@
   ],
   "capital_in": 2020000.0,
   "capital_returned": 0.0,
-  "generated": "2026-08-07T17:30:04-06:00",
+  "generated": "2026-08-07T19:17:44-06:00",
   "source": "HubSpot RQF pipelines: EMD, POF, Stack, Double Close, Echo, GAP",
   "notes": "Pool = capital ledger (capital_events.json) summed to today: contributions in minus returns to investors. Deployed(confirmed,f=true)=Wired Amount out, no Return Wire Amount logged (GAP only if Signed&Funded after 2026-03-01); out from Signed&Funded until returned. err=true: HubSpot record inconsistent but still counted until corrected. probable=02-approved + committed-not-yet-wired. onhold=00/01 pipeline watch (not in math).",
   "deals": [
@@ -49,7 +49,7 @@
       "err": false,
       "note": "",
       "od": true,
-      "odd": 431
+      "odd": 432
     },
     {
       "n": "124 S Mockingbird Cir #A & B, Cedar Creek, Texas 78612",
@@ -57,13 +57,13 @@
       "l": "confirmed",
       "f": true,
       "a": 1000.0,
-      "s": "2026-08-07",
+      "s": "2026-08-08",
       "e": "2027-12-31",
-      "c": "2026-08-07",
+      "c": "2026-08-08",
       "err": true,
       "note": "HubSpot: stage says returned/fell-through, no return amount",
       "od": true,
-      "odd": 392
+      "odd": 393
     },
     {
       "n": "1717 Crimson Cir Memphis TN",
@@ -77,7 +77,7 @@
       "err": false,
       "note": "",
       "od": true,
-      "odd": 231
+      "odd": 232
     },
     {
       "n": "415 Clark St Saginaw MI",
@@ -91,7 +91,7 @@
       "err": false,
       "note": "",
       "od": true,
-      "odd": 5
+      "odd": 6
     },
     {
       "n": "11813 NW 38th Ave Vancouver WA",
@@ -105,7 +105,7 @@
       "err": false,
       "note": "",
       "od": true,
-      "odd": 83
+      "odd": 84
     },
     {
       "n": "2909 N 3rd Way Ridgefield WA",
@@ -119,7 +119,7 @@
       "err": false,
       "note": "",
       "od": true,
-      "odd": 54
+      "odd": 55
     },
     {
       "n": "310 Michigan Ave Leesburg FL (ECHO)",
@@ -147,7 +147,7 @@
       "err": false,
       "note": "",
       "od": true,
-      "odd": 14
+      "odd": 15
     },
     {
       "n": "601 E Beach Dr Galveston TX",
@@ -175,7 +175,7 @@
       "err": false,
       "note": "",
       "od": true,
-      "odd": 22
+      "odd": 23
     },
     {
       "n": "5779 Legends Club Cir Braselton GA",
@@ -217,7 +217,7 @@
       "err": false,
       "note": "",
       "od": true,
-      "odd": 14
+      "odd": 15
     },
     {
       "n": "55 East Ave Bridgeton NJ",
@@ -231,7 +231,7 @@
       "err": false,
       "note": "",
       "od": true,
-      "odd": 1
+      "odd": 2
     },
     {
       "n": "1819 Fern Ct Leesburg FL (ECHO)",
@@ -745,7 +745,7 @@
       "l": "onhold",
       "f": false,
       "a": 70000.0,
-      "s": "2026-08-07",
+      "s": "2026-08-08",
       "e": "2026-08-15",
       "c": "2026-08-20",
       "err": false,
@@ -1033,7 +1033,7 @@
       "l": "onhold",
       "f": false,
       "a": 8000.0,
-      "s": "2026-08-07",
+      "s": "2026-08-08",
       "e": "2026-08-15",
       "c": "2026-08-26",
       "err": false,
@@ -1093,7 +1093,7 @@
       "l": "onhold",
       "f": false,
       "a": 2650.0,
-      "s": "2026-08-07",
+      "s": "2026-08-08",
       "e": "2026-08-25",
       "c": "2026-08-31",
       "err": false,
@@ -1141,7 +1141,7 @@
       "l": "onhold",
       "f": false,
       "a": 50000.0,
-      "s": "2026-08-07",
+      "s": "2026-08-08",
       "e": "2026-10-09",
       "c": "2026-10-22",
       "err": false,
@@ -1177,7 +1177,7 @@
       "l": "onhold",
       "f": false,
       "a": 14500.0,
-      "s": "2026-08-07",
+      "s": "2026-08-08",
       "e": "2026-08-14",
       "c": "2026-08-31",
       "err": false,
@@ -1192,6 +1192,18 @@
       "s": "2026-08-26",
       "e": "2026-08-28",
       "c": "2026-08-27",
+      "err": false,
+      "note": ""
+    },
+    {
+      "n": "2290 North St Beaumont TX 77701",
+      "t": "Stack",
+      "l": "onhold",
+      "f": false,
+      "a": 32177.0,
+      "s": "2026-09-13",
+      "e": "2026-09-15",
+      "c": "2026-09-14",
       "err": false,
       "note": ""
     }
