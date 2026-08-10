@@ -33,7 +33,7 @@
   ],
   "capital_in": 2020000.0,
   "capital_returned": 0.0,
-  "generated": "2026-08-09T17:26:53-06:00",
+  "generated": "2026-08-09T19:24:17-06:00",
   "source": "HubSpot RQF pipelines: EMD, POF, Stack, Double Close, Echo, GAP",
   "notes": "Pool = capital ledger (capital_events.json) summed to today: contributions in minus returns to investors. Deployed(confirmed,f=true)=Wired Amount out, no Return Wire Amount logged (GAP only if Signed&Funded after 2026-03-01); out from Signed&Funded until returned. err=true: HubSpot record inconsistent but still counted until corrected. probable=02-approved + committed-not-yet-wired. onhold=00/01 pipeline watch (not in math).",
   "deals": [
@@ -49,7 +49,7 @@
       "err": false,
       "note": "",
       "od": true,
-      "odd": 433
+      "odd": 434
     },
     {
       "n": "124 S Mockingbird Cir #A & B, Cedar Creek, Texas 78612",
@@ -57,13 +57,13 @@
       "l": "confirmed",
       "f": true,
       "a": 1000.0,
-      "s": "2026-08-09",
+      "s": "2026-08-10",
       "e": "2027-12-31",
-      "c": "2026-08-09",
+      "c": "2026-08-10",
       "err": true,
       "note": "HubSpot: stage says returned/fell-through, no return amount",
       "od": true,
-      "odd": 394
+      "odd": 395
     },
     {
       "n": "1717 Crimson Cir Memphis TN",
@@ -77,7 +77,7 @@
       "err": false,
       "note": "",
       "od": true,
-      "odd": 233
+      "odd": 234
     },
     {
       "n": "415 Clark St Saginaw MI",
@@ -91,7 +91,7 @@
       "err": false,
       "note": "",
       "od": true,
-      "odd": 7
+      "odd": 8
     },
     {
       "n": "11813 NW 38th Ave Vancouver WA",
@@ -105,7 +105,7 @@
       "err": false,
       "note": "",
       "od": true,
-      "odd": 85
+      "odd": 86
     },
     {
       "n": "2909 N 3rd Way Ridgefield WA",
@@ -119,7 +119,7 @@
       "err": false,
       "note": "",
       "od": true,
-      "odd": 56
+      "odd": 57
     },
     {
       "n": "310 Michigan Ave Leesburg FL (ECHO)",
@@ -147,7 +147,7 @@
       "err": false,
       "note": "",
       "od": true,
-      "odd": 16
+      "odd": 17
     },
     {
       "n": "601 E Beach Dr Galveston TX",
@@ -175,7 +175,7 @@
       "err": false,
       "note": "",
       "od": true,
-      "odd": 24
+      "odd": 25
     },
     {
       "n": "5779 Legends Club Cir Braselton GA",
@@ -217,7 +217,7 @@
       "err": false,
       "note": "",
       "od": true,
-      "odd": 16
+      "odd": 17
     },
     {
       "n": "55 East Ave Bridgeton NJ",
@@ -231,7 +231,7 @@
       "err": false,
       "note": "",
       "od": true,
-      "odd": 3
+      "odd": 4
     },
     {
       "n": "1819 Fern Ct Leesburg FL (ECHO)",
@@ -745,7 +745,7 @@
       "l": "onhold",
       "f": false,
       "a": 70000.0,
-      "s": "2026-08-09",
+      "s": "2026-08-10",
       "e": "2026-08-15",
       "c": "2026-08-20",
       "err": false,
@@ -1033,7 +1033,7 @@
       "l": "onhold",
       "f": false,
       "a": 8000.0,
-      "s": "2026-08-09",
+      "s": "2026-08-10",
       "e": "2026-08-15",
       "c": "2026-08-26",
       "err": false,
@@ -1093,7 +1093,7 @@
       "l": "onhold",
       "f": false,
       "a": 2650.0,
-      "s": "2026-08-09",
+      "s": "2026-08-10",
       "e": "2026-08-25",
       "c": "2026-08-31",
       "err": false,
@@ -1141,7 +1141,7 @@
       "l": "onhold",
       "f": false,
       "a": 50000.0,
-      "s": "2026-08-09",
+      "s": "2026-08-10",
       "e": "2026-10-09",
       "c": "2026-10-22",
       "err": false,
@@ -1177,7 +1177,7 @@
       "l": "onhold",
       "f": false,
       "a": 14500.0,
-      "s": "2026-08-09",
+      "s": "2026-08-10",
       "e": "2026-08-14",
       "c": "2026-08-31",
       "err": false,
