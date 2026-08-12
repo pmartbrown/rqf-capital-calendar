@@ -33,7 +33,7 @@
   ],
   "capital_in": 2020000.0,
   "capital_returned": 0.0,
-  "generated": "2026-08-12T08:22:59-06:00",
+  "generated": "2026-08-12T09:55:59-06:00",
   "source": "HubSpot RQF pipelines: EMD, POF, Stack, Double Close, Echo, GAP",
   "notes": "Pool = capital ledger (capital_events.json) summed to today: contributions in minus returns to investors. Deployed(confirmed,f=true)=Wired Amount out, no Return Wire Amount logged (GAP only if Signed&Funded after 2026-03-01); out from Signed&Funded until returned. err=true: HubSpot record inconsistent but still counted until corrected. probable=02-approved + committed-not-yet-wired. onhold=00/01 pipeline watch (not in math).",
   "deals": [
@@ -92,20 +92,6 @@
       "note": "",
       "od": true,
       "odd": 10
-    },
-    {
-      "n": "310 Michigan Ave Leesburg FL (ECHO)",
-      "t": "Echo",
-      "l": "confirmed",
-      "f": true,
-      "a": 72144.98,
-      "s": "2026-08-07",
-      "e": "2027-12-31",
-      "c": "2026-08-07",
-      "err": false,
-      "note": "",
-      "od": false,
-      "odd": 0
     },
     {
       "n": "5213, 5216 & 5217 Collier Ct Jefferson City MO (EMD)",
@@ -248,6 +234,20 @@
       "odd": 0
     },
     {
+      "n": "10456 Masters Rd Wales MI",
+      "t": "Echo",
+      "l": "confirmed",
+      "f": true,
+      "a": 11786.76,
+      "s": "2026-08-11",
+      "e": "2027-12-31",
+      "c": "2026-08-11",
+      "err": false,
+      "note": "",
+      "od": false,
+      "odd": 0
+    },
+    {
       "n": "256 Yellow Snapdragon Davenport FL",
       "t": "EMD",
       "l": "probable",
@@ -358,7 +358,7 @@
     {
       "n": "310 Michigan Ave Leesburg FL (DC)",
       "t": "DC",
-      "l": "probable",
+      "l": "onhold",
       "f": false,
       "a": 255084.31,
       "s": "2026-04-29",
@@ -388,6 +388,18 @@
       "s": "2026-05-06",
       "e": "2026-05-08",
       "c": "2026-05-07",
+      "err": false,
+      "note": ""
+    },
+    {
+      "n": "1819 Fern Ct Leesburg FL (DC)",
+      "t": "DC",
+      "l": "probable",
+      "f": false,
+      "a": 106491.11,
+      "s": "2026-08-10",
+      "e": "2026-08-12",
+      "c": "2026-08-11",
       "err": false,
       "note": ""
     },
@@ -1160,7 +1172,7 @@
       "note": ""
     },
     {
-      "n": "5830 North Carolina 209 Hot Springs NC 28743",
+      "n": "5830 NC-209 Hot Springs NC",
       "t": "Stack",
       "l": "onhold",
       "f": false,
@@ -1232,7 +1244,7 @@
       "note": ""
     },
     {
-      "n": "310 West 22nd Street Stuttgart Arkansas 72160",
+      "n": "310 W 22nd St Stuttgart AR",
       "t": "Stack",
       "l": "onhold",
       "f": false,
