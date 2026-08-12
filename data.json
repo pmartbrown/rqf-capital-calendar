@@ -33,7 +33,7 @@
   ],
   "capital_in": 2020000.0,
   "capital_returned": 0.0,
-  "generated": "2026-08-11T22:03:30-06:00",
+  "generated": "2026-08-12T00:10:50-06:00",
   "source": "HubSpot RQF pipelines: EMD, POF, Stack, Double Close, Echo, GAP",
   "notes": "Pool = capital ledger (capital_events.json) summed to today: contributions in minus returns to investors. Deployed(confirmed,f=true)=Wired Amount out, no Return Wire Amount logged (GAP only if Signed&Funded after 2026-03-01); out from Signed&Funded until returned. err=true: HubSpot record inconsistent but still counted until corrected. probable=02-approved + committed-not-yet-wired. onhold=00/01 pipeline watch (not in math).",
   "deals": [
@@ -92,34 +92,6 @@
       "note": "",
       "od": true,
       "odd": 10
-    },
-    {
-      "n": "11813 NW 38th Ave Vancouver WA",
-      "t": "Stack",
-      "l": "confirmed",
-      "f": true,
-      "a": 148373.38,
-      "s": "2026-05-06",
-      "e": "2027-12-31",
-      "c": "2026-05-06",
-      "err": false,
-      "note": "",
-      "od": true,
-      "odd": 88
-    },
-    {
-      "n": "2909 N 3rd Way Ridgefield WA",
-      "t": "Stack",
-      "l": "confirmed",
-      "f": true,
-      "a": 205000.0,
-      "s": "2026-06-04",
-      "e": "2027-12-31",
-      "c": "2026-06-04",
-      "err": false,
-      "note": "",
-      "od": true,
-      "odd": 59
     },
     {
       "n": "310 Michigan Ave Leesburg FL (ECHO)",
@@ -192,7 +164,7 @@
       "odd": 0
     },
     {
-      "n": "2909 N 3rd Way Ridgefield WA (clone)",
+      "n": "2909 N 3rd Way Ridgefield WA (1st Pos Gap)",
       "t": "GAP",
       "l": "confirmed",
       "f": true,
@@ -220,6 +192,20 @@
       "odd": 5
     },
     {
+      "n": "68, 78, and 44 E Bridge Street, Big Sandy TN (148)",
+      "t": "GAP",
+      "l": "confirmed",
+      "f": true,
+      "a": 148373.38,
+      "s": "2026-05-06",
+      "e": "2027-12-31",
+      "c": "2026-05-06",
+      "err": false,
+      "note": "",
+      "od": true,
+      "odd": 8
+    },
+    {
       "n": "55 East Ave Bridgeton NJ",
       "t": "EMD",
       "l": "confirmed",
@@ -242,6 +228,20 @@
       "s": "2026-08-07",
       "e": "2027-12-31",
       "c": "2026-08-07",
+      "err": false,
+      "note": "",
+      "od": false,
+      "odd": 0
+    },
+    {
+      "n": "68, 78, and 44 E Bridge Street, Big Sandy TN (205)",
+      "t": "GAP",
+      "l": "confirmed",
+      "f": true,
+      "a": 205000.0,
+      "s": "2026-06-04",
+      "e": "2027-12-31",
+      "c": "2026-06-04",
       "err": false,
       "note": "",
       "od": false,
@@ -376,6 +376,18 @@
       "s": "2026-06-25",
       "e": "2026-06-27",
       "c": "2026-06-26",
+      "err": false,
+      "note": ""
+    },
+    {
+      "n": "2909 N 3rd Way Ridgefield WA (stack)",
+      "t": "Stack",
+      "l": "probable",
+      "f": false,
+      "a": 100000.0,
+      "s": "2026-05-06",
+      "e": "2026-05-08",
+      "c": "2026-05-07",
       "err": false,
       "note": ""
     },
