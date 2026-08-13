@@ -33,7 +33,7 @@
   ],
   "capital_in": 2020000.0,
   "capital_returned": 0.0,
-  "generated": "2026-08-13T13:57:22-06:00",
+  "generated": "2026-08-13T14:46:10-06:00",
   "source": "HubSpot RQF pipelines: EMD, POF, Stack, Double Close, Echo, GAP",
   "notes": "Pool = capital ledger (capital_events.json) summed to today: contributions in minus returns to investors. Deployed(confirmed,f=true)=Wired Amount out, no Return Wire Amount logged (GAP only if Signed&Funded after 2026-03-01); out from Signed&Funded until returned. err=true: HubSpot record inconsistent but still counted until corrected. probable=02-approved + committed-not-yet-wired. onhold=00/01 pipeline watch (not in math).",
   "deals": [
@@ -1060,18 +1060,6 @@
       "note": ""
     },
     {
-      "n": "13127 Archwood St North Hollywood CA",
-      "t": "EMD",
-      "l": "onhold",
-      "f": false,
-      "a": 14500.0,
-      "s": "2026-08-12",
-      "e": "2026-08-14",
-      "c": "2026-08-31",
-      "err": false,
-      "note": ""
-    },
-    {
       "n": "5830 NC-209 Hot Springs NC",
       "t": "Stack",
       "l": "onhold",
@@ -1170,7 +1158,7 @@
     {
       "n": "1337 & 1341 Walker St Harrisonburg VA (EMD)",
       "t": "EMD",
-      "l": "onhold",
+      "l": "probable",
       "f": false,
       "a": 15000.0,
       "s": "2026-08-13",
@@ -1192,7 +1180,7 @@
       "note": ""
     },
     {
-      "n": "101 RV Park, Highway 101 sallisaw oklahoma sallisaw ok 0000",
+      "n": "101 RV Park, Highway 101 Sallisaw OK",
       "t": "EMD",
       "l": "onhold",
       "f": false,
@@ -1200,6 +1188,30 @@
       "s": "2026-08-13",
       "e": "2026-09-04",
       "c": "2026-09-10",
+      "err": false,
+      "note": ""
+    },
+    {
+      "n": "761 Forrest Street Roswell GA 30075",
+      "t": "Stack",
+      "l": "onhold",
+      "f": false,
+      "a": 140000.0,
+      "s": "2026-08-20",
+      "e": "2026-08-22",
+      "c": "2026-08-21",
+      "err": false,
+      "note": ""
+    },
+    {
+      "n": "10 club ct Alpharetta ga 30005",
+      "t": "Echo",
+      "l": "onhold",
+      "f": false,
+      "a": 125000.0,
+      "s": "2026-08-13",
+      "e": "2026-08-15",
+      "c": "2026-08-14",
       "err": false,
       "note": ""
     }
