@@ -33,7 +33,7 @@
   ],
   "capital_in": 2020000.0,
   "capital_returned": 0.0,
-  "generated": "2026-08-13T14:46:10-06:00",
+  "generated": "2026-08-13T15:40:30-06:00",
   "source": "HubSpot RQF pipelines: EMD, POF, Stack, Double Close, Echo, GAP",
   "notes": "Pool = capital ledger (capital_events.json) summed to today: contributions in minus returns to investors. Deployed(confirmed,f=true)=Wired Amount out, no Return Wire Amount logged (GAP only if Signed&Funded after 2026-03-01); out from Signed&Funded until returned. err=true: HubSpot record inconsistent but still counted until corrected. probable=02-approved + committed-not-yet-wired. onhold=00/01 pipeline watch (not in math).",
   "deals": [
@@ -1048,7 +1048,7 @@
       "note": ""
     },
     {
-      "n": "10655 Camarillo Place Los Angeles CA 91602",
+      "n": "10655 Camarillo Place Los Angeles CA",
       "t": "Echo",
       "l": "onhold",
       "f": false,
@@ -1209,6 +1209,18 @@
       "l": "onhold",
       "f": false,
       "a": 125000.0,
+      "s": "2026-08-13",
+      "e": "2026-08-15",
+      "c": "2026-08-14",
+      "err": false,
+      "note": ""
+    },
+    {
+      "n": "8014 Lincoln Avenue Evansville IN 47715",
+      "t": "DC",
+      "l": "onhold",
+      "f": false,
+      "a": 19000.0,
       "s": "2026-08-13",
       "e": "2026-08-15",
       "c": "2026-08-14",
