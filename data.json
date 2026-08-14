@@ -33,7 +33,7 @@
   ],
   "capital_in": 2020000.0,
   "capital_returned": 0.0,
-  "generated": "2026-08-13T17:37:03-06:00",
+  "generated": "2026-08-13T19:39:23-06:00",
   "source": "HubSpot RQF pipelines: EMD, POF, Stack, Double Close, Echo, GAP",
   "notes": "Pool = capital ledger (capital_events.json) summed to today: contributions in minus returns to investors. Deployed(confirmed,f=true)=Wired Amount out, no Return Wire Amount logged (GAP only if Signed&Funded after 2026-03-01); out from Signed&Funded until returned. err=true: HubSpot record inconsistent but still counted until corrected. probable=02-approved + committed-not-yet-wired. onhold=00/01 pipeline watch (not in math).",
   "deals": [
@@ -49,7 +49,7 @@
       "err": false,
       "note": "",
       "od": true,
-      "odd": 437
+      "odd": 438
     },
     {
       "n": "124 S Mockingbird Cir #A & B, Cedar Creek, Texas 78612",
@@ -57,13 +57,13 @@
       "l": "confirmed",
       "f": true,
       "a": 1000.0,
-      "s": "2026-08-13",
+      "s": "2026-08-14",
       "e": "2027-12-31",
-      "c": "2026-08-13",
+      "c": "2026-08-14",
       "err": true,
       "note": "HubSpot: stage says returned/fell-through, no return amount",
       "od": true,
-      "odd": 398
+      "odd": 399
     },
     {
       "n": "1717 Crimson Cir Memphis TN",
@@ -77,7 +77,7 @@
       "err": false,
       "note": "",
       "od": true,
-      "odd": 237
+      "odd": 238
     },
     {
       "n": "415 Clark St Saginaw MI",
@@ -91,7 +91,7 @@
       "err": false,
       "note": "",
       "od": true,
-      "odd": 11
+      "odd": 12
     },
     {
       "n": "5213, 5216 & 5217 Collier Ct Jefferson City MO (EMD)",
@@ -105,7 +105,7 @@
       "err": false,
       "note": "",
       "od": true,
-      "odd": 20
+      "odd": 21
     },
     {
       "n": "601 E Beach Dr Galveston TX",
@@ -133,7 +133,7 @@
       "err": false,
       "note": "",
       "od": true,
-      "odd": 28
+      "odd": 29
     },
     {
       "n": "5779 Legends Club Cir Braselton GA",
@@ -175,7 +175,7 @@
       "err": false,
       "note": "",
       "od": true,
-      "odd": 6
+      "odd": 7
     },
     {
       "n": "68, 78, and 44 E Bridge Street, Big Sandy TN (148)",
@@ -189,7 +189,7 @@
       "err": false,
       "note": "",
       "od": true,
-      "odd": 9
+      "odd": 10
     },
     {
       "n": "55 East Ave Bridgeton NJ",
@@ -203,7 +203,7 @@
       "err": false,
       "note": "",
       "od": true,
-      "odd": 7
+      "odd": 8
     },
     {
       "n": "68, 78, and 44 E Bridge Street, Big Sandy TN (205)",
@@ -957,7 +957,7 @@
       "l": "onhold",
       "f": false,
       "a": 8000.0,
-      "s": "2026-08-13",
+      "s": "2026-08-14",
       "e": "2026-08-25",
       "c": "2026-09-08",
       "err": false,
@@ -993,7 +993,7 @@
       "l": "onhold",
       "f": false,
       "a": 2650.0,
-      "s": "2026-08-13",
+      "s": "2026-08-14",
       "e": "2026-08-25",
       "c": "2026-08-31",
       "err": false,
@@ -1029,7 +1029,7 @@
       "l": "onhold",
       "f": false,
       "a": 50000.0,
-      "s": "2026-08-13",
+      "s": "2026-08-14",
       "e": "2026-10-09",
       "c": "2026-10-22",
       "err": false,
@@ -1161,7 +1161,7 @@
       "l": "probable",
       "f": false,
       "a": 15000.0,
-      "s": "2026-08-13",
+      "s": "2026-08-14",
       "e": "2026-09-04",
       "c": "2026-09-04",
       "err": false,
@@ -1185,7 +1185,7 @@
       "l": "onhold",
       "f": false,
       "a": 7000.0,
-      "s": "2026-08-13",
+      "s": "2026-08-14",
       "e": "2026-09-04",
       "c": "2026-09-10",
       "err": false,
@@ -1209,18 +1209,6 @@
       "l": "onhold",
       "f": false,
       "a": 125000.0,
-      "s": "2026-08-13",
-      "e": "2026-08-15",
-      "c": "2026-08-14",
-      "err": false,
-      "note": ""
-    },
-    {
-      "n": "8014 Lincoln Avenue Evansville IN 47715",
-      "t": "DC",
-      "l": "onhold",
-      "f": false,
-      "a": 19000.0,
       "s": "2026-08-13",
       "e": "2026-08-15",
       "c": "2026-08-14",
