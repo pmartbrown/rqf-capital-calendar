@@ -33,7 +33,7 @@
   ],
   "capital_in": 2020000.0,
   "capital_returned": 0.0,
-  "generated": "2026-08-14T17:17:51-06:00",
+  "generated": "2026-08-14T19:01:04-06:00",
   "source": "HubSpot RQF pipelines: EMD, POF, Stack, Double Close, Echo, GAP",
   "notes": "Pool = capital ledger (capital_events.json) summed to today: contributions in minus returns to investors. Deployed(confirmed,f=true)=Wired Amount out, no Return Wire Amount logged (GAP only if Signed&Funded after 2026-03-01); out from Signed&Funded until returned. err=true: HubSpot record inconsistent but still counted until corrected. probable=02-approved + committed-not-yet-wired. onhold=00/01 pipeline watch (not in math).",
   "deals": [
@@ -49,7 +49,7 @@
       "err": false,
       "note": "",
       "od": true,
-      "odd": 438
+      "odd": 439
     },
     {
       "n": "124 S Mockingbird Cir #A & B, Cedar Creek, Texas 78612",
@@ -57,13 +57,13 @@
       "l": "confirmed",
       "f": true,
       "a": 1000.0,
-      "s": "2026-08-14",
+      "s": "2026-08-15",
       "e": "2027-12-31",
-      "c": "2026-08-14",
+      "c": "2026-08-15",
       "err": true,
       "note": "HubSpot: stage says returned/fell-through, no return amount",
       "od": true,
-      "odd": 399
+      "odd": 400
     },
     {
       "n": "1717 Crimson Cir Memphis TN",
@@ -77,7 +77,7 @@
       "err": false,
       "note": "",
       "od": true,
-      "odd": 238
+      "odd": 239
     },
     {
       "n": "415 Clark St Saginaw MI",
@@ -91,7 +91,7 @@
       "err": false,
       "note": "",
       "od": true,
-      "odd": 12
+      "odd": 13
     },
     {
       "n": "5213, 5216 & 5217 Collier Ct Jefferson City MO (EMD)",
@@ -105,7 +105,7 @@
       "err": false,
       "note": "",
       "od": true,
-      "odd": 21
+      "odd": 22
     },
     {
       "n": "601 E Beach Dr Galveston TX",
@@ -133,7 +133,7 @@
       "err": false,
       "note": "",
       "od": true,
-      "odd": 29
+      "odd": 30
     },
     {
       "n": "5779 Legends Club Cir Braselton GA",
@@ -175,7 +175,7 @@
       "err": false,
       "note": "",
       "od": true,
-      "odd": 7
+      "odd": 8
     },
     {
       "n": "68, 78, and 44 E Bridge Street, Big Sandy TN (148)",
@@ -189,7 +189,7 @@
       "err": false,
       "note": "",
       "od": true,
-      "odd": 10
+      "odd": 11
     },
     {
       "n": "55 East Ave Bridgeton NJ",
@@ -203,7 +203,7 @@
       "err": false,
       "note": "",
       "od": true,
-      "odd": 8
+      "odd": 9
     },
     {
       "n": "14923 Gates Ave Magnolia Springs AL",
@@ -971,7 +971,7 @@
       "l": "onhold",
       "f": false,
       "a": 8000.0,
-      "s": "2026-08-14",
+      "s": "2026-08-15",
       "e": "2026-08-25",
       "c": "2026-09-08",
       "err": false,
@@ -1007,7 +1007,7 @@
       "l": "onhold",
       "f": false,
       "a": 2650.0,
-      "s": "2026-08-14",
+      "s": "2026-08-15",
       "e": "2026-08-25",
       "c": "2026-08-31",
       "err": false,
@@ -1043,7 +1043,7 @@
       "l": "onhold",
       "f": false,
       "a": 50000.0,
-      "s": "2026-08-14",
+      "s": "2026-08-15",
       "e": "2026-10-09",
       "c": "2026-10-22",
       "err": false,
@@ -1163,7 +1163,7 @@
       "l": "probable",
       "f": false,
       "a": 15000.0,
-      "s": "2026-08-14",
+      "s": "2026-08-15",
       "e": "2026-09-04",
       "c": "2026-09-04",
       "err": false,
@@ -1187,7 +1187,7 @@
       "l": "probable",
       "f": false,
       "a": 7000.0,
-      "s": "2026-08-14",
+      "s": "2026-08-15",
       "e": "2026-09-04",
       "c": "2026-09-10",
       "err": false,
@@ -1238,6 +1238,18 @@
       "s": "2026-09-14",
       "e": "2026-09-16",
       "c": "2026-09-15",
+      "err": false,
+      "note": ""
+    },
+    {
+      "n": "224 redwood ct columbia South Carolina 29223",
+      "t": "EMD",
+      "l": "onhold",
+      "f": false,
+      "a": 17000.0,
+      "s": "2026-08-15",
+      "e": "2026-09-16",
+      "c": "2026-10-16",
       "err": false,
       "note": ""
     }
