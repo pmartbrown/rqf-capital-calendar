@@ -33,7 +33,7 @@
   ],
   "capital_in": 2020000.0,
   "capital_returned": 0.0,
-  "generated": "2026-08-17T08:22:58-06:00",
+  "generated": "2026-08-17T09:21:12-06:00",
   "source": "HubSpot RQF pipelines: EMD, POF, Stack, Double Close, Echo, GAP",
   "notes": "Pool = capital ledger (capital_events.json) summed to today: contributions in minus returns to investors. Deployed(confirmed,f=true)=Wired Amount out, no Return Wire Amount logged (GAP only if Signed&Funded after 2026-03-01); out from Signed&Funded until returned. err=true: HubSpot record inconsistent but still counted until corrected. probable=02-approved + committed-not-yet-wired. onhold=00/01 pipeline watch (not in math).",
   "deals": [
@@ -1146,7 +1146,7 @@
       "note": ""
     },
     {
-      "n": "3631 Washington Avenue Cincinnati Ohio 45229",
+      "n": "3631 Washington Ave Cincinnati OH",
       "t": "Stack",
       "l": "onhold",
       "f": false,
@@ -1266,7 +1266,7 @@
       "note": ""
     },
     {
-      "n": "2551 San Pablo Avenue Oakland California 94607",
+      "n": "2551 San Pablo Ave Oakland CA 94607",
       "t": "Stack",
       "l": "onhold",
       "f": false,
@@ -1278,7 +1278,7 @@
       "note": ""
     },
     {
-      "n": "470\u2013480 Wilson Avenue, Vallejo, CA 94590 Vallejo California 94590",
+      "n": "470-480 Wilson Ave Vallejo CA",
       "t": "Stack",
       "l": "onhold",
       "f": false,
@@ -1314,13 +1314,13 @@
       "note": ""
     },
     {
-      "n": "470-480 Wilson Avenue Vallejo California 94590",
+      "n": "470-480 Wilson Ave Vallejo CA",
       "t": "EMD",
       "l": "onhold",
       "f": false,
       "a": 49200.0,
       "s": "2026-08-17",
-      "e": "2026-09-13",
+      "e": "2026-08-30",
       "c": "2026-09-26",
       "err": false,
       "note": ""
