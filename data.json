@@ -33,7 +33,7 @@
   ],
   "capital_in": 2020000.0,
   "capital_returned": 0.0,
-  "generated": "2026-08-17T07:36:22-06:00",
+  "generated": "2026-08-17T08:22:58-06:00",
   "source": "HubSpot RQF pipelines: EMD, POF, Stack, Double Close, Echo, GAP",
   "notes": "Pool = capital ledger (capital_events.json) summed to today: contributions in minus returns to investors. Deployed(confirmed,f=true)=Wired Amount out, no Return Wire Amount logged (GAP only if Signed&Funded after 2026-03-01); out from Signed&Funded until returned. err=true: HubSpot record inconsistent but still counted until corrected. probable=02-approved + committed-not-yet-wired. onhold=00/01 pipeline watch (not in math).",
   "deals": [
@@ -1230,7 +1230,7 @@
       "note": ""
     },
     {
-      "n": "2100 Carlyle Drive Las Cruces NM 88005",
+      "n": "2100 Carlyle Dr Las Cruces NM",
       "t": "Stack",
       "l": "onhold",
       "f": false,
@@ -1242,14 +1242,14 @@
       "note": ""
     },
     {
-      "n": "224 redwood ct columbia South Carolina 29223",
+      "n": "224 Redwood Ct Columbia SC",
       "t": "EMD",
       "l": "onhold",
       "f": false,
       "a": 17000.0,
       "s": "2026-08-17",
       "e": "2026-09-16",
-      "c": "2026-10-16",
+      "c": "2026-10-05",
       "err": false,
       "note": ""
     },
