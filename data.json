@@ -33,7 +33,7 @@
   ],
   "capital_in": 2020000.0,
   "capital_returned": 0.0,
-  "generated": "2026-08-16T19:02:03-06:00",
+  "generated": "2026-08-16T20:55:45-06:00",
   "source": "HubSpot RQF pipelines: EMD, POF, Stack, Double Close, Echo, GAP",
   "notes": "Pool = capital ledger (capital_events.json) summed to today: contributions in minus returns to investors. Deployed(confirmed,f=true)=Wired Amount out, no Return Wire Amount logged (GAP only if Signed&Funded after 2026-03-01); out from Signed&Funded until returned. err=true: HubSpot record inconsistent but still counted until corrected. probable=02-approved + committed-not-yet-wired. onhold=00/01 pipeline watch (not in math).",
   "deals": [
@@ -1262,6 +1262,66 @@
       "s": "2026-08-30",
       "e": "2026-09-01",
       "c": "2026-08-31",
+      "err": false,
+      "note": ""
+    },
+    {
+      "n": "2551 San Pablo Avenue Oakland California 94607",
+      "t": "Stack",
+      "l": "onhold",
+      "f": false,
+      "a": 8450000.0,
+      "s": "2026-08-21",
+      "e": "2026-08-23",
+      "c": "2026-08-22",
+      "err": false,
+      "note": ""
+    },
+    {
+      "n": "470\u2013480 Wilson Avenue, Vallejo, CA 94590 Vallejo California 94590",
+      "t": "Stack",
+      "l": "onhold",
+      "f": false,
+      "a": 1049600.0,
+      "s": "2026-09-24",
+      "e": "2026-09-26",
+      "c": "2026-09-25",
+      "err": false,
+      "note": ""
+    },
+    {
+      "n": "526 Jersey Street Vallejo California 94590",
+      "t": "Stack",
+      "l": "onhold",
+      "f": false,
+      "a": 506250.0,
+      "s": "2026-09-24",
+      "e": "2026-09-26",
+      "c": "2026-09-25",
+      "err": false,
+      "note": ""
+    },
+    {
+      "n": "526 Jersey Street Vallejo California 94590",
+      "t": "EMD",
+      "l": "onhold",
+      "f": false,
+      "a": 20250.0,
+      "s": "2026-08-17",
+      "e": "2026-09-12",
+      "c": "2026-09-26",
+      "err": false,
+      "note": ""
+    },
+    {
+      "n": "470-480 Wilson Avenue Vallejo California 94590",
+      "t": "EMD",
+      "l": "onhold",
+      "f": false,
+      "a": 49200.0,
+      "s": "2026-08-17",
+      "e": "2026-09-13",
+      "c": "2026-09-26",
       "err": false,
       "note": ""
     }
