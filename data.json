@@ -33,7 +33,7 @@
   ],
   "capital_in": 2020000.0,
   "capital_returned": 0.0,
-  "generated": "2026-08-17T17:18:51-06:00",
+  "generated": "2026-08-17T19:00:07-06:00",
   "source": "HubSpot RQF pipelines: EMD, POF, Stack, Double Close, Echo, GAP",
   "notes": "Pool = capital ledger (capital_events.json) summed to today: contributions in minus returns to investors. Deployed(confirmed,f=true)=Wired Amount out, no Return Wire Amount logged (GAP only if Signed&Funded after 2026-03-01); out from Signed&Funded until returned. err=true: HubSpot record inconsistent but still counted until corrected. probable=02-approved + committed-not-yet-wired. onhold=00/01 pipeline watch (not in math).",
   "deals": [
@@ -49,7 +49,7 @@
       "err": false,
       "note": "",
       "od": true,
-      "odd": 441
+      "odd": 442
     },
     {
       "n": "124 S Mockingbird Cir #A & B, Cedar Creek, Texas 78612",
@@ -57,13 +57,13 @@
       "l": "confirmed",
       "f": true,
       "a": 1000.0,
-      "s": "2026-08-17",
+      "s": "2026-08-18",
       "e": "2027-12-31",
-      "c": "2026-08-17",
+      "c": "2026-08-18",
       "err": true,
       "note": "HubSpot: stage says returned/fell-through, no return amount",
       "od": true,
-      "odd": 402
+      "odd": 403
     },
     {
       "n": "1717 Crimson Cir Memphis TN",
@@ -77,7 +77,7 @@
       "err": false,
       "note": "",
       "od": true,
-      "odd": 241
+      "odd": 242
     },
     {
       "n": "415 Clark St Saginaw MI",
@@ -91,7 +91,7 @@
       "err": false,
       "note": "",
       "od": true,
-      "odd": 15
+      "odd": 16
     },
     {
       "n": "5213, 5216 & 5217 Collier Ct Jefferson City MO (EMD)",
@@ -105,7 +105,7 @@
       "err": false,
       "note": "",
       "od": true,
-      "odd": 24
+      "odd": 25
     },
     {
       "n": "601 E Beach Dr Galveston TX",
@@ -133,7 +133,7 @@
       "err": false,
       "note": "",
       "od": true,
-      "odd": 32
+      "odd": 33
     },
     {
       "n": "5779 Legends Club Cir Braselton GA",
@@ -175,7 +175,7 @@
       "err": false,
       "note": "",
       "od": true,
-      "odd": 10
+      "odd": 11
     },
     {
       "n": "68, 78, and 44 E Bridge Street, Big Sandy TN (148)",
@@ -189,7 +189,7 @@
       "err": false,
       "note": "",
       "od": true,
-      "odd": 13
+      "odd": 14
     },
     {
       "n": "55 East Ave Bridgeton NJ",
@@ -203,7 +203,7 @@
       "err": false,
       "note": "",
       "od": true,
-      "odd": 11
+      "odd": 12
     },
     {
       "n": "68, 78, and 44 E Bridge Street, Big Sandy TN (205)",
@@ -700,7 +700,7 @@
       "note": ""
     },
     {
-      "n": "537 U.S. 22 Hillside New Jersey 07205",
+      "n": "537 US-22 Hillside NJ",
       "t": "Stack",
       "l": "probable",
       "f": false,
@@ -744,18 +744,6 @@
       "s": "2026-08-11",
       "e": "2026-08-13",
       "c": "2026-08-12",
-      "err": false,
-      "note": ""
-    },
-    {
-      "n": "2231 Pheasant Run Dr Bourbonnais IL",
-      "t": "Stack",
-      "l": "probable",
-      "f": false,
-      "a": 138463.0,
-      "s": "2026-07-23",
-      "e": "2026-07-25",
-      "c": "2026-07-24",
       "err": false,
       "note": ""
     },
@@ -981,7 +969,7 @@
       "l": "onhold",
       "f": false,
       "a": 2650.0,
-      "s": "2026-08-17",
+      "s": "2026-08-18",
       "e": "2026-08-25",
       "c": "2026-08-31",
       "err": false,
@@ -1017,7 +1005,7 @@
       "l": "onhold",
       "f": false,
       "a": 50000.0,
-      "s": "2026-08-17",
+      "s": "2026-08-18",
       "e": "2026-10-09",
       "c": "2026-10-22",
       "err": false,
@@ -1137,7 +1125,7 @@
       "l": "probable",
       "f": false,
       "a": 15000.0,
-      "s": "2026-08-17",
+      "s": "2026-08-18",
       "e": "2026-09-04",
       "c": "2026-09-04",
       "err": false,
@@ -1161,7 +1149,7 @@
       "l": "probable",
       "f": false,
       "a": 7000.0,
-      "s": "2026-08-17",
+      "s": "2026-08-18",
       "e": "2026-09-04",
       "c": "2026-10-03",
       "err": false,
@@ -1221,7 +1209,7 @@
       "l": "onhold",
       "f": false,
       "a": 17000.0,
-      "s": "2026-08-17",
+      "s": "2026-08-18",
       "e": "2026-09-16",
       "c": "2026-10-05",
       "err": false,
@@ -1240,7 +1228,7 @@
       "note": ""
     },
     {
-      "n": "2551 San Pablo Ave Oakland CA 94607",
+      "n": "2551 San Pablo Ave Oakland CA",
       "t": "Stack",
       "l": "onhold",
       "f": false,
@@ -1281,7 +1269,7 @@
       "l": "onhold",
       "f": false,
       "a": 20250.0,
-      "s": "2026-08-17",
+      "s": "2026-08-18",
       "e": "2026-09-12",
       "c": "2026-09-26",
       "err": false,
@@ -1293,7 +1281,7 @@
       "l": "onhold",
       "f": false,
       "a": 49200.0,
-      "s": "2026-08-17",
+      "s": "2026-08-18",
       "e": "2026-08-30",
       "c": "2026-09-26",
       "err": false,
@@ -1305,7 +1293,7 @@
       "l": "onhold",
       "f": false,
       "a": 50000.0,
-      "s": "2026-08-17",
+      "s": "2026-08-18",
       "e": "2026-09-18",
       "c": "2026-09-17",
       "err": false,
