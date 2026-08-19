@@ -33,7 +33,7 @@
   ],
   "capital_in": 2020000.0,
   "capital_returned": 0.0,
-  "generated": "2026-08-19T10:26:22-06:00",
+  "generated": "2026-08-19T11:22:56-06:00",
   "source": "HubSpot RQF pipelines: EMD, POF, Stack, Double Close, Echo, GAP",
   "notes": "Pool = capital ledger (capital_events.json) summed to today: contributions in minus returns to investors. Deployed(confirmed,f=true)=Wired Amount out, no Return Wire Amount logged (GAP only if Signed&Funded after 2026-03-01); out from Signed&Funded until returned. err=true: HubSpot record inconsistent but still counted until corrected. probable=02-approved + committed-not-yet-wired. onhold=00/01 pipeline watch (not in math).",
   "deals": [
@@ -470,18 +470,6 @@
       "s": "2026-07-28",
       "e": "2026-07-30",
       "c": "2026-07-29",
-      "err": false,
-      "note": ""
-    },
-    {
-      "n": "374 Broadway St Wasco CA",
-      "t": "Stack",
-      "l": "onhold",
-      "f": false,
-      "a": 125000.0,
-      "s": "2026-07-09",
-      "e": "2026-07-11",
-      "c": "2026-07-10",
       "err": false,
       "note": ""
     },
@@ -1382,6 +1370,18 @@
       "s": "2026-08-30",
       "e": "2026-09-01",
       "c": "2026-08-31",
+      "err": false,
+      "note": ""
+    },
+    {
+      "n": "5654 Ashley Square North Memphis Tennessee 38120",
+      "t": "Stack",
+      "l": "onhold",
+      "f": false,
+      "a": 240000.0,
+      "s": "2026-08-18",
+      "e": "2026-08-20",
+      "c": "2026-08-19",
       "err": false,
       "note": ""
     }
