@@ -33,7 +33,7 @@
   ],
   "capital_in": 2020000.0,
   "capital_returned": 0.0,
-  "generated": "2026-08-19T23:25:36-06:00",
+  "generated": "2026-08-20T00:38:34-06:00",
   "source": "HubSpot RQF pipelines: EMD, POF, Stack, Double Close, Echo, GAP",
   "notes": "Pool = capital ledger (capital_events.json) summed to today: contributions in minus returns to investors. Deployed(confirmed,f=true)=Wired Amount out, no Return Wire Amount logged (GAP only if Signed&Funded after 2026-03-01); out from Signed&Funded until returned. err=true: HubSpot record inconsistent but still counted until corrected. probable=02-approved + committed-not-yet-wired. onhold=00/01 pipeline watch (not in math).",
   "deals": [
@@ -1310,6 +1310,18 @@
       "s": "2026-08-20",
       "e": "2026-08-28",
       "c": "2026-09-15",
+      "err": false,
+      "note": ""
+    },
+    {
+      "n": "93283 County Road 690 Dowagiac Michigan 49047",
+      "t": "EMD",
+      "l": "onhold",
+      "f": false,
+      "a": 25000.0,
+      "s": "2026-08-20",
+      "e": "2026-08-27",
+      "c": "2026-10-23",
       "err": false,
       "note": ""
     }
