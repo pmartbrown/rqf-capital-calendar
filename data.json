@@ -33,7 +33,7 @@
   ],
   "capital_in": 2020000.0,
   "capital_returned": 0.0,
-  "generated": "2026-08-19T17:19:14-06:00",
+  "generated": "2026-08-19T19:00:43-06:00",
   "source": "HubSpot RQF pipelines: EMD, POF, Stack, Double Close, Echo, GAP",
   "notes": "Pool = capital ledger (capital_events.json) summed to today: contributions in minus returns to investors. Deployed(confirmed,f=true)=Wired Amount out, no Return Wire Amount logged (GAP only if Signed&Funded after 2026-03-01); out from Signed&Funded until returned. err=true: HubSpot record inconsistent but still counted until corrected. probable=02-approved + committed-not-yet-wired. onhold=00/01 pipeline watch (not in math).",
   "deals": [
@@ -49,7 +49,7 @@
       "err": false,
       "note": "",
       "od": true,
-      "odd": 443
+      "odd": 444
     },
     {
       "n": "124 S Mockingbird Cir #A & B, Cedar Creek, Texas 78612",
@@ -57,13 +57,13 @@
       "l": "confirmed",
       "f": true,
       "a": 1000.0,
-      "s": "2026-08-19",
+      "s": "2026-08-20",
       "e": "2027-12-31",
-      "c": "2026-08-19",
+      "c": "2026-08-20",
       "err": true,
       "note": "HubSpot: stage says returned/fell-through, no return amount",
       "od": true,
-      "odd": 404
+      "odd": 405
     },
     {
       "n": "1717 Crimson Cir Memphis TN",
@@ -77,7 +77,7 @@
       "err": false,
       "note": "",
       "od": true,
-      "odd": 243
+      "odd": 244
     },
     {
       "n": "415 Clark St Saginaw MI",
@@ -91,7 +91,7 @@
       "err": false,
       "note": "",
       "od": true,
-      "odd": 17
+      "odd": 18
     },
     {
       "n": "5213, 5216 & 5217 Collier Ct Jefferson City MO (EMD)",
@@ -105,7 +105,7 @@
       "err": false,
       "note": "",
       "od": true,
-      "odd": 26
+      "odd": 27
     },
     {
       "n": "601 E Beach Dr Galveston TX",
@@ -133,7 +133,7 @@
       "err": false,
       "note": "",
       "od": true,
-      "odd": 34
+      "odd": 35
     },
     {
       "n": "2909 N 3rd Way Ridgefield WA (1st Pos Gap)",
@@ -175,7 +175,7 @@
       "err": false,
       "note": "",
       "od": true,
-      "odd": 15
+      "odd": 16
     },
     {
       "n": "55 East Ave Bridgeton NJ",
@@ -189,7 +189,7 @@
       "err": false,
       "note": "",
       "od": true,
-      "odd": 13
+      "odd": 14
     },
     {
       "n": "149 Luluka Pl Kihei HI",
@@ -654,18 +654,6 @@
       "note": ""
     },
     {
-      "n": "1000 County Rd 78 Bremen AL",
-      "t": "Stack",
-      "l": "onhold",
-      "f": false,
-      "a": 2000000.0,
-      "s": "2026-08-25",
-      "e": "2026-08-27",
-      "c": "2026-08-26",
-      "err": false,
-      "note": ""
-    },
-    {
       "n": "1183 NW Ozmun Ave Lawton OK",
       "t": "Stack",
       "l": "onhold",
@@ -786,18 +774,6 @@
       "note": ""
     },
     {
-      "n": "5234 Hermosa Ave Eagle Rock CA (Stack)",
-      "t": "Stack",
-      "l": "onhold",
-      "f": false,
-      "a": 70000.0,
-      "s": "2026-07-26",
-      "e": "2026-07-28",
-      "c": "2026-07-27",
-      "err": false,
-      "note": ""
-    },
-    {
       "n": "3330 Line Springs Rd Sevierville TN",
       "t": "Stack",
       "l": "onhold",
@@ -846,7 +822,7 @@
       "note": ""
     },
     {
-      "n": "103 Salt Flat Road Bayside TX 78340",
+      "n": "103 Salt Flat Rd Bayside TX",
       "t": "Stack",
       "l": "onhold",
       "f": false,
@@ -971,7 +947,7 @@
       "l": "onhold",
       "f": false,
       "a": 50000.0,
-      "s": "2026-08-19",
+      "s": "2026-08-20",
       "e": "2026-10-09",
       "c": "2026-10-22",
       "err": false,
@@ -1014,7 +990,7 @@
       "note": ""
     },
     {
-      "n": "2290 North St Beaumont TX 77701",
+      "n": "2290 North St Beaumont TX",
       "t": "Stack",
       "l": "onhold",
       "f": false,
@@ -1074,24 +1050,12 @@
       "note": ""
     },
     {
-      "n": "10 Club Court Alpharetta GA",
-      "t": "Stack",
-      "l": "onhold",
-      "f": false,
-      "a": 150000.0,
-      "s": "2026-08-13",
-      "e": "2026-08-15",
-      "c": "2026-08-14",
-      "err": false,
-      "note": ""
-    },
-    {
       "n": "101 RV Park Highway 101 Sallisaw OK",
       "t": "EMD",
       "l": "probable",
       "f": false,
       "a": 7000.0,
-      "s": "2026-08-19",
+      "s": "2026-08-20",
       "e": "2026-09-04",
       "c": "2026-10-03",
       "err": false,
@@ -1139,7 +1103,7 @@
       "l": "onhold",
       "f": false,
       "a": 17000.0,
-      "s": "2026-08-19",
+      "s": "2026-08-20",
       "e": "2026-09-16",
       "c": "2026-10-05",
       "err": false,
@@ -1199,7 +1163,7 @@
       "l": "onhold",
       "f": false,
       "a": 20250.0,
-      "s": "2026-08-19",
+      "s": "2026-08-20",
       "e": "2026-09-12",
       "c": "2026-09-26",
       "err": false,
@@ -1211,7 +1175,7 @@
       "l": "onhold",
       "f": false,
       "a": 49200.0,
-      "s": "2026-08-19",
+      "s": "2026-08-20",
       "e": "2026-08-30",
       "c": "2026-09-26",
       "err": false,
@@ -1223,7 +1187,7 @@
       "l": "onhold",
       "f": false,
       "a": 50000.0,
-      "s": "2026-08-19",
+      "s": "2026-08-20",
       "e": "2026-09-18",
       "c": "2026-09-17",
       "err": false,
@@ -1259,7 +1223,7 @@
       "l": "probable",
       "f": false,
       "a": 28500.0,
-      "s": "2026-08-19",
+      "s": "2026-08-20",
       "e": "2026-09-06",
       "c": "2026-10-05",
       "err": false,
@@ -1271,7 +1235,7 @@
       "l": "onhold",
       "f": false,
       "a": 30000.0,
-      "s": "2026-08-19",
+      "s": "2026-08-20",
       "e": "2026-09-02",
       "c": "2026-09-15",
       "err": false,
@@ -1283,7 +1247,7 @@
       "l": "onhold",
       "f": false,
       "a": 13000.0,
-      "s": "2026-08-19",
+      "s": "2026-08-20",
       "e": "2026-08-30",
       "c": "2026-09-04",
       "err": false,
@@ -1307,7 +1271,7 @@
       "l": "onhold",
       "f": false,
       "a": 20000.0,
-      "s": "2026-08-19",
+      "s": "2026-08-20",
       "e": "2026-08-29",
       "c": "2026-09-18",
       "err": false,
@@ -1343,7 +1307,7 @@
       "l": "onhold",
       "f": false,
       "a": 62000.0,
-      "s": "2026-08-19",
+      "s": "2026-08-20",
       "e": "2026-08-28",
       "c": "2026-09-15",
       "err": false,
