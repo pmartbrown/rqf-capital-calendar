@@ -33,7 +33,7 @@
   ],
   "capital_in": 2020000.0,
   "capital_returned": 0.0,
-  "generated": "2026-08-20T08:32:07-06:00",
+  "generated": "2026-08-20T09:29:13-06:00",
   "source": "HubSpot RQF pipelines: EMD, POF, Stack, Double Close, Echo, GAP",
   "notes": "Pool = capital ledger (capital_events.json) summed to today: contributions in minus returns to investors. Deployed(confirmed,f=true)=Wired Amount out, no Return Wire Amount logged (GAP only if Signed&Funded after 2026-03-01); out from Signed&Funded until returned. err=true: HubSpot record inconsistent but still counted until corrected. probable=02-approved + committed-not-yet-wired. onhold=00/01 pipeline watch (not in math).",
   "deals": [
@@ -1290,7 +1290,7 @@
       "note": ""
     },
     {
-      "n": "5654 Ashley Square North Memphis Tennessee 38120",
+      "n": "5654 Ashley Square N Memphis TN",
       "t": "Stack",
       "l": "onhold",
       "f": false,
