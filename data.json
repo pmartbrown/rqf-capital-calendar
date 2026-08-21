@@ -33,7 +33,7 @@
   ],
   "capital_in": 2020000.0,
   "capital_returned": 0.0,
-  "generated": "2026-08-21T15:20:10-06:00",
+  "generated": "2026-08-21T16:19:51-06:00",
   "source": "HubSpot RQF pipelines: EMD, POF, Stack, Double Close, Echo, GAP",
   "notes": "Pool = capital ledger (capital_events.json) summed to today: contributions in minus returns to investors. Deployed(confirmed,f=true)=Wired Amount out, no Return Wire Amount logged (GAP only if Signed&Funded after 2026-03-01); out from Signed&Funded until returned. err=true: HubSpot record inconsistent but still counted until corrected. probable=02-approved + committed-not-yet-wired. onhold=00/01 pipeline watch (not in math).",
   "deals": [
@@ -846,7 +846,7 @@
       "note": ""
     },
     {
-      "n": "7914 Nixon Ave Southwest Lakewood WA",
+      "n": "7914 Nixon Ave SW Lakewood WA",
       "t": "Echo",
       "l": "onhold",
       "f": false,
@@ -894,7 +894,7 @@
       "note": ""
     },
     {
-      "n": "47967 Meadowlark Street Harrisburg South Dakota 57032",
+      "n": "47967 Meadowlark St Harrisburg SD",
       "t": "Echo",
       "l": "onhold",
       "f": false,
@@ -1100,12 +1100,12 @@
     {
       "n": "2551 San Pablo Ave Oakland CA",
       "t": "Stack",
-      "l": "onhold",
+      "l": "probable",
       "f": false,
       "a": 8450000.0,
-      "s": "2026-08-21",
-      "e": "2026-08-23",
-      "c": "2026-08-22",
+      "s": "2026-08-25",
+      "e": "2026-08-27",
+      "c": "2026-08-26",
       "err": false,
       "note": ""
     },
@@ -1302,7 +1302,7 @@
       "note": ""
     },
     {
-      "n": "43 Obrien Hill Road Verbank NY 12585",
+      "n": "43 Obrien Hill Rd Verbank NY",
       "t": "Echo",
       "l": "onhold",
       "f": false,
@@ -1338,9 +1338,9 @@
       "note": ""
     },
     {
-      "n": "207 South 70th Avenue Omaha Nebraska 68132",
+      "n": "207 S 70th Ave Omaha NE",
       "t": "Stack",
-      "l": "onhold",
+      "l": "probable",
       "f": false,
       "a": 318000.0,
       "s": "2026-08-25",
@@ -1350,11 +1350,11 @@
       "note": ""
     },
     {
-      "n": "209 Foxkroft Dr Foxfire Village NC 27281",
+      "n": "1258 Pinkham Rd East Burke VT",
       "t": "Stack",
       "l": "onhold",
       "f": false,
-      "a": 30000.0,
+      "a": 413750.0,
       "s": "2026-09-29",
       "e": "2026-10-01",
       "c": "2026-09-30",
