@@ -33,7 +33,7 @@
   ],
   "capital_in": 2020000.0,
   "capital_returned": 0.0,
-  "generated": "2026-08-21T07:41:28-06:00",
+  "generated": "2026-08-21T08:30:45-06:00",
   "source": "HubSpot RQF pipelines: EMD, POF, Stack, Double Close, Echo, GAP",
   "notes": "Pool = capital ledger (capital_events.json) summed to today: contributions in minus returns to investors. Deployed(confirmed,f=true)=Wired Amount out, no Return Wire Amount logged (GAP only if Signed&Funded after 2026-03-01); out from Signed&Funded until returned. err=true: HubSpot record inconsistent but still counted until corrected. probable=02-approved + committed-not-yet-wired. onhold=00/01 pipeline watch (not in math).",
   "deals": [
@@ -1267,8 +1267,8 @@
     },
     {
       "n": "5654 Ashley Square N Memphis TN",
-      "t": "Stack",
-      "l": "probable",
+      "t": "Echo",
+      "l": "onhold",
       "f": false,
       "a": 256981.37,
       "s": "2026-08-18",
@@ -1278,7 +1278,7 @@
       "note": ""
     },
     {
-      "n": "3511 Berry Dr Studio City CA",
+      "n": "3511 Berry Dr Studio City CA (EMD)",
       "t": "EMD",
       "l": "onhold",
       "f": false,
@@ -1314,7 +1314,7 @@
       "note": ""
     },
     {
-      "n": "3511 Berry Drive Los Angeles CA 91604",
+      "n": "3511 Berry Dr Studio City CA (DC)",
       "t": "DC",
       "l": "onhold",
       "f": false,
@@ -1326,7 +1326,7 @@
       "note": ""
     },
     {
-      "n": "130 Benefield Boulevard Peekskill NY 10566",
+      "n": "130 Benefield Blvd Peekskill NY",
       "t": "EMD",
       "l": "onhold",
       "f": false,
