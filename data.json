@@ -33,7 +33,7 @@
   ],
   "capital_in": 2020000.0,
   "capital_returned": 0.0,
-  "generated": "2026-08-21T16:19:51-06:00",
+  "generated": "2026-08-21T17:19:27-06:00",
   "source": "HubSpot RQF pipelines: EMD, POF, Stack, Double Close, Echo, GAP",
   "notes": "Pool = capital ledger (capital_events.json) summed to today: contributions in minus returns to investors. Deployed(confirmed,f=true)=Wired Amount out, no Return Wire Amount logged (GAP only if Signed&Funded after 2026-03-01); out from Signed&Funded until returned. err=true: HubSpot record inconsistent but still counted until corrected. probable=02-approved + committed-not-yet-wired. onhold=00/01 pipeline watch (not in math).",
   "deals": [
@@ -798,18 +798,6 @@
       "note": ""
     },
     {
-      "n": "2405 Northlake Ct Irving TX",
-      "t": "Stack",
-      "l": "probable",
-      "f": false,
-      "a": 44800.0,
-      "s": "2026-07-30",
-      "e": "2026-08-01",
-      "c": "2026-07-31",
-      "err": false,
-      "note": ""
-    },
-    {
       "n": "103 Salt Flat Rd Bayside TX",
       "t": "Stack",
       "l": "onhold",
@@ -834,7 +822,7 @@
       "note": ""
     },
     {
-      "n": "246 Rebecca Street Houston Texas 77022",
+      "n": "246 Rebecca St Houston TX",
       "t": "Echo",
       "l": "onhold",
       "f": false,
