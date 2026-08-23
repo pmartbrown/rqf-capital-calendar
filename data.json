@@ -33,7 +33,7 @@
   ],
   "capital_in": 2020000.0,
   "capital_returned": 0.0,
-  "generated": "2026-08-22T17:16:58-06:00",
+  "generated": "2026-08-22T19:06:10-06:00",
   "source": "HubSpot RQF pipelines: EMD, POF, Stack, Double Close, Echo, GAP",
   "notes": "Pool = capital ledger (capital_events.json) summed to today: contributions in minus returns to investors. Deployed(confirmed,f=true)=Wired Amount out, no Return Wire Amount logged (GAP only if Signed&Funded after 2026-03-01); out from Signed&Funded until returned. err=true: HubSpot record inconsistent but still counted until corrected. probable=02-approved + committed-not-yet-wired. onhold=00/01 pipeline watch (not in math).",
   "deals": [
@@ -49,7 +49,7 @@
       "err": false,
       "note": "",
       "od": true,
-      "odd": 446
+      "odd": 447
     },
     {
       "n": "124 S Mockingbird Cir #A & B, Cedar Creek, Texas 78612",
@@ -57,13 +57,13 @@
       "l": "confirmed",
       "f": true,
       "a": 1000.0,
-      "s": "2026-08-22",
+      "s": "2026-08-23",
       "e": "2027-12-31",
-      "c": "2026-08-22",
+      "c": "2026-08-23",
       "err": true,
       "note": "HubSpot: stage says returned/fell-through, no return amount",
       "od": true,
-      "odd": 407
+      "odd": 408
     },
     {
       "n": "1717 Crimson Cir Memphis TN",
@@ -77,7 +77,7 @@
       "err": false,
       "note": "",
       "od": true,
-      "odd": 246
+      "odd": 247
     },
     {
       "n": "415 Clark St Saginaw MI",
@@ -91,7 +91,7 @@
       "err": false,
       "note": "",
       "od": true,
-      "odd": 20
+      "odd": 21
     },
     {
       "n": "5213, 5216 & 5217 Collier Ct Jefferson City MO (EMD)",
@@ -105,7 +105,7 @@
       "err": false,
       "note": "",
       "od": true,
-      "odd": 29
+      "odd": 30
     },
     {
       "n": "601 E Beach Dr Galveston TX",
@@ -133,7 +133,7 @@
       "err": false,
       "note": "",
       "od": true,
-      "odd": 37
+      "odd": 38
     },
     {
       "n": "2909 N 3rd Way Ridgefield WA (1st Pos Gap)",
@@ -175,7 +175,7 @@
       "err": false,
       "note": "",
       "od": true,
-      "odd": 18
+      "odd": 19
     },
     {
       "n": "55 East Ave Bridgeton NJ",
@@ -189,7 +189,7 @@
       "err": false,
       "note": "",
       "od": true,
-      "odd": 16
+      "odd": 17
     },
     {
       "n": "149 Luluka Pl Kihei HI",
@@ -911,7 +911,7 @@
       "l": "onhold",
       "f": false,
       "a": 50000.0,
-      "s": "2026-08-22",
+      "s": "2026-08-23",
       "e": "2026-10-09",
       "c": "2026-10-22",
       "err": false,
@@ -1019,7 +1019,7 @@
       "l": "probable",
       "f": false,
       "a": 7000.0,
-      "s": "2026-08-22",
+      "s": "2026-08-23",
       "e": "2026-09-04",
       "c": "2026-10-03",
       "err": false,
@@ -1067,7 +1067,7 @@
       "l": "onhold",
       "f": false,
       "a": 17000.0,
-      "s": "2026-08-22",
+      "s": "2026-08-23",
       "e": "2026-09-16",
       "c": "2026-10-05",
       "err": false,
@@ -1127,7 +1127,7 @@
       "l": "onhold",
       "f": false,
       "a": 20250.0,
-      "s": "2026-08-22",
+      "s": "2026-08-23",
       "e": "2026-09-12",
       "c": "2026-09-26",
       "err": false,
@@ -1139,7 +1139,7 @@
       "l": "onhold",
       "f": false,
       "a": 49200.0,
-      "s": "2026-08-22",
+      "s": "2026-08-23",
       "e": "2026-08-30",
       "c": "2026-09-26",
       "err": false,
@@ -1151,7 +1151,7 @@
       "l": "onhold",
       "f": false,
       "a": 50000.0,
-      "s": "2026-08-22",
+      "s": "2026-08-23",
       "e": "2026-09-18",
       "c": "2026-09-17",
       "err": false,
@@ -1187,7 +1187,7 @@
       "l": "probable",
       "f": false,
       "a": 28500.0,
-      "s": "2026-08-22",
+      "s": "2026-08-23",
       "e": "2026-09-06",
       "c": "2026-10-05",
       "err": false,
@@ -1199,7 +1199,7 @@
       "l": "onhold",
       "f": false,
       "a": 30000.0,
-      "s": "2026-08-22",
+      "s": "2026-08-23",
       "e": "2026-09-02",
       "c": "2026-09-15",
       "err": false,
@@ -1211,7 +1211,7 @@
       "l": "onhold",
       "f": false,
       "a": 13000.0,
-      "s": "2026-08-22",
+      "s": "2026-08-23",
       "e": "2026-08-30",
       "c": "2026-09-04",
       "err": false,
@@ -1235,7 +1235,7 @@
       "l": "onhold",
       "f": false,
       "a": 20000.0,
-      "s": "2026-08-22",
+      "s": "2026-08-23",
       "e": "2026-08-29",
       "c": "2026-09-18",
       "err": false,
@@ -1271,7 +1271,7 @@
       "l": "onhold",
       "f": false,
       "a": 62000.0,
-      "s": "2026-08-22",
+      "s": "2026-08-23",
       "e": "2026-08-28",
       "c": "2026-09-15",
       "err": false,
@@ -1283,7 +1283,7 @@
       "l": "onhold",
       "f": false,
       "a": 25000.0,
-      "s": "2026-08-22",
+      "s": "2026-08-23",
       "e": "2026-08-27",
       "c": "2026-10-23",
       "err": false,
@@ -1319,7 +1319,7 @@
       "l": "onhold",
       "f": false,
       "a": 50000.0,
-      "s": "2026-08-22",
+      "s": "2026-08-23",
       "e": "2026-09-05",
       "c": "2026-09-30",
       "err": false,
