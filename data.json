@@ -33,7 +33,7 @@
   ],
   "capital_in": 2020000.0,
   "capital_returned": 0.0,
-  "generated": "2026-08-26T10:14:38-06:00",
+  "generated": "2026-08-26T12:56:09-06:00",
   "source": "HubSpot RQF pipelines: EMD, POF, Stack, Double Close, Echo, GAP",
   "notes": "Pool = capital ledger (capital_events.json) summed to today: contributions in minus returns to investors. Deployed(confirmed,f=true)=Wired Amount out, no Return Wire Amount logged (GAP only if Signed&Funded after 2026-03-01); out from Signed&Funded until returned. err=true: HubSpot record inconsistent but still counted until corrected. probable=02-approved + committed-not-yet-wired. onhold=00/01 pipeline watch (not in math).",
   "deals": [
@@ -812,18 +812,6 @@
       "note": ""
     },
     {
-      "n": "210 Gold St Buffalo NY (DC)",
-      "t": "DC",
-      "l": "onhold",
-      "f": false,
-      "a": 20000.0,
-      "s": "2026-08-02",
-      "e": "2026-08-04",
-      "c": "2026-08-03",
-      "err": false,
-      "note": ""
-    },
-    {
       "n": "304 S Jones Blvd #5065, Las Vegas, NV 89107",
       "t": "Stack",
       "l": "onhold",
@@ -964,18 +952,6 @@
       "s": "2026-08-20",
       "e": "2026-08-22",
       "c": "2026-08-21",
-      "err": false,
-      "note": ""
-    },
-    {
-      "n": "715 13th Street North Bessemer AL 35020",
-      "t": "DC",
-      "l": "onhold",
-      "f": false,
-      "a": 87000.0,
-      "s": "2026-08-13",
-      "e": "2026-08-15",
-      "c": "2026-08-14",
       "err": false,
       "note": ""
     },
