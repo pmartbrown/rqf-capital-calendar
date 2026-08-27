@@ -33,7 +33,7 @@
   ],
   "capital_in": 2020000.0,
   "capital_returned": 0.0,
-  "generated": "2026-08-26T15:38:54-06:00",
+  "generated": "2026-08-26T20:51:38-06:00",
   "source": "HubSpot RQF pipelines: EMD, POF, Stack, Double Close, Echo, GAP",
   "notes": "Pool = capital ledger (capital_events.json) summed to today: contributions in minus returns to investors. Deployed(confirmed,f=true)=Wired Amount out, no Return Wire Amount logged (GAP only if Signed&Funded after 2026-03-01); out from Signed&Funded until returned. err=true: HubSpot record inconsistent but still counted until corrected. probable=02-approved + committed-not-yet-wired. onhold=00/01 pipeline watch (not in math).",
   "deals": [
@@ -49,7 +49,7 @@
       "err": false,
       "note": "",
       "od": true,
-      "odd": 450
+      "odd": 451
     },
     {
       "n": "124 S Mockingbird Cir #A & B, Cedar Creek, Texas 78612",
@@ -57,13 +57,13 @@
       "l": "confirmed",
       "f": true,
       "a": 1000.0,
-      "s": "2026-08-26",
+      "s": "2026-08-27",
       "e": "2027-12-31",
-      "c": "2026-08-26",
+      "c": "2026-08-27",
       "err": true,
       "note": "HubSpot: stage says returned/fell-through, no return amount",
       "od": true,
-      "odd": 411
+      "odd": 412
     },
     {
       "n": "1717 Crimson Cir Memphis TN",
@@ -77,7 +77,7 @@
       "err": false,
       "note": "",
       "od": true,
-      "odd": 250
+      "odd": 251
     },
     {
       "n": "415 Clark St Saginaw MI",
@@ -91,7 +91,7 @@
       "err": false,
       "note": "",
       "od": true,
-      "odd": 24
+      "odd": 25
     },
     {
       "n": "5213, 5216 & 5217 Collier Ct Jefferson City MO (EMD)",
@@ -105,7 +105,7 @@
       "err": false,
       "note": "",
       "od": true,
-      "odd": 33
+      "odd": 34
     },
     {
       "n": "601 E Beach Dr Galveston TX",
@@ -133,7 +133,7 @@
       "err": false,
       "note": "",
       "od": true,
-      "odd": 41
+      "odd": 42
     },
     {
       "n": "2909 N 3rd Way Ridgefield WA (1st Pos Gap)",
@@ -175,7 +175,7 @@
       "err": false,
       "note": "",
       "od": true,
-      "odd": 22
+      "odd": 23
     },
     {
       "n": "55 East Ave Bridgeton NJ",
@@ -188,8 +188,8 @@
       "c": "2026-07-30",
       "err": false,
       "note": "",
-      "od": false,
-      "odd": 0
+      "od": true,
+      "odd": 1
     },
     {
       "n": "149 Luluka Pl Kihei HI",
@@ -1021,7 +1021,7 @@
       "l": "onhold",
       "f": false,
       "a": 20250.0,
-      "s": "2026-08-26",
+      "s": "2026-08-27",
       "e": "2026-09-12",
       "c": "2026-09-26",
       "err": false,
@@ -1033,7 +1033,7 @@
       "l": "onhold",
       "f": false,
       "a": 49200.0,
-      "s": "2026-08-26",
+      "s": "2026-08-27",
       "e": "2026-08-30",
       "c": "2026-09-26",
       "err": false,
@@ -1045,7 +1045,7 @@
       "l": "onhold",
       "f": false,
       "a": 50000.0,
-      "s": "2026-08-26",
+      "s": "2026-08-27",
       "e": "2026-09-18",
       "c": "2026-09-17",
       "err": false,
@@ -1081,7 +1081,7 @@
       "l": "onhold",
       "f": false,
       "a": 30000.0,
-      "s": "2026-08-26",
+      "s": "2026-08-27",
       "e": "2026-09-02",
       "c": "2026-09-15",
       "err": false,
@@ -1093,7 +1093,7 @@
       "l": "onhold",
       "f": false,
       "a": 13000.0,
-      "s": "2026-08-26",
+      "s": "2026-08-27",
       "e": "2026-08-30",
       "c": "2026-09-04",
       "err": false,
@@ -1117,7 +1117,7 @@
       "l": "onhold",
       "f": false,
       "a": 20000.0,
-      "s": "2026-08-26",
+      "s": "2026-08-27",
       "e": "2026-08-29",
       "c": "2026-09-18",
       "err": false,
@@ -1201,7 +1201,7 @@
       "l": "onhold",
       "f": false,
       "a": 50000.0,
-      "s": "2026-08-26",
+      "s": "2026-08-27",
       "e": "2026-09-05",
       "c": "2026-09-30",
       "err": false,
@@ -1261,7 +1261,7 @@
       "l": "onhold",
       "f": false,
       "a": 6400.0,
-      "s": "2026-08-26",
+      "s": "2026-08-27",
       "e": "2026-08-30",
       "c": "2026-08-29",
       "err": false,
@@ -1324,6 +1324,18 @@
       "s": "2026-08-27",
       "e": "2026-08-29",
       "c": "2026-08-28",
+      "err": false,
+      "note": ""
+    },
+    {
+      "n": "202 Milford Street Tupelo Mississippi 38801",
+      "t": "EMD",
+      "l": "onhold",
+      "f": false,
+      "a": 200000.0,
+      "s": "2026-08-27",
+      "e": "2026-10-06",
+      "c": "2027-01-05",
       "err": false,
       "note": ""
     }
