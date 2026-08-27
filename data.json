@@ -33,7 +33,7 @@
   ],
   "capital_in": 2020000.0,
   "capital_returned": 0.0,
-  "generated": "2026-08-27T07:42:12-06:00",
+  "generated": "2026-08-27T17:32:25-06:00",
   "source": "HubSpot RQF pipelines: EMD, POF, Stack, Double Close, Echo, GAP",
   "notes": "Pool = capital ledger (capital_events.json) summed to today: contributions in minus returns to investors. Deployed(confirmed,f=true)=Wired Amount out, no Return Wire Amount logged (GAP only if Signed&Funded after 2026-03-01); out from Signed&Funded until returned. err=true: HubSpot record inconsistent but still counted until corrected. probable=02-approved + committed-not-yet-wired. onhold=00/01 pipeline watch (not in math).",
   "deals": [
@@ -190,20 +190,6 @@
       "note": "",
       "od": true,
       "odd": 1
-    },
-    {
-      "n": "149 Luluka Pl Kihei HI",
-      "t": "Stack",
-      "l": "confirmed",
-      "f": true,
-      "a": 203058.09,
-      "s": "2026-08-19",
-      "e": "2027-12-31",
-      "c": "2026-08-19",
-      "err": false,
-      "note": "",
-      "od": false,
-      "odd": 0
     },
     {
       "n": "68, 78, and 44 E Bridge Street, Big Sandy TN (205)",
@@ -460,18 +446,6 @@
       "s": "2026-08-11",
       "e": "2026-08-13",
       "c": "2026-08-12",
-      "err": false,
-      "note": ""
-    },
-    {
-      "n": "1222 Lawrence Ave Ellwood City PA",
-      "t": "Stack",
-      "l": "onhold",
-      "f": false,
-      "a": 1320000.0,
-      "s": "2026-07-08",
-      "e": "2026-07-10",
-      "c": "2026-07-09",
       "err": false,
       "note": ""
     },
@@ -1052,18 +1026,6 @@
       "note": ""
     },
     {
-      "n": "25454 Normandy St Roseville MI",
-      "t": "DC",
-      "l": "probable",
-      "f": false,
-      "a": 77000.0,
-      "s": "2026-08-22",
-      "e": "2026-08-24",
-      "c": "2026-08-23",
-      "err": false,
-      "note": ""
-    },
-    {
       "n": "104 West End Ave Island Heights NJ",
       "t": "Stack",
       "l": "probable",
@@ -1071,18 +1033,6 @@
       "a": 625000.0,
       "s": "2026-09-14",
       "e": "2026-09-16",
-      "c": "2026-09-15",
-      "err": false,
-      "note": ""
-    },
-    {
-      "n": "2811 Broad St Houston TX",
-      "t": "EMD",
-      "l": "onhold",
-      "f": false,
-      "a": 30000.0,
-      "s": "2026-08-27",
-      "e": "2026-09-02",
       "c": "2026-09-15",
       "err": false,
       "note": ""
@@ -1328,19 +1278,19 @@
       "note": ""
     },
     {
-      "n": "202 Milford Street Tupelo Mississippi 38801",
+      "n": "202 Milford St Tupelo MS",
       "t": "EMD",
       "l": "onhold",
       "f": false,
       "a": 200000.0,
       "s": "2026-08-27",
       "e": "2026-10-06",
-      "c": "2027-01-05",
+      "c": "2026-12-31",
       "err": false,
       "note": ""
     },
     {
-      "n": "175 Fish Hook Road Broken Bow OK 74728",
+      "n": "175 Fish Hook Rd Broken Bow OK",
       "t": "Stack",
       "l": "onhold",
       "f": false,
@@ -1352,7 +1302,7 @@
       "note": ""
     },
     {
-      "n": "83 Ginseng Circle Broken Bow OK 74728",
+      "n": "83 Ginseng Circle Broken Bow OK",
       "t": "Stack",
       "l": "onhold",
       "f": false,
@@ -1364,7 +1314,7 @@
       "note": ""
     },
     {
-      "n": "238 Rutty Pine Ridge Broken Bow OK 74728",
+      "n": "238 Rutty Pine Ridge Broken Bow OK",
       "t": "Stack",
       "l": "onhold",
       "f": false,
