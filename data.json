@@ -33,7 +33,7 @@
   ],
   "capital_in": 2020000.0,
   "capital_returned": 0.0,
-  "generated": "2026-08-28T02:52:54-06:00",
+  "generated": "2026-08-28T14:40:10-06:00",
   "source": "HubSpot RQF pipelines: EMD, POF, Stack, Double Close, Echo, GAP",
   "notes": "Pool = capital ledger (capital_events.json) summed to today: contributions in minus returns to investors. Deployed(confirmed,f=true)=Wired Amount out, no Return Wire Amount logged (GAP only if Signed&Funded after 2026-03-01); out from Signed&Funded until returned. err=true: HubSpot record inconsistent but still counted until corrected. probable=02-approved + committed-not-yet-wired. onhold=00/01 pipeline watch (not in math).",
   "deals": [
@@ -594,18 +594,6 @@
       "note": ""
     },
     {
-      "n": "1134 Monroe Ave Atlantic City NJ",
-      "t": "EMD",
-      "l": "onhold",
-      "f": false,
-      "a": 20000.0,
-      "s": "2026-08-02",
-      "e": "2026-08-04",
-      "c": "2026-08-26",
-      "err": false,
-      "note": ""
-    },
-    {
       "n": "1183 NW Ozmun Ave Lawton OK",
       "t": "Stack",
       "l": "onhold",
@@ -698,18 +686,6 @@
       "s": "2026-08-13",
       "e": "2026-08-15",
       "c": "2026-08-14",
-      "err": false,
-      "note": ""
-    },
-    {
-      "n": "1142 Appleland Dr Wenatchee WA",
-      "t": "DC",
-      "l": "probable",
-      "f": false,
-      "a": 260000.0,
-      "s": "2026-08-25",
-      "e": "2026-08-27",
-      "c": "2026-08-26",
       "err": false,
       "note": ""
     },
@@ -944,7 +920,7 @@
     {
       "n": "1518 Hanover Ct Ann Arbor MI 48103",
       "t": "DC",
-      "l": "onhold",
+      "l": "probable",
       "f": false,
       "a": 400000.0,
       "s": "2026-08-30",
@@ -1206,18 +1182,6 @@
       "note": ""
     },
     {
-      "n": "10037 Empire Rd Oakland CA (EMD)",
-      "t": "EMD",
-      "l": "onhold",
-      "f": false,
-      "a": 6400.0,
-      "s": "2026-08-28",
-      "e": "2026-08-30",
-      "c": "2026-08-29",
-      "err": false,
-      "note": ""
-    },
-    {
       "n": "10037 Empire Rd Oakland CA (Stack)",
       "t": "Stack",
       "l": "onhold",
@@ -1322,6 +1286,18 @@
       "s": "2026-08-27",
       "e": "2026-08-29",
       "c": "2026-08-28",
+      "err": false,
+      "note": ""
+    },
+    {
+      "n": "1175 Barron Court Memphis TN 38114",
+      "t": "DC",
+      "l": "onhold",
+      "f": false,
+      "a": 3750000.0,
+      "s": "2026-09-24",
+      "e": "2026-09-26",
+      "c": "2026-09-25",
       "err": false,
       "note": ""
     }
