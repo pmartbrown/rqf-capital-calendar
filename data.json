@@ -33,7 +33,7 @@
   ],
   "capital_in": 2020000.0,
   "capital_returned": 0.0,
-  "generated": "2026-08-28T14:40:10-06:00",
+  "generated": "2026-08-28T21:03:07-06:00",
   "source": "HubSpot RQF pipelines: EMD, POF, Stack, Double Close, Echo, GAP",
   "notes": "Pool = capital ledger (capital_events.json) summed to today: contributions in minus returns to investors. Deployed(confirmed,f=true)=Wired Amount out, no Return Wire Amount logged (GAP only if Signed&Funded after 2026-03-01); out from Signed&Funded until returned. err=true: HubSpot record inconsistent but still counted until corrected. probable=02-approved + committed-not-yet-wired. onhold=00/01 pipeline watch (not in math).",
   "deals": [
@@ -49,7 +49,7 @@
       "err": false,
       "note": "",
       "od": true,
-      "odd": 452
+      "odd": 453
     },
     {
       "n": "124 S Mockingbird Cir #A & B, Cedar Creek, Texas 78612",
@@ -57,13 +57,13 @@
       "l": "confirmed",
       "f": true,
       "a": 1000.0,
-      "s": "2026-08-28",
+      "s": "2026-08-29",
       "e": "2027-12-31",
-      "c": "2026-08-28",
+      "c": "2026-08-29",
       "err": true,
       "note": "HubSpot: stage says returned/fell-through, no return amount",
       "od": true,
-      "odd": 413
+      "odd": 414
     },
     {
       "n": "1717 Crimson Cir Memphis TN",
@@ -77,7 +77,7 @@
       "err": false,
       "note": "",
       "od": true,
-      "odd": 252
+      "odd": 253
     },
     {
       "n": "415 Clark St Saginaw MI",
@@ -91,7 +91,7 @@
       "err": false,
       "note": "",
       "od": true,
-      "odd": 26
+      "odd": 27
     },
     {
       "n": "5213, 5216 & 5217 Collier Ct Jefferson City MO (EMD)",
@@ -105,7 +105,7 @@
       "err": false,
       "note": "",
       "od": true,
-      "odd": 35
+      "odd": 36
     },
     {
       "n": "601 E Beach Dr Galveston TX",
@@ -133,7 +133,7 @@
       "err": false,
       "note": "",
       "od": true,
-      "odd": 43
+      "odd": 44
     },
     {
       "n": "2909 N 3rd Way Ridgefield WA (1st Pos Gap)",
@@ -175,7 +175,7 @@
       "err": false,
       "note": "",
       "od": true,
-      "odd": 24
+      "odd": 25
     },
     {
       "n": "55 East Ave Bridgeton NJ",
@@ -189,7 +189,7 @@
       "err": false,
       "note": "",
       "od": true,
-      "odd": 2
+      "odd": 3
     },
     {
       "n": "68, 78, and 44 E Bridge Street, Big Sandy TN (205)",
@@ -971,7 +971,7 @@
       "l": "onhold",
       "f": false,
       "a": 20250.0,
-      "s": "2026-08-28",
+      "s": "2026-08-29",
       "e": "2026-09-12",
       "c": "2026-09-26",
       "err": false,
@@ -995,7 +995,7 @@
       "l": "onhold",
       "f": false,
       "a": 50000.0,
-      "s": "2026-08-28",
+      "s": "2026-08-29",
       "e": "2026-09-18",
       "c": "2026-09-17",
       "err": false,
@@ -1074,18 +1074,6 @@
       "note": ""
     },
     {
-      "n": "3511 Berry Dr Studio City CA (EMD)",
-      "t": "EMD",
-      "l": "onhold",
-      "f": false,
-      "a": 62000.0,
-      "s": "2026-08-26",
-      "e": "2026-08-28",
-      "c": "2026-09-15",
-      "err": false,
-      "note": ""
-    },
-    {
       "n": "93283 Co Rd 690 Dowagiac MI",
       "t": "EMD",
       "l": "onhold",
@@ -1127,7 +1115,7 @@
       "l": "onhold",
       "f": false,
       "a": 50000.0,
-      "s": "2026-08-28",
+      "s": "2026-08-29",
       "e": "2026-09-05",
       "c": "2026-09-30",
       "err": false,
@@ -1247,7 +1235,7 @@
       "l": "onhold",
       "f": false,
       "a": 200000.0,
-      "s": "2026-08-28",
+      "s": "2026-08-29",
       "e": "2026-10-06",
       "c": "2026-12-31",
       "err": false,
@@ -1298,6 +1286,18 @@
       "s": "2026-09-24",
       "e": "2026-09-26",
       "c": "2026-09-25",
+      "err": false,
+      "note": ""
+    },
+    {
+      "n": "10 different properties Topeka KS 66606",
+      "t": "Stack",
+      "l": "onhold",
+      "f": false,
+      "a": 368000.0,
+      "s": "2026-10-06",
+      "e": "2026-10-08",
+      "c": "2026-10-07",
       "err": false,
       "note": ""
     }
