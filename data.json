@@ -33,7 +33,7 @@
   ],
   "capital_in": 2020000.0,
   "capital_returned": 0.0,
-  "generated": "2026-09-01T07:01:56-06:00",
+  "generated": "2026-09-01T11:33:21-06:00",
   "source": "HubSpot RQF pipelines: EMD, POF, Stack, Double Close, Echo, GAP",
   "notes": "Pool = capital ledger (capital_events.json) summed to today: contributions in minus returns to investors. Deployed(confirmed,f=true)=Wired Amount out, no Return Wire Amount logged (GAP only if Signed&Funded after 2026-03-01); out from Signed&Funded until returned. err=true: HubSpot record inconsistent but still counted until corrected. probable=02-approved + committed-not-yet-wired. onhold=00/01 pipeline watch (not in math).",
   "deals": [
@@ -192,6 +192,20 @@
       "odd": 6
     },
     {
+      "n": "7914 Nixon Ave SW Lakewood WA",
+      "t": "Echo",
+      "l": "confirmed",
+      "f": true,
+      "a": 289500.0,
+      "s": "2026-08-31",
+      "e": "2027-12-31",
+      "c": "2026-08-31",
+      "err": false,
+      "note": "",
+      "od": false,
+      "odd": 0
+    },
+    {
       "n": "68, 78, and 44 E Bridge Street, Big Sandy TN (205)",
       "t": "GAP",
       "l": "confirmed",
@@ -216,6 +230,20 @@
       "c": "2026-08-19",
       "err": false,
       "note": "",
+      "od": false,
+      "odd": 0
+    },
+    {
+      "n": "1518 Hanover Ct Ann Arbor MI 48103",
+      "t": "DC",
+      "l": "confirmed",
+      "f": true,
+      "a": 403657.28,
+      "s": "2026-09-01",
+      "e": "2027-12-31",
+      "c": "2026-09-01",
+      "err": true,
+      "note": "HubSpot: wired but stage still 02 Approved",
       "od": false,
       "odd": 0
     },
@@ -422,18 +450,6 @@
       "s": "2026-05-31",
       "e": "2026-06-02",
       "c": "2026-06-01",
-      "err": false,
-      "note": ""
-    },
-    {
-      "n": "Deuces Wild Waynoka OK 73860",
-      "t": "Stack",
-      "l": "onhold",
-      "f": false,
-      "a": 400000.0,
-      "s": "2026-07-18",
-      "e": "2026-07-20",
-      "c": "2026-07-19",
       "err": false,
       "note": ""
     },
@@ -750,18 +766,6 @@
       "note": ""
     },
     {
-      "n": "7914 Nixon Ave SW Lakewood WA",
-      "t": "Echo",
-      "l": "onhold",
-      "f": false,
-      "a": 289500.0,
-      "s": "2026-08-10",
-      "e": "2026-08-12",
-      "c": "2026-08-11",
-      "err": false,
-      "note": ""
-    },
-    {
       "n": "304 S Jones Blvd #5065, Las Vegas, NV 89107",
       "t": "Stack",
       "l": "onhold",
@@ -918,18 +922,6 @@
       "note": ""
     },
     {
-      "n": "1518 Hanover Ct Ann Arbor MI 48103",
-      "t": "DC",
-      "l": "probable",
-      "f": false,
-      "a": 400000.0,
-      "s": "2026-08-30",
-      "e": "2026-09-01",
-      "c": "2026-08-31",
-      "err": false,
-      "note": ""
-    },
-    {
       "n": "2551 San Pablo Ave Oakland CA",
       "t": "Stack",
       "l": "probable",
@@ -968,7 +960,7 @@
     {
       "n": "526 Jersey St Vallejo CA (EMD)",
       "t": "EMD",
-      "l": "onhold",
+      "l": "probable",
       "f": false,
       "a": 20250.0,
       "s": "2026-09-01",
@@ -980,7 +972,7 @@
     {
       "n": "470-480 Wilson Ave Vallejo CA (EMD)",
       "t": "EMD",
-      "l": "onhold",
+      "l": "probable",
       "f": false,
       "a": 49200.0,
       "s": "2026-08-28",
@@ -1268,7 +1260,7 @@
     {
       "n": "1175 Barron Court Memphis TN 38114",
       "t": "DC",
-      "l": "onhold",
+      "l": "probable",
       "f": false,
       "a": 3750000.0,
       "s": "2026-09-24",
@@ -1362,14 +1354,14 @@
       "note": ""
     },
     {
-      "n": "6130 Wheatley Street Houston Texas 77091",
+      "n": "6130 Wheatley St Houston TX",
       "t": "EMD",
       "l": "onhold",
       "f": false,
       "a": 20000.0,
       "s": "2026-09-01",
       "e": "2026-11-01",
-      "c": "2026-11-01",
+      "c": "2026-10-30",
       "err": false,
       "note": ""
     }
