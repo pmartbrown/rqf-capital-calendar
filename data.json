@@ -33,7 +33,7 @@
   ],
   "capital_in": 2020000.0,
   "capital_returned": 0.0,
-  "generated": "2026-09-02T04:33:01-06:00",
+  "generated": "2026-09-02T08:56:10-06:00",
   "source": "HubSpot RQF pipelines: EMD, POF, Stack, Double Close, Echo, GAP",
   "notes": "Pool = capital ledger (capital_events.json) summed to today: contributions in minus returns to investors. Deployed(confirmed,f=true)=Wired Amount out, no Return Wire Amount logged (GAP only if Signed&Funded after 2026-03-01); out from Signed&Funded until returned. err=true: HubSpot record inconsistent but still counted until corrected. probable=02-approved + committed-not-yet-wired. onhold=00/01 pipeline watch (not in math).",
   "deals": [
@@ -228,20 +228,6 @@
       "s": "2026-08-19",
       "e": "2027-12-31",
       "c": "2026-08-19",
-      "err": false,
-      "note": "",
-      "od": false,
-      "odd": 0
-    },
-    {
-      "n": "1518 Hanover Ct Ann Arbor MI 48103",
-      "t": "DC",
-      "l": "confirmed",
-      "f": true,
-      "a": 403657.28,
-      "s": "2026-09-01",
-      "e": "2027-12-31",
-      "c": "2026-09-01",
       "err": false,
       "note": "",
       "od": false,
@@ -922,6 +908,18 @@
       "note": ""
     },
     {
+      "n": "1518 Hanover Ct Ann Arbor MI 48103",
+      "t": "DC",
+      "l": "onhold",
+      "f": false,
+      "a": 403657.28,
+      "s": "2026-08-30",
+      "e": "2026-09-01",
+      "c": "2026-08-31",
+      "err": false,
+      "note": ""
+    },
+    {
       "n": "2551 San Pablo Ave Oakland CA",
       "t": "Stack",
       "l": "probable",
@@ -1366,14 +1364,26 @@
       "note": ""
     },
     {
-      "n": "3370 Mansfield Hwy, 3400 Mansfield Hwy, 3349 Bisbee St, 3401 Bisbee St  Fort Worth Texas 76119",
+      "n": "3370, 3400 Mansfield Hwy & 3349, 3401 Bisbee St, Fort Worth, TX 76119",
       "t": "DC",
-      "l": "onhold",
+      "l": "probable",
       "f": false,
       "a": 796000.0,
       "s": "2026-09-02",
       "e": "2026-09-04",
       "c": "2026-09-03",
+      "err": false,
+      "note": ""
+    },
+    {
+      "n": "4960 Dogwood Dr Everett WA",
+      "t": "DC",
+      "l": "onhold",
+      "f": false,
+      "a": 300000.0,
+      "s": "2026-09-08",
+      "e": "2026-09-10",
+      "c": "2026-09-09",
       "err": false,
       "note": ""
     }
