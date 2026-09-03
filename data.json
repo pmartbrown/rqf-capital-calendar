@@ -33,7 +33,7 @@
   ],
   "capital_in": 2020000.0,
   "capital_returned": 0.0,
-  "generated": "2026-09-03T06:32:53-06:00",
+  "generated": "2026-09-03T10:53:46-06:00",
   "source": "HubSpot RQF pipelines: EMD, POF, Stack, Double Close, Echo, GAP",
   "notes": "Pool = capital ledger (capital_events.json) summed to today: contributions in minus returns to investors. Deployed(confirmed,f=true)=Wired Amount out, no Return Wire Amount logged (GAP only if Signed&Funded after 2026-03-01); out from Signed&Funded until returned. err=true: HubSpot record inconsistent but still counted until corrected. probable=02-approved + committed-not-yet-wired. onhold=00/01 pipeline watch (not in math).",
   "deals": [
@@ -98,7 +98,7 @@
       "t": "DC",
       "l": "confirmed",
       "f": true,
-      "a": 152588.5,
+      "a": 106715.81,
       "s": "2026-09-02",
       "e": "2027-12-31",
       "c": "2026-09-02",
@@ -248,6 +248,20 @@
       "odd": 0
     },
     {
+      "n": "1107 Lucas St Leesburg FL (ECHO)",
+      "t": "Echo",
+      "l": "confirmed",
+      "f": true,
+      "a": 45872.69,
+      "s": "2026-09-02",
+      "e": "2027-12-31",
+      "c": "2026-09-02",
+      "err": false,
+      "note": "",
+      "od": false,
+      "odd": 0
+    },
+    {
       "n": "256 Yellow Snapdragon Davenport FL",
       "t": "EMD",
       "l": "probable",
@@ -356,71 +370,11 @@
       "note": ""
     },
     {
-      "n": "17 E 62nd Pl N Tulsa OK (DC)",
-      "t": "DC",
-      "l": "onhold",
-      "f": false,
-      "a": 80500.0,
-      "s": "2026-05-30",
-      "e": "2026-06-01",
-      "c": "2026-05-31",
-      "err": false,
-      "note": ""
-    },
-    {
       "n": "34 East 63rd St N Tulsa OK (DC)",
       "t": "DC",
       "l": "onhold",
       "f": false,
       "a": 80400.0,
-      "s": "2026-05-31",
-      "e": "2026-06-02",
-      "c": "2026-06-01",
-      "err": false,
-      "note": ""
-    },
-    {
-      "n": "138 W 50th Ct N Tulsa OK (DC)",
-      "t": "DC",
-      "l": "onhold",
-      "f": false,
-      "a": 80500.0,
-      "s": "2026-05-31",
-      "e": "2026-06-02",
-      "c": "2026-06-01",
-      "err": false,
-      "note": ""
-    },
-    {
-      "n": "314 W 49th St N Tulsa OK (DC)",
-      "t": "DC",
-      "l": "onhold",
-      "f": false,
-      "a": 80500.0,
-      "s": "2026-05-31",
-      "e": "2026-06-02",
-      "c": "2026-06-01",
-      "err": false,
-      "note": ""
-    },
-    {
-      "n": "335 W 61st Pl N Tulsa OK (DC)",
-      "t": "DC",
-      "l": "onhold",
-      "f": false,
-      "a": 80500.0,
-      "s": "2026-05-31",
-      "e": "2026-06-02",
-      "c": "2026-06-01",
-      "err": false,
-      "note": ""
-    },
-    {
-      "n": "4313 N Frankfort Pl Tulsa OK (DC)",
-      "t": "DC",
-      "l": "onhold",
-      "f": false,
-      "a": 86800.0,
       "s": "2026-05-31",
       "e": "2026-06-02",
       "c": "2026-06-01",
@@ -1364,7 +1318,7 @@
       "note": ""
     },
     {
-      "n": "1812 Parkway Terrace Memphis TN 38114",
+      "n": "1812 Parkway Terrace Memphis TN",
       "t": "Echo",
       "l": "onhold",
       "f": false,
