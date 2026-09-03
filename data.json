@@ -33,7 +33,7 @@
   ],
   "capital_in": 2020000.0,
   "capital_returned": 0.0,
-  "generated": "2026-09-03T10:53:46-06:00",
+  "generated": "2026-09-03T13:36:53-06:00",
   "source": "HubSpot RQF pipelines: EMD, POF, Stack, Double Close, Echo, GAP",
   "notes": "Pool = capital ledger (capital_events.json) summed to today: contributions in minus returns to investors. Deployed(confirmed,f=true)=Wired Amount out, no Return Wire Amount logged (GAP only if Signed&Funded after 2026-03-01); out from Signed&Funded until returned. err=true: HubSpot record inconsistent but still counted until corrected. probable=02-approved + committed-not-yet-wired. onhold=00/01 pipeline watch (not in math).",
   "deals": [
@@ -218,6 +218,34 @@
       "note": "",
       "od": false,
       "odd": 0
+    },
+    {
+      "n": "526 Jersey St Vallejo CA (EMD)",
+      "t": "EMD",
+      "l": "confirmed",
+      "f": true,
+      "a": 20250.0,
+      "s": "2026-09-03",
+      "e": "2027-12-31",
+      "c": "2026-09-03",
+      "err": false,
+      "note": "",
+      "od": false,
+      "odd": 0
+    },
+    {
+      "n": "470-480 Wilson Ave Vallejo CA (EMD)",
+      "t": "EMD",
+      "l": "confirmed",
+      "f": true,
+      "a": 49200.0,
+      "s": "2026-09-03",
+      "e": "2027-12-31",
+      "c": "2026-09-03",
+      "err": false,
+      "note": "",
+      "od": true,
+      "odd": 5
     },
     {
       "n": "2802 Shaver St Pasadena TX",
@@ -858,30 +886,6 @@
       "s": "2026-09-24",
       "e": "2026-09-26",
       "c": "2026-09-25",
-      "err": false,
-      "note": ""
-    },
-    {
-      "n": "526 Jersey St Vallejo CA (EMD)",
-      "t": "EMD",
-      "l": "probable",
-      "f": false,
-      "a": 20250.0,
-      "s": "2026-09-03",
-      "e": "2026-09-12",
-      "c": "2026-09-26",
-      "err": false,
-      "note": ""
-    },
-    {
-      "n": "470-480 Wilson Ave Vallejo CA (EMD)",
-      "t": "EMD",
-      "l": "probable",
-      "f": false,
-      "a": 49200.0,
-      "s": "2026-08-28",
-      "e": "2026-08-30",
-      "c": "2026-09-26",
       "err": false,
       "note": ""
     },
