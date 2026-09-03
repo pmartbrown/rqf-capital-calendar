@@ -33,7 +33,7 @@
   ],
   "capital_in": 2020000.0,
   "capital_returned": 0.0,
-  "generated": "2026-09-03T13:36:53-06:00",
+  "generated": "2026-09-03T16:13:29-06:00",
   "source": "HubSpot RQF pipelines: EMD, POF, Stack, Double Close, Echo, GAP",
   "notes": "Pool = capital ledger (capital_events.json) summed to today: contributions in minus returns to investors. Deployed(confirmed,f=true)=Wired Amount out, no Return Wire Amount logged (GAP only if Signed&Funded after 2026-03-01); out from Signed&Funded until returned. err=true: HubSpot record inconsistent but still counted until corrected. probable=02-approved + committed-not-yet-wired. onhold=00/01 pipeline watch (not in math).",
   "deals": [
@@ -1330,6 +1330,42 @@
       "s": "2026-09-10",
       "e": "2026-09-12",
       "c": "2026-09-11",
+      "err": false,
+      "note": ""
+    },
+    {
+      "n": "4067 County Road Southeast & 4250 Mount Vernon TX",
+      "t": "EMD",
+      "l": "probable",
+      "f": false,
+      "a": 32000.0,
+      "s": "2026-09-03",
+      "e": "2026-09-27",
+      "c": "2026-10-11",
+      "err": false,
+      "note": ""
+    },
+    {
+      "n": "177 Empress Avenue Sebastian FL 32958",
+      "t": "EMD",
+      "l": "onhold",
+      "f": false,
+      "a": 40400.0,
+      "s": "2026-09-03",
+      "e": "2026-10-13",
+      "c": "2026-11-11",
+      "err": false,
+      "note": ""
+    },
+    {
+      "n": "3710 14th Street Vero Beach FL 32960",
+      "t": "EMD",
+      "l": "onhold",
+      "f": false,
+      "a": 60600.0,
+      "s": "2026-09-03",
+      "e": "2026-10-13",
+      "c": "2026-11-11",
       "err": false,
       "note": ""
     }
