@@ -33,7 +33,7 @@
   ],
   "capital_in": 2020000.0,
   "capital_returned": 0.0,
-  "generated": "2026-09-04T12:02:45-06:00",
+  "generated": "2026-09-04T15:12:15-06:00",
   "source": "HubSpot RQF pipelines: EMD, POF, Stack, Double Close, Echo, GAP",
   "notes": "Pool = capital ledger (capital_events.json) summed to today: contributions in minus returns to investors. Deployed(confirmed,f=true)=Wired Amount out, no Return Wire Amount logged (GAP only if Signed&Funded after 2026-03-01); out from Signed&Funded until returned. err=true: HubSpot record inconsistent but still counted until corrected. probable=02-approved + committed-not-yet-wired. onhold=00/01 pipeline watch (not in math).",
   "deals": [
@@ -94,20 +94,6 @@
       "odd": 33
     },
     {
-      "n": "1107 Lucas St Leesburg FL (DC)",
-      "t": "DC",
-      "l": "confirmed",
-      "f": true,
-      "a": 106715.81,
-      "s": "2026-09-02",
-      "e": "2027-12-31",
-      "c": "2026-09-02",
-      "err": false,
-      "note": "",
-      "od": false,
-      "odd": 0
-    },
-    {
       "n": "5213, 5216 & 5217 Collier Ct Jefferson City MO (EMD)",
       "t": "EMD",
       "l": "confirmed",
@@ -118,8 +104,8 @@
       "c": "2026-07-10",
       "err": false,
       "note": "",
-      "od": true,
-      "odd": 42
+      "od": false,
+      "odd": 0
     },
     {
       "n": "601 E Beach Dr Galveston TX",
@@ -256,20 +242,6 @@
       "s": "2026-08-25",
       "e": "2027-12-31",
       "c": "2026-08-25",
-      "err": false,
-      "note": "",
-      "od": false,
-      "odd": 0
-    },
-    {
-      "n": "1107 Lucas St Leesburg FL (ECHO)",
-      "t": "Echo",
-      "l": "confirmed",
-      "f": true,
-      "a": 45872.69,
-      "s": "2026-09-02",
-      "e": "2027-12-31",
-      "c": "2026-09-02",
       "err": false,
       "note": "",
       "od": false,
@@ -856,18 +828,6 @@
       "note": ""
     },
     {
-      "n": "1518 Hanover Ct Ann Arbor MI 48103",
-      "t": "DC",
-      "l": "onhold",
-      "f": false,
-      "a": 403657.28,
-      "s": "2026-08-30",
-      "e": "2026-09-01",
-      "c": "2026-08-31",
-      "err": false,
-      "note": ""
-    },
-    {
       "n": "2551 San Pablo Ave Oakland CA",
       "t": "Stack",
       "l": "probable",
@@ -1053,9 +1013,9 @@
       "l": "onhold",
       "f": false,
       "a": 240000.0,
-      "s": "2026-08-02",
-      "e": "2026-08-04",
-      "c": "2026-10-31",
+      "s": "2026-09-04",
+      "e": "2026-09-29",
+      "c": "2026-10-03",
       "err": false,
       "note": ""
     },
@@ -1332,6 +1292,18 @@
       "s": "2026-09-04",
       "e": "2026-10-13",
       "c": "2026-11-11",
+      "err": false,
+      "note": ""
+    },
+    {
+      "n": "171 Lake Road Huntington New York 11743",
+      "t": "Stack",
+      "l": "onhold",
+      "f": false,
+      "a": 740000.0,
+      "s": "2026-09-16",
+      "e": "2026-09-18",
+      "c": "2026-09-17",
       "err": false,
       "note": ""
     }
