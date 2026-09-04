@@ -33,7 +33,7 @@
   ],
   "capital_in": 2020000.0,
   "capital_returned": 0.0,
-  "generated": "2026-09-04T08:44:46-06:00",
+  "generated": "2026-09-04T12:02:45-06:00",
   "source": "HubSpot RQF pipelines: EMD, POF, Stack, Double Close, Echo, GAP",
   "notes": "Pool = capital ledger (capital_events.json) summed to today: contributions in minus returns to investors. Deployed(confirmed,f=true)=Wired Amount out, no Return Wire Amount logged (GAP only if Signed&Funded after 2026-03-01); out from Signed&Funded until returned. err=true: HubSpot record inconsistent but still counted until corrected. probable=02-approved + committed-not-yet-wired. onhold=00/01 pipeline watch (not in math).",
   "deals": [
@@ -270,6 +270,20 @@
       "s": "2026-09-02",
       "e": "2027-12-31",
       "c": "2026-09-02",
+      "err": false,
+      "note": "",
+      "od": false,
+      "odd": 0
+    },
+    {
+      "n": "4067 County Road Southeast & 4250 Mount Vernon TX",
+      "t": "EMD",
+      "l": "confirmed",
+      "f": true,
+      "a": 32000.0,
+      "s": "2026-09-04",
+      "e": "2027-12-31",
+      "c": "2026-09-04",
       "err": false,
       "note": "",
       "od": false,
@@ -914,18 +928,6 @@
       "note": ""
     },
     {
-      "n": "38109 Compass Point Loop Lady Lake FL (EMD)",
-      "t": "EMD",
-      "l": "onhold",
-      "f": false,
-      "a": 13000.0,
-      "s": "2026-08-28",
-      "e": "2026-08-30",
-      "c": "2026-09-04",
-      "err": false,
-      "note": ""
-    },
-    {
       "n": "1217 Butztown Rd Bethlehem PA",
       "t": "Stack",
       "l": "onhold",
@@ -1318,18 +1320,6 @@
       "s": "2026-09-10",
       "e": "2026-09-12",
       "c": "2026-09-11",
-      "err": false,
-      "note": ""
-    },
-    {
-      "n": "4067 County Road Southeast & 4250 Mount Vernon TX",
-      "t": "EMD",
-      "l": "probable",
-      "f": false,
-      "a": 32000.0,
-      "s": "2026-09-04",
-      "e": "2026-09-27",
-      "c": "2026-10-11",
       "err": false,
       "note": ""
     },
