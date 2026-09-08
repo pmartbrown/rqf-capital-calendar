@@ -33,7 +33,7 @@
   ],
   "capital_in": 2020000.0,
   "capital_returned": 0.0,
-  "generated": "2026-09-08T02:33:18-06:00",
+  "generated": "2026-09-08T11:43:40-06:00",
   "source": "HubSpot RQF pipelines: EMD, POF, Stack, Double Close, Echo, GAP",
   "notes": "Pool = capital ledger (capital_events.json) summed to today: contributions in minus returns to investors. Deployed(confirmed,f=true)=Wired Amount out, no Return Wire Amount logged (GAP only if Signed&Funded after 2026-03-01); out from Signed&Funded until returned. err=true: HubSpot record inconsistent but still counted until corrected. probable=02-approved + committed-not-yet-wired. onhold=00/01 pipeline watch (not in math).",
   "deals": [
@@ -804,18 +804,6 @@
       "note": ""
     },
     {
-      "n": "761 Forrest St Roswell GA",
-      "t": "Stack",
-      "l": "onhold",
-      "f": false,
-      "a": 140000.0,
-      "s": "2026-08-20",
-      "e": "2026-08-22",
-      "c": "2026-08-21",
-      "err": false,
-      "note": ""
-    },
-    {
       "n": "2100 Carlyle Dr Las Cruces NM",
       "t": "Stack",
       "l": "onhold",
@@ -1340,6 +1328,30 @@
       "s": "2026-09-08",
       "e": "2026-09-11",
       "c": "2026-10-02",
+      "err": false,
+      "note": ""
+    },
+    {
+      "n": "10 Club Ct Alpharetta GA (echo)",
+      "t": "Echo",
+      "l": "onhold",
+      "f": false,
+      "a": 125000.0,
+      "s": "2026-09-10",
+      "e": "2026-09-12",
+      "c": "2026-09-11",
+      "err": false,
+      "note": ""
+    },
+    {
+      "n": "345 Beade Street Plymouth Pennsylvania 18651",
+      "t": "Stack",
+      "l": "onhold",
+      "f": false,
+      "a": 180000.0,
+      "s": "2026-09-30",
+      "e": "2026-10-02",
+      "c": "2026-10-01",
       "err": false,
       "note": ""
     }
