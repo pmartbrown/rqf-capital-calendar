@@ -33,7 +33,7 @@
   ],
   "capital_in": 2020000.0,
   "capital_returned": 0.0,
-  "generated": "2026-09-09T06:42:03-06:00",
+  "generated": "2026-09-09T11:00:28-06:00",
   "source": "HubSpot RQF pipelines: EMD, POF, Stack, Double Close, Echo, GAP",
   "notes": "Pool = capital ledger (capital_events.json) summed to today: contributions in minus returns to investors. Deployed(confirmed,f=true)=Wired Amount out, no Return Wire Amount logged (GAP only if Signed&Funded after 2026-03-01); out from Signed&Funded until returned. err=true: HubSpot record inconsistent but still counted until corrected. probable=02-approved + committed-not-yet-wired. onhold=00/01 pipeline watch (not in math).",
   "deals": [
@@ -192,20 +192,6 @@
       "odd": 7
     },
     {
-      "n": "1337 & 1341 Walker St Harrisonburg VA (EMD)",
-      "t": "EMD",
-      "l": "confirmed",
-      "f": true,
-      "a": 15000.0,
-      "s": "2026-08-19",
-      "e": "2027-12-31",
-      "c": "2026-08-19",
-      "err": false,
-      "note": "",
-      "od": true,
-      "odd": 6
-    },
-    {
       "n": "526 Jersey St Vallejo CA (EMD)",
       "t": "EMD",
       "l": "confirmed",
@@ -296,30 +282,6 @@
       "s": "2026-08-27",
       "e": "2026-08-29",
       "c": "2026-08-28",
-      "err": false,
-      "note": ""
-    },
-    {
-      "n": "2107 Ohio Ave Richmond CA",
-      "t": "Echo",
-      "l": "onhold",
-      "f": false,
-      "a": 60000.0,
-      "s": "2026-01-25",
-      "e": "2026-01-27",
-      "c": "2026-01-26",
-      "err": false,
-      "note": ""
-    },
-    {
-      "n": "348 E Byrd Ave Fresno CA",
-      "t": "Echo",
-      "l": "onhold",
-      "f": false,
-      "a": 27657.5,
-      "s": "2026-01-25",
-      "e": "2026-01-27",
-      "c": "2026-01-26",
       "err": false,
       "note": ""
     },
@@ -564,18 +526,6 @@
       "note": ""
     },
     {
-      "n": "465 Colorado Blvd Idaho Springs CO",
-      "t": "Stack",
-      "l": "probable",
-      "f": false,
-      "a": 875000.0,
-      "s": "2026-08-11",
-      "e": "2026-08-13",
-      "c": "2026-08-12",
-      "err": false,
-      "note": ""
-    },
-    {
       "n": "4160 US 49 Florence MS",
       "t": "Stack",
       "l": "onhold",
@@ -656,18 +606,6 @@
       "s": "2026-08-11",
       "e": "2026-08-13",
       "c": "2026-08-12",
-      "err": false,
-      "note": ""
-    },
-    {
-      "n": "47967 Meadowlark St Harrisburg SD",
-      "t": "Echo",
-      "l": "onhold",
-      "f": false,
-      "a": 250000.0,
-      "s": "2026-08-06",
-      "e": "2026-08-08",
-      "c": "2026-08-07",
       "err": false,
       "note": ""
     },
@@ -1200,18 +1138,6 @@
       "note": ""
     },
     {
-      "n": "16813 Whitcomb Detroit MI",
-      "t": "EMD",
-      "l": "onhold",
-      "f": false,
-      "a": 3000.0,
-      "s": "2026-09-09",
-      "e": "2026-09-25",
-      "c": "2026-09-24",
-      "err": false,
-      "note": ""
-    },
-    {
       "n": "16907 Boy Scout Rd Odessa FL",
       "t": "Stack",
       "l": "onhold",
@@ -1344,14 +1270,26 @@
       "note": ""
     },
     {
-      "n": "1500 Preston road, Apt 1111 Plano Texas 75093",
-      "t": "Echo",
+      "n": "16517 Cherrylawn Street Detroit Michigan 48221",
+      "t": "EMD",
       "l": "onhold",
       "f": false,
-      "a": 75000.0,
-      "s": "2026-09-10",
-      "e": "2026-09-12",
-      "c": "2026-09-11",
+      "a": 50000.0,
+      "s": "2026-09-09",
+      "e": "2026-10-02",
+      "c": "2026-10-01",
+      "err": false,
+      "note": ""
+    },
+    {
+      "n": "821 North Jackson Street Arlington Virginia 22201",
+      "t": "Stack",
+      "l": "onhold",
+      "f": false,
+      "a": 1500000.0,
+      "s": "2026-10-15",
+      "e": "2026-10-17",
+      "c": "2026-10-16",
       "err": false,
       "note": ""
     }
