@@ -33,7 +33,7 @@
   ],
   "capital_in": 2020000.0,
   "capital_returned": 0.0,
-  "generated": "2026-09-11T10:52:42-06:00",
+  "generated": "2026-09-11T13:25:48-06:00",
   "source": "HubSpot RQF pipelines: EMD, POF, Stack, Double Close, Echo, GAP",
   "notes": "Pool = capital ledger (capital_events.json) summed to today: contributions in minus returns to investors. Deployed(confirmed,f=true)=Wired Amount out, no Return Wire Amount logged (GAP only if Signed&Funded after 2026-03-01); out from Signed&Funded until returned. err=true: HubSpot record inconsistent but still counted until corrected. probable=02-approved + committed-not-yet-wired. onhold=00/01 pipeline watch (not in math).",
   "deals": [
@@ -430,18 +430,6 @@
       "note": ""
     },
     {
-      "n": "250 Hodgson Rd Darlington PA",
-      "t": "Stack",
-      "l": "onhold",
-      "f": false,
-      "a": 1200000.0,
-      "s": "2026-07-20",
-      "e": "2026-07-22",
-      "c": "2026-07-21",
-      "err": false,
-      "note": ""
-    },
-    {
       "n": "803 N Main St Spring Lake NC",
       "t": "Stack",
       "l": "onhold",
@@ -483,9 +471,9 @@
       "l": "onhold",
       "f": false,
       "a": 800000.0,
-      "s": "2026-08-12",
-      "e": "2026-08-14",
-      "c": "2026-08-13",
+      "s": "2026-09-24",
+      "e": "2026-09-26",
+      "c": "2026-09-25",
       "err": false,
       "note": ""
     },
@@ -546,18 +534,6 @@
       "s": "2026-08-13",
       "e": "2026-08-15",
       "c": "2026-08-14",
-      "err": false,
-      "note": ""
-    },
-    {
-      "n": "304 S. Jones Blvd. Suite 5065 Las Vegas NV 89107-2623",
-      "t": "Stack",
-      "l": "onhold",
-      "f": false,
-      "a": 246210.0,
-      "s": "2026-08-11",
-      "e": "2026-08-13",
-      "c": "2026-08-12",
       "err": false,
       "note": ""
     },
@@ -639,9 +615,9 @@
       "l": "onhold",
       "f": false,
       "a": 550000.0,
-      "s": "2026-08-26",
-      "e": "2026-08-28",
-      "c": "2026-08-27",
+      "s": "2026-09-17",
+      "e": "2026-09-19",
+      "c": "2026-09-18",
       "err": false,
       "note": ""
     },
@@ -666,30 +642,6 @@
       "s": "2026-08-25",
       "e": "2026-08-27",
       "c": "2026-08-26",
-      "err": false,
-      "note": ""
-    },
-    {
-      "n": "409 S Wood St Stuttgart AR",
-      "t": "Stack",
-      "l": "onhold",
-      "f": false,
-      "a": 2275000.0,
-      "s": "2026-10-15",
-      "e": "2026-10-17",
-      "c": "2026-10-16",
-      "err": false,
-      "note": ""
-    },
-    {
-      "n": "310 W 22nd St Stuttgart AR",
-      "t": "Stack",
-      "l": "onhold",
-      "f": false,
-      "a": 2275000.0,
-      "s": "2026-10-15",
-      "e": "2026-10-17",
-      "c": "2026-10-16",
       "err": false,
       "note": ""
     },
@@ -1294,14 +1246,14 @@
       "note": ""
     },
     {
-      "n": "6026 East Waltann Lane Scottsdale Arizona 85254",
+      "n": "6026 E Waltann Ln Scottsdale AZ",
       "t": "EMD",
       "l": "onhold",
       "f": false,
       "a": 10000.0,
       "s": "2026-09-10",
       "e": "2026-09-12",
-      "c": "2026-10-01",
+      "c": "2026-09-30",
       "err": false,
       "note": ""
     },
@@ -1314,6 +1266,18 @@
       "s": "2026-09-11",
       "e": "2026-09-17",
       "c": "2026-09-17",
+      "err": false,
+      "note": ""
+    },
+    {
+      "n": "280 Star Creek Road Morganton Georgia 30560",
+      "t": "Stack",
+      "l": "onhold",
+      "f": false,
+      "a": 1800000.0,
+      "s": "2026-10-29",
+      "e": "2026-10-31",
+      "c": "2026-10-30",
       "err": false,
       "note": ""
     }
