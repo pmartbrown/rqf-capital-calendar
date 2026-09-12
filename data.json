@@ -33,7 +33,7 @@
   ],
   "capital_in": 2020000.0,
   "capital_returned": 0.0,
-  "generated": "2026-09-12T07:50:21-06:00",
+  "generated": "2026-09-12T10:42:49-06:00",
   "source": "HubSpot RQF pipelines: EMD, POF, Stack, Double Close, Echo, GAP",
   "notes": "Pool = capital ledger (capital_events.json) summed to today: contributions in minus returns to investors. Deployed(confirmed,f=true)=Wired Amount out, no Return Wire Amount logged (GAP only if Signed&Funded after 2026-03-01); out from Signed&Funded until returned. err=true: HubSpot record inconsistent but still counted until corrected. probable=02-approved + committed-not-yet-wired. onhold=00/01 pipeline watch (not in math).",
   "deals": [
@@ -1290,6 +1290,18 @@
       "s": "2026-10-10",
       "e": "2026-10-12",
       "c": "2026-10-11",
+      "err": false,
+      "note": ""
+    },
+    {
+      "n": "4914 357th Street South Roy WA 98580",
+      "t": "Stack",
+      "l": "onhold",
+      "f": false,
+      "a": 205000.0,
+      "s": "2026-10-09",
+      "e": "2026-10-11",
+      "c": "2026-10-10",
       "err": false,
       "note": ""
     }
