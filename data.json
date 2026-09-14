@@ -33,7 +33,7 @@
   ],
   "capital_in": 2020000.0,
   "capital_returned": 0.0,
-  "generated": "2026-09-14T11:35:45-06:00",
+  "generated": "2026-09-14T15:24:33-06:00",
   "source": "HubSpot RQF pipelines: EMD, POF, Stack, Double Close, Echo, GAP",
   "notes": "Pool = capital ledger (capital_events.json) summed to today: contributions in minus returns to investors. Deployed(confirmed,f=true)=Wired Amount out, no Return Wire Amount logged (GAP only if Signed&Funded after 2026-03-01); out from Signed&Funded until returned. err=true: HubSpot record inconsistent but still counted until corrected. probable=02-approved + committed-not-yet-wired. onhold=00/01 pipeline watch (not in math).",
   "deals": [
@@ -730,18 +730,6 @@
       "note": ""
     },
     {
-      "n": "9808 N 64th Pl. Paradise Valley AZ",
-      "t": "EMD",
-      "l": "onhold",
-      "f": false,
-      "a": 20000.0,
-      "s": "2026-08-27",
-      "e": "2026-08-29",
-      "c": "2026-09-18",
-      "err": false,
-      "note": ""
-    },
-    {
       "n": "3038 Marble Crest Dr Land O' Lakes FL",
       "t": "Stack",
       "l": "probable",
@@ -798,18 +786,6 @@
       "s": "2026-09-16",
       "e": "2026-09-18",
       "c": "2026-09-17",
-      "err": false,
-      "note": ""
-    },
-    {
-      "n": "130 Benefield Blvd Peekskill NY",
-      "t": "EMD",
-      "l": "onhold",
-      "f": false,
-      "a": 50000.0,
-      "s": "2026-09-03",
-      "e": "2026-09-05",
-      "c": "2026-09-30",
       "err": false,
       "note": ""
     },
@@ -1114,18 +1090,6 @@
       "note": ""
     },
     {
-      "n": "650 NW Irving St Portland OR",
-      "t": "Stack",
-      "l": "onhold",
-      "f": false,
-      "a": 116000.0,
-      "s": "2026-09-29",
-      "e": "2026-10-01",
-      "c": "2026-09-30",
-      "err": false,
-      "note": ""
-    },
-    {
       "n": "2813, 2821, 2823 & 2825 E Rosedale St Fort Worth TX 76105",
       "t": "EMD",
       "l": "onhold",
@@ -1294,14 +1258,26 @@
       "note": ""
     },
     {
-      "n": "211 Vanshire Road East Lakeside Texas 76108",
+      "n": "211 Vanshire Rd E Lakeside TX",
       "t": "EMD",
       "l": "onhold",
       "f": false,
-      "a": 30000.0,
+      "a": 29950.0,
       "s": "2026-09-14",
       "e": "2026-11-01",
       "c": "2026-12-12",
+      "err": false,
+      "note": ""
+    },
+    {
+      "n": "485 Northeast Jessup Street Portland Oregon 97211",
+      "t": "Stack",
+      "l": "onhold",
+      "f": false,
+      "a": 316000.0,
+      "s": "2026-10-15",
+      "e": "2026-10-17",
+      "c": "2026-10-16",
       "err": false,
       "note": ""
     }
