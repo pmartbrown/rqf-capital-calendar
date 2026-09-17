@@ -33,7 +33,7 @@
   ],
   "capital_in": 2020000.0,
   "capital_returned": 0.0,
-  "generated": "2026-09-17T08:38:33-06:00",
+  "generated": "2026-09-17T12:46:50-06:00",
   "source": "HubSpot RQF pipelines: EMD, POF, Stack, Double Close, Echo, GAP",
   "notes": "Pool = capital ledger (capital_events.json) summed to today: contributions in minus returns to investors. Deployed(confirmed,f=true)=Wired Amount out, no Return Wire Amount logged (GAP only if Signed&Funded after 2026-03-01); out from Signed&Funded until returned. err=true: HubSpot record inconsistent but still counted until corrected. probable=02-approved + committed-not-yet-wired. onhold=00/01 pipeline watch (not in math).",
   "deals": [
@@ -754,18 +754,6 @@
       "note": ""
     },
     {
-      "n": "207 S 70th Ave Omaha NE",
-      "t": "Stack",
-      "l": "probable",
-      "f": false,
-      "a": 318000.0,
-      "s": "2026-09-01",
-      "e": "2026-09-03",
-      "c": "2026-09-02",
-      "err": false,
-      "note": ""
-    },
-    {
       "n": "1258 Pinkham Rd East Burke VT",
       "t": "Stack",
       "l": "onhold",
@@ -952,7 +940,7 @@
       "f": false,
       "a": 20000.0,
       "s": "2026-09-17",
-      "e": "2026-11-01",
+      "e": "2026-09-26",
       "c": "2026-10-30",
       "err": false,
       "note": ""
@@ -1242,6 +1230,18 @@
       "s": "2026-09-29",
       "e": "2026-10-01",
       "c": "2026-09-30",
+      "err": false,
+      "note": ""
+    },
+    {
+      "n": "93283 co Rd Dowagiac Avenue Dowagiac MI 49047",
+      "t": "EMD",
+      "l": "onhold",
+      "f": false,
+      "a": 25000.0,
+      "s": "2026-09-17",
+      "e": "2026-11-19",
+      "c": "2026-11-18",
       "err": false,
       "note": ""
     }
