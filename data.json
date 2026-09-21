@@ -33,7 +33,7 @@
   ],
   "capital_in": 2020000.0,
   "capital_returned": 0.0,
-  "generated": "2026-09-21T05:54:10-06:00",
+  "generated": "2026-09-21T11:48:40-06:00",
   "source": "HubSpot RQF pipelines: EMD, POF, Stack, Double Close, Echo, GAP",
   "notes": "Pool = capital ledger (capital_events.json) summed to today: contributions in minus returns to investors. Deployed(confirmed,f=true)=Wired Amount out, no Return Wire Amount logged (GAP only if Signed&Funded after 2026-03-01); out from Signed&Funded until returned. err=true: HubSpot record inconsistent but still counted until corrected. probable=02-approved + committed-not-yet-wired. onhold=00/01 pipeline watch (not in math).",
   "deals": [
@@ -234,6 +234,34 @@
       "odd": 0
     },
     {
+      "n": "3250 Dodson Drive Connector East Point GA | 3128 Chateau Blvd East Point GA | 4060 Janice Dr Atlanta GA | 815 S Cobb Dr SE Marietta GA",
+      "t": "EMD",
+      "l": "confirmed",
+      "f": true,
+      "a": 240000.0,
+      "s": "2026-09-21",
+      "e": "2027-12-31",
+      "c": "2026-09-21",
+      "err": false,
+      "note": "",
+      "od": false,
+      "odd": 0
+    },
+    {
+      "n": "3370, 3400 Mansfield Hwy & 3349, 3401 Bisbee St, Fort Worth, TX 76119",
+      "t": "Stack",
+      "l": "confirmed",
+      "f": true,
+      "a": 60472.88,
+      "s": "2026-09-18",
+      "e": "2027-12-31",
+      "c": "2026-09-18",
+      "err": false,
+      "note": "",
+      "od": false,
+      "odd": 0
+    },
+    {
       "n": "4067 County Road Southeast & 4250 Mount Vernon TX",
       "t": "EMD",
       "l": "confirmed",
@@ -279,9 +307,9 @@
       "l": "probable",
       "f": false,
       "a": 1850000.0,
-      "s": "2026-08-27",
-      "e": "2026-08-29",
-      "c": "2026-08-28",
+      "s": "2026-09-24",
+      "e": "2026-09-26",
+      "c": "2026-09-25",
       "err": false,
       "note": ""
     },
@@ -754,18 +782,6 @@
       "note": ""
     },
     {
-      "n": "3250 Dodson Drive Connector East Point GA | 3128 Chateau Blvd East Point GA | 4060 Janice Dr Atlanta GA | 815 S Cobb Dr SE Marietta GA",
-      "t": "EMD",
-      "l": "probable",
-      "f": false,
-      "a": 240000.0,
-      "s": "2026-09-21",
-      "e": "2026-09-29",
-      "c": "2026-10-03",
-      "err": false,
-      "note": ""
-    },
-    {
       "n": "183 John Baker Rd, FIELDALE VA",
       "t": "Stack",
       "l": "onhold",
@@ -798,18 +814,6 @@
       "s": "2026-09-13",
       "e": "2026-09-15",
       "c": "2026-09-14",
-      "err": false,
-      "note": ""
-    },
-    {
-      "n": "913 N Trekell Rd Casa Grande AZ",
-      "t": "Stack",
-      "l": "probable",
-      "f": false,
-      "a": 216000.0,
-      "s": "2026-08-31",
-      "e": "2026-09-02",
-      "c": "2026-09-01",
       "err": false,
       "note": ""
     },
@@ -930,18 +934,6 @@
       "s": "2026-09-21",
       "e": "2026-09-26",
       "c": "2026-10-30",
-      "err": false,
-      "note": ""
-    },
-    {
-      "n": "3370, 3400 Mansfield Hwy & 3349, 3401 Bisbee St, Fort Worth, TX 76119",
-      "t": "Stack",
-      "l": "probable",
-      "f": false,
-      "a": 796000.0,
-      "s": "2026-09-02",
-      "e": "2026-09-04",
-      "c": "2026-09-03",
       "err": false,
       "note": ""
     },
@@ -1222,18 +1214,6 @@
       "note": ""
     },
     {
-      "n": "93283 co Rd Dowagiac Avenue Dowagiac MI 49047",
-      "t": "EMD",
-      "l": "onhold",
-      "f": false,
-      "a": 25000.0,
-      "s": "2026-09-21",
-      "e": "2026-11-19",
-      "c": "2026-11-18",
-      "err": false,
-      "note": ""
-    },
-    {
       "n": "408 W Howry Ave DeLand FL",
       "t": "EMD",
       "l": "onhold",
@@ -1266,6 +1246,18 @@
       "s": "2026-10-03",
       "e": "2026-10-05",
       "c": "2026-10-04",
+      "err": false,
+      "note": ""
+    },
+    {
+      "n": "17850 Santa Rosa Avenue Guerneville California 95446",
+      "t": "EMD",
+      "l": "onhold",
+      "f": false,
+      "a": 7500.0,
+      "s": "2026-09-21",
+      "e": "2026-10-03",
+      "c": "2026-10-09",
       "err": false,
       "note": ""
     }
