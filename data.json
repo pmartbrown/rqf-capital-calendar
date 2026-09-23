@@ -33,7 +33,7 @@
   ],
   "capital_in": 2020000.0,
   "capital_returned": 0.0,
-  "generated": "2026-09-23T07:18:41-06:00",
+  "generated": "2026-09-23T12:13:14-06:00",
   "source": "HubSpot RQF pipelines: EMD, POF, Stack, Double Close, Echo, GAP",
   "notes": "Pool = capital ledger (capital_events.json) summed to today: contributions in minus returns to investors. Deployed(confirmed,f=true)=Wired Amount out, no Return Wire Amount logged (GAP only if Signed&Funded after 2026-03-01); out from Signed&Funded until returned. err=true: HubSpot record inconsistent but still counted until corrected. probable=02-approved + committed-not-yet-wired. onhold=00/01 pipeline watch (not in math).",
   "deals": [
@@ -604,26 +604,14 @@
       "note": ""
     },
     {
-      "n": "10655 Camarillo Place Los Angeles CA",
-      "t": "Echo",
-      "l": "onhold",
-      "f": false,
-      "a": 680000.0,
-      "s": "2026-07-19",
-      "e": "2026-07-21",
-      "c": "2026-07-20",
-      "err": false,
-      "note": ""
-    },
-    {
       "n": "5830 NC-209 Hot Springs NC",
       "t": "Stack",
       "l": "onhold",
       "f": false,
       "a": 550000.0,
-      "s": "2026-09-17",
-      "e": "2026-09-19",
-      "c": "2026-09-18",
+      "s": "2026-10-12",
+      "e": "2026-10-14",
+      "c": "2026-10-13",
       "err": false,
       "note": ""
     },
@@ -636,18 +624,6 @@
       "s": "2026-09-13",
       "e": "2026-09-15",
       "c": "2026-09-14",
-      "err": false,
-      "note": ""
-    },
-    {
-      "n": "259 Widow Mountain Dr Hays NC",
-      "t": "Stack",
-      "l": "onhold",
-      "f": false,
-      "a": 30750.0,
-      "s": "2026-08-25",
-      "e": "2026-08-27",
-      "c": "2026-08-26",
       "err": false,
       "note": ""
     },
@@ -729,21 +705,9 @@
       "l": "onhold",
       "f": false,
       "a": 256981.37,
-      "s": "2026-08-18",
-      "e": "2026-08-20",
-      "c": "2026-08-19",
-      "err": false,
-      "note": ""
-    },
-    {
-      "n": "43 Obrien Hill Rd Verbank NY",
-      "t": "Echo",
-      "l": "onhold",
-      "f": false,
-      "a": 60000.0,
-      "s": "2026-08-24",
-      "e": "2026-08-26",
-      "c": "2026-08-25",
+      "s": "2026-09-23",
+      "e": "2026-09-25",
+      "c": "2026-09-24",
       "err": false,
       "note": ""
     },
@@ -904,18 +868,6 @@
       "note": ""
     },
     {
-      "n": "16907 Boy Scout Rd Odessa FL",
-      "t": "Stack",
-      "l": "onhold",
-      "f": false,
-      "a": 2472500.0,
-      "s": "2026-11-01",
-      "e": "2026-11-03",
-      "c": "2026-11-02",
-      "err": false,
-      "note": ""
-    },
-    {
       "n": "177 Empress Avenue Sebastian FL",
       "t": "EMD",
       "l": "probable",
@@ -936,18 +888,6 @@
       "s": "2026-09-16",
       "e": "2026-09-18",
       "c": "2026-09-17",
-      "err": false,
-      "note": ""
-    },
-    {
-      "n": "5017 Arlington Ave St. Louis Missouri",
-      "t": "Echo",
-      "l": "onhold",
-      "f": false,
-      "a": 16000.0,
-      "s": "2026-09-11",
-      "e": "2026-09-13",
-      "c": "2026-09-12",
       "err": false,
       "note": ""
     },
@@ -1204,7 +1144,7 @@
       "note": ""
     },
     {
-      "n": "3900 Marydale Way Modesto California 95355",
+      "n": "3900 Marydale Way Modesto CA",
       "t": "EMD",
       "l": "onhold",
       "f": false,
@@ -1212,18 +1152,6 @@
       "s": "2026-09-23",
       "e": "2026-10-08",
       "c": "2026-10-15",
-      "err": false,
-      "note": ""
-    },
-    {
-      "n": "3900 Marydale Way Modesto California 95355",
-      "t": "EMD",
-      "l": "onhold",
-      "f": false,
-      "a": 7249.0,
-      "s": "2026-09-23",
-      "e": "2026-10-08",
-      "c": "2026-10-13",
       "err": false,
       "note": ""
     },
@@ -1236,6 +1164,54 @@
       "s": "2026-10-30",
       "e": "2026-11-01",
       "c": "2026-10-31",
+      "err": false,
+      "note": ""
+    },
+    {
+      "n": "1901 Clifford Street Fort Myers Florida 33901",
+      "t": "DC",
+      "l": "onhold",
+      "f": false,
+      "a": 140000.0,
+      "s": "2026-10-27",
+      "e": "2026-10-29",
+      "c": "2026-10-28",
+      "err": false,
+      "note": ""
+    },
+    {
+      "n": "2122 Ridge Drive Winter Park Florida 32792",
+      "t": "EMD",
+      "l": "onhold",
+      "f": false,
+      "a": 6500.0,
+      "s": "2026-09-23",
+      "e": "2026-09-27",
+      "c": "2026-10-05",
+      "err": false,
+      "note": ""
+    },
+    {
+      "n": "4314 North Suncoast Boulevard Crystal River FL 34428",
+      "t": "EMD",
+      "l": "onhold",
+      "f": false,
+      "a": 13000.0,
+      "s": "2026-09-23",
+      "e": "2026-10-18",
+      "c": "2026-10-15",
+      "err": false,
+      "note": ""
+    },
+    {
+      "n": "4314 N Suncoast Blvd Crystal River FL",
+      "t": "Stack",
+      "l": "onhold",
+      "f": false,
+      "a": 500000.0,
+      "s": "2026-10-14",
+      "e": "2026-10-16",
+      "c": "2026-10-15",
       "err": false,
       "note": ""
     }
