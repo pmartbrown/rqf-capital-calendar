@@ -33,7 +33,7 @@
   ],
   "capital_in": 2020000.0,
   "capital_returned": 0.0,
-  "generated": "2026-09-23T12:13:14-06:00",
+  "generated": "2026-09-23T16:00:34-06:00",
   "source": "HubSpot RQF pipelines: EMD, POF, Stack, Double Close, Echo, GAP",
   "notes": "Pool = capital ledger (capital_events.json) summed to today: contributions in minus returns to investors. Deployed(confirmed,f=true)=Wired Amount out, no Return Wire Amount logged (GAP only if Signed&Funded after 2026-03-01); out from Signed&Funded until returned. err=true: HubSpot record inconsistent but still counted until corrected. probable=02-approved + committed-not-yet-wired. onhold=00/01 pipeline watch (not in math).",
   "deals": [
@@ -420,18 +420,6 @@
       "s": "2026-07-16",
       "e": "2026-07-18",
       "c": "2026-07-17",
-      "err": false,
-      "note": ""
-    },
-    {
-      "n": "5700 S Agnew Ave Oklahoma City OK",
-      "t": "EMD",
-      "l": "probable",
-      "f": false,
-      "a": 32000.0,
-      "s": "2026-06-26",
-      "e": "2026-06-28",
-      "c": "2026-08-26",
       "err": false,
       "note": ""
     },
@@ -904,36 +892,12 @@
       "note": ""
     },
     {
-      "n": "2719 Galaxy Ct Decatur GA",
-      "t": "EMD",
-      "l": "onhold",
-      "f": false,
-      "a": 1700.0,
-      "s": "2026-09-09",
-      "e": "2026-09-11",
-      "c": "2026-10-02",
-      "err": false,
-      "note": ""
-    },
-    {
       "n": "345 Beade St Plymouth PA",
       "t": "Stack",
       "l": "onhold",
       "f": false,
       "a": 180000.0,
       "s": "2026-09-30",
-      "e": "2026-10-02",
-      "c": "2026-10-01",
-      "err": false,
-      "note": ""
-    },
-    {
-      "n": "16517 Cherrylawn Street Detroit Michigan 48221",
-      "t": "EMD",
-      "l": "onhold",
-      "f": false,
-      "a": 50000.0,
-      "s": "2026-09-23",
       "e": "2026-10-02",
       "c": "2026-10-01",
       "err": false,
@@ -1180,7 +1144,7 @@
       "note": ""
     },
     {
-      "n": "2122 Ridge Drive Winter Park Florida 32792",
+      "n": "2122 Ridge Dr Winter Park FL",
       "t": "EMD",
       "l": "onhold",
       "f": false,
@@ -1192,13 +1156,13 @@
       "note": ""
     },
     {
-      "n": "4314 North Suncoast Boulevard Crystal River FL 34428",
+      "n": "4314 N Suncoast Blvd Crystal River FL",
       "t": "EMD",
-      "l": "onhold",
+      "l": "probable",
       "f": false,
       "a": 13000.0,
       "s": "2026-09-23",
-      "e": "2026-10-18",
+      "e": "2026-10-16",
       "c": "2026-10-15",
       "err": false,
       "note": ""
