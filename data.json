@@ -33,7 +33,7 @@
   ],
   "capital_in": 2020000.0,
   "capital_returned": 0.0,
-  "generated": "2026-09-24T12:08:07-06:00",
+  "generated": "2026-09-24T15:55:49-06:00",
   "source": "HubSpot RQF pipelines: EMD, POF, Stack, Double Close, Echo, GAP",
   "notes": "Pool = capital ledger (capital_events.json) summed to today: contributions in minus returns to investors. Deployed(confirmed,f=true)=Wired Amount out, no Return Wire Amount logged (GAP only if Signed&Funded after 2026-03-01); out from Signed&Funded until returned. err=true: HubSpot record inconsistent but still counted until corrected. probable=02-approved + committed-not-yet-wired. onhold=00/01 pipeline watch (not in math).",
   "deals": [
@@ -456,18 +456,6 @@
       "s": "2026-07-30",
       "e": "2026-08-01",
       "c": "2026-07-31",
-      "err": false,
-      "note": ""
-    },
-    {
-      "n": "537 US-22 Hillside NJ",
-      "t": "Stack",
-      "l": "probable",
-      "f": false,
-      "a": 900000.0,
-      "s": "2026-09-21",
-      "e": "2026-09-23",
-      "c": "2026-09-22",
       "err": false,
       "note": ""
     },
@@ -916,18 +904,6 @@
       "note": ""
     },
     {
-      "n": "2709 S Izard St Little Rock AR",
-      "t": "EMD",
-      "l": "onhold",
-      "f": false,
-      "a": 1000.0,
-      "s": "2026-09-15",
-      "e": "2026-09-17",
-      "c": "2026-09-17",
-      "err": false,
-      "note": ""
-    },
-    {
       "n": "280 Star Creek Rd Morganton GA",
       "t": "Stack",
       "l": "onhold",
@@ -1158,12 +1134,36 @@
     {
       "n": "10754 South 1225 East Sandy UT",
       "t": "Stack",
-      "l": "onhold",
+      "l": "probable",
       "f": false,
       "a": 525000.0,
       "s": "2026-10-19",
       "e": "2026-10-21",
       "c": "2026-10-20",
+      "err": false,
+      "note": ""
+    },
+    {
+      "n": "5402 Libbey Dr Houston TX",
+      "t": "EMD",
+      "l": "onhold",
+      "f": false,
+      "a": 8000.0,
+      "s": "2026-09-24",
+      "e": "2026-10-07",
+      "c": "2026-10-30",
+      "err": false,
+      "note": ""
+    },
+    {
+      "n": "2083 North Taylor Road Cleveland Ohio 44112",
+      "t": "DC",
+      "l": "onhold",
+      "f": false,
+      "a": 70000.0,
+      "s": "2026-10-24",
+      "e": "2026-10-26",
+      "c": "2026-10-25",
       "err": false,
       "note": ""
     }
