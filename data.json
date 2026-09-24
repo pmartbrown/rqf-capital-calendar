@@ -33,7 +33,7 @@
   ],
   "capital_in": 2020000.0,
   "capital_returned": 0.0,
-  "generated": "2026-09-24T07:08:13-06:00",
+  "generated": "2026-09-24T12:08:07-06:00",
   "source": "HubSpot RQF pipelines: EMD, POF, Stack, Double Close, Echo, GAP",
   "notes": "Pool = capital ledger (capital_events.json) summed to today: contributions in minus returns to investors. Deployed(confirmed,f=true)=Wired Amount out, no Return Wire Amount logged (GAP only if Signed&Funded after 2026-03-01); out from Signed&Funded until returned. err=true: HubSpot record inconsistent but still counted until corrected. probable=02-approved + committed-not-yet-wired. onhold=00/01 pipeline watch (not in math).",
   "deals": [
@@ -328,18 +328,6 @@
       "note": ""
     },
     {
-      "n": "6305 Antoine Dr Houston TX (ECHO)",
-      "t": "Echo",
-      "l": "onhold",
-      "f": false,
-      "a": 135000.0,
-      "s": "2026-04-16",
-      "e": "2026-04-18",
-      "c": "2026-04-17",
-      "err": false,
-      "note": ""
-    },
-    {
       "n": "The Bonnie Brae LLC",
       "t": "POF",
       "l": "probable",
@@ -348,18 +336,6 @@
       "s": "2026-03-31",
       "e": "2026-04-02",
       "c": "2026-04-01",
-      "err": false,
-      "note": ""
-    },
-    {
-      "n": "121 Mack Cemetery Rd Prentiss MS",
-      "t": "Stack",
-      "l": "onhold",
-      "f": false,
-      "a": 1200000.0,
-      "s": "2026-05-28",
-      "e": "2026-05-30",
-      "c": "2026-05-29",
       "err": false,
       "note": ""
     },
@@ -456,18 +432,6 @@
       "s": "2026-09-08",
       "e": "2026-09-10",
       "c": "2026-09-09",
-      "err": false,
-      "note": ""
-    },
-    {
-      "n": "6305 Antoine Dr Houston TX (EMD2)",
-      "t": "EMD",
-      "l": "onhold",
-      "f": false,
-      "a": 10000.0,
-      "s": "2026-07-23",
-      "e": "2026-07-25",
-      "c": "2026-07-24",
       "err": false,
       "note": ""
     },
@@ -692,7 +656,7 @@
       "t": "Echo",
       "l": "onhold",
       "f": false,
-      "a": 256981.37,
+      "a": 242761.47,
       "s": "2026-09-23",
       "e": "2026-09-25",
       "c": "2026-09-24",
@@ -1012,7 +976,7 @@
       "note": ""
     },
     {
-      "n": "16517 Cherrylawn Street Detroit MI 48221",
+      "n": "16517 Cherrylawn Street Detroit MI 48221 (Stack)",
       "t": "Stack",
       "l": "onhold",
       "f": false,
@@ -1180,7 +1144,7 @@
       "note": ""
     },
     {
-      "n": "Multiple properties Portfolio  Branson  Missouri 65616",
+      "n": "430 & 440, 450 Historic State Hwy 165, Branson MO 65616",
       "t": "EMD",
       "l": "onhold",
       "f": false,
@@ -1188,6 +1152,18 @@
       "s": "2026-09-24",
       "e": "2026-09-29",
       "c": "2026-11-27",
+      "err": false,
+      "note": ""
+    },
+    {
+      "n": "10754 South 1225 East Sandy UT",
+      "t": "Stack",
+      "l": "onhold",
+      "f": false,
+      "a": 525000.0,
+      "s": "2026-10-19",
+      "e": "2026-10-21",
+      "c": "2026-10-20",
       "err": false,
       "note": ""
     }
