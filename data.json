@@ -33,7 +33,7 @@
   ],
   "capital_in": 2020000.0,
   "capital_returned": 0.0,
-  "generated": "2026-09-25T10:26:18-06:00",
+  "generated": "2026-09-25T14:12:51-06:00",
   "source": "HubSpot RQF pipelines: EMD, POF, Stack, Double Close, Echo, GAP",
   "notes": "Pool = capital ledger (capital_events.json) summed to today: contributions in minus returns to investors. Deployed(confirmed,f=true)=Wired Amount out, no Return Wire Amount logged (GAP only if Signed&Funded after 2026-03-01); out from Signed&Funded until returned. err=true: HubSpot record inconsistent but still counted until corrected. probable=02-approved + committed-not-yet-wired. onhold=00/01 pipeline watch (not in math).",
   "deals": [
@@ -298,6 +298,34 @@
       "s": "2026-09-21",
       "e": "2027-12-31",
       "c": "2026-09-21",
+      "err": false,
+      "note": "",
+      "od": false,
+      "odd": 0
+    },
+    {
+      "n": "618 Wilkes St Wharton TX",
+      "t": "EMD",
+      "l": "confirmed",
+      "f": true,
+      "a": 9500.0,
+      "s": "2026-09-25",
+      "e": "2027-12-31",
+      "c": "2026-09-25",
+      "err": false,
+      "note": "",
+      "od": false,
+      "odd": 0
+    },
+    {
+      "n": "5380 Somerlane Trail Southwest College Park GA",
+      "t": "Echo",
+      "l": "confirmed",
+      "f": true,
+      "a": 334688.49,
+      "s": "2026-09-25",
+      "e": "2027-12-31",
+      "c": "2026-09-25",
       "err": false,
       "note": "",
       "od": false,
@@ -784,7 +812,7 @@
       "note": ""
     },
     {
-      "n": "6130 Wheatley St Houston TX",
+      "n": "6130 Wheatley St Houston TX (EMD)",
       "t": "EMD",
       "l": "onhold",
       "f": false,
@@ -828,18 +856,6 @@
       "s": "2026-09-16",
       "e": "2026-09-18",
       "c": "2026-09-17",
-      "err": false,
-      "note": ""
-    },
-    {
-      "n": "2813, 2821, 2823 & 2825 E Rosedale St Fort Worth TX 76105",
-      "t": "EMD",
-      "l": "onhold",
-      "f": false,
-      "a": 3750.0,
-      "s": "2026-09-25",
-      "e": "2026-10-08",
-      "c": "2026-10-05",
       "err": false,
       "note": ""
     },
@@ -964,18 +980,6 @@
       "note": ""
     },
     {
-      "n": "618 Wilkes St Wharton TX",
-      "t": "EMD",
-      "l": "probable",
-      "f": false,
-      "a": 9500.0,
-      "s": "2026-09-25",
-      "e": "2026-10-10",
-      "c": "2026-11-11",
-      "err": false,
-      "note": ""
-    },
-    {
       "n": "7 Elati Street Denver Colorado 80223",
       "t": "Stack",
       "l": "onhold",
@@ -996,18 +1000,6 @@
       "s": "2026-09-25",
       "e": "2026-10-15",
       "c": "2026-11-11",
-      "err": false,
-      "note": ""
-    },
-    {
-      "n": "1825 Bayou Rd La Marque TX",
-      "t": "EMD",
-      "l": "onhold",
-      "f": false,
-      "a": 12000.0,
-      "s": "2026-09-17",
-      "e": "2026-09-19",
-      "c": "2026-10-01",
       "err": false,
       "note": ""
     },
@@ -1128,18 +1120,6 @@
       "s": "2026-10-19",
       "e": "2026-10-21",
       "c": "2026-10-20",
-      "err": false,
-      "note": ""
-    },
-    {
-      "n": "5402 Libbey Dr Houston TX",
-      "t": "EMD",
-      "l": "onhold",
-      "f": false,
-      "a": 8000.0,
-      "s": "2026-09-25",
-      "e": "2026-10-07",
-      "c": "2026-10-30",
       "err": false,
       "note": ""
     },
