@@ -33,7 +33,7 @@
   ],
   "capital_in": 2020000.0,
   "capital_returned": 0.0,
-  "generated": "2026-09-25T17:46:22-06:00",
+  "generated": "2026-09-25T21:20:43-06:00",
   "source": "HubSpot RQF pipelines: EMD, POF, Stack, Double Close, Echo, GAP",
   "notes": "Pool = capital ledger (capital_events.json) summed to today: contributions in minus returns to investors. Deployed(confirmed,f=true)=Wired Amount out, no Return Wire Amount logged (GAP only if Signed&Funded after 2026-03-01); out from Signed&Funded until returned. err=true: HubSpot record inconsistent but still counted until corrected. probable=02-approved + committed-not-yet-wired. onhold=00/01 pipeline watch (not in math).",
   "deals": [
@@ -49,7 +49,7 @@
       "err": false,
       "note": "",
       "od": true,
-      "odd": 480
+      "odd": 481
     },
     {
       "n": "124 S Mockingbird Cir #A & B, Cedar Creek, Texas 78612",
@@ -57,13 +57,13 @@
       "l": "confirmed",
       "f": true,
       "a": 1000.0,
-      "s": "2026-09-25",
+      "s": "2026-09-26",
       "e": "2027-12-31",
-      "c": "2026-09-25",
+      "c": "2026-09-26",
       "err": true,
       "note": "HubSpot: stage says returned/fell-through, no return amount",
       "od": true,
-      "odd": 441
+      "odd": 442
     },
     {
       "n": "1717 Crimson Cir Memphis TN",
@@ -77,7 +77,7 @@
       "err": false,
       "note": "",
       "od": true,
-      "odd": 280
+      "odd": 281
     },
     {
       "n": "415 Clark St Saginaw MI",
@@ -91,7 +91,7 @@
       "err": false,
       "note": "",
       "od": true,
-      "odd": 54
+      "odd": 55
     },
     {
       "n": "5213, 5216 & 5217 Collier Ct Jefferson City MO (EMD)",
@@ -105,7 +105,7 @@
       "err": false,
       "note": "",
       "od": true,
-      "odd": 14
+      "odd": 15
     },
     {
       "n": "601 E Beach Dr Galveston TX",
@@ -133,7 +133,7 @@
       "err": false,
       "note": "",
       "od": true,
-      "odd": 71
+      "odd": 72
     },
     {
       "n": "2909 N 3rd Way Ridgefield WA (1st Pos Gap)",
@@ -175,7 +175,7 @@
       "err": false,
       "note": "",
       "od": true,
-      "odd": 52
+      "odd": 53
     },
     {
       "n": "68, 78, and 44 E Bridge Street, Big Sandy TN (205)",
@@ -189,7 +189,7 @@
       "err": false,
       "note": "",
       "od": true,
-      "odd": 23
+      "odd": 24
     },
     {
       "n": "526 Jersey St Vallejo CA (EMD)",
@@ -244,8 +244,8 @@
       "c": "2026-09-21",
       "err": false,
       "note": "",
-      "od": false,
-      "odd": 0
+      "od": true,
+      "odd": 1
     },
     {
       "n": "3370, 3400 Mansfield Hwy & 3349, 3401 Bisbee St, Fort Worth, TX 76119",
@@ -281,9 +281,9 @@
       "l": "confirmed",
       "f": true,
       "a": 60600.0,
-      "s": "2026-09-25",
+      "s": "2026-09-26",
       "e": "2027-12-31",
-      "c": "2026-09-25",
+      "c": "2026-09-26",
       "err": false,
       "note": "",
       "od": false,
@@ -841,7 +841,7 @@
       "l": "probable",
       "f": false,
       "a": 40400.0,
-      "s": "2026-09-25",
+      "s": "2026-09-26",
       "e": "2026-10-13",
       "c": "2026-11-11",
       "err": false,
@@ -949,7 +949,7 @@
       "l": "onhold",
       "f": false,
       "a": 29950.0,
-      "s": "2026-09-25",
+      "s": "2026-09-26",
       "e": "2026-11-01",
       "c": "2026-12-12",
       "err": false,
@@ -997,7 +997,7 @@
       "l": "onhold",
       "f": false,
       "a": 35000.0,
-      "s": "2026-09-25",
+      "s": "2026-09-26",
       "e": "2026-10-15",
       "c": "2026-11-11",
       "err": false,
@@ -1021,7 +1021,7 @@
       "l": "onhold",
       "f": false,
       "a": 7500.0,
-      "s": "2026-09-25",
+      "s": "2026-09-26",
       "e": "2026-09-29",
       "c": "2026-10-05",
       "err": false,
@@ -1033,7 +1033,7 @@
       "l": "probable",
       "f": false,
       "a": 7249.0,
-      "s": "2026-09-25",
+      "s": "2026-09-26",
       "e": "2026-10-08",
       "c": "2026-10-15",
       "err": false,
@@ -1081,7 +1081,7 @@
       "l": "probable",
       "f": false,
       "a": 13000.0,
-      "s": "2026-09-25",
+      "s": "2026-09-26",
       "e": "2026-10-16",
       "c": "2026-10-15",
       "err": false,
@@ -1105,7 +1105,7 @@
       "l": "onhold",
       "f": false,
       "a": 50000.0,
-      "s": "2026-09-25",
+      "s": "2026-09-26",
       "e": "2026-09-29",
       "c": "2026-11-27",
       "err": false,
@@ -1141,7 +1141,7 @@
       "l": "onhold",
       "f": false,
       "a": 13000.0,
-      "s": "2026-09-25",
+      "s": "2026-09-26",
       "e": "2026-09-29",
       "c": "2026-10-08",
       "err": false,
@@ -1165,7 +1165,7 @@
       "l": "onhold",
       "f": false,
       "a": 142500.0,
-      "s": "2026-09-25",
+      "s": "2026-09-26",
       "e": "2026-10-18",
       "c": "2026-11-07",
       "err": false,
@@ -1177,7 +1177,7 @@
       "l": "onhold",
       "f": false,
       "a": 7000.0,
-      "s": "2026-09-25",
+      "s": "2026-09-26",
       "e": "2026-09-30",
       "c": "2026-10-08",
       "err": false,
@@ -1189,7 +1189,7 @@
       "l": "onhold",
       "f": false,
       "a": 6000.0,
-      "s": "2026-09-25",
+      "s": "2026-09-26",
       "e": "2026-09-30",
       "c": "2026-10-08",
       "err": false,
