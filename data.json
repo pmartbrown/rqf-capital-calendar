@@ -33,7 +33,7 @@
   ],
   "capital_in": 2020000.0,
   "capital_returned": 0.0,
-  "generated": "2026-09-28T04:29:32-06:00",
+  "generated": "2026-09-28T12:23:41-06:00",
   "source": "HubSpot RQF pipelines: EMD, POF, Stack, Double Close, Echo, GAP",
   "notes": "Pool = capital ledger (capital_events.json) summed to today: contributions in minus returns to investors. Deployed(confirmed,f=true)=Wired Amount out, no Return Wire Amount logged (GAP only if Signed&Funded after 2026-03-01); out from Signed&Funded until returned. err=true: HubSpot record inconsistent but still counted until corrected. probable=02-approved + committed-not-yet-wired. onhold=00/01 pipeline watch (not in math).",
   "deals": [
@@ -656,23 +656,11 @@
       "note": ""
     },
     {
-      "n": "3038 Marble Crest Dr Land O' Lakes FL",
-      "t": "Stack",
-      "l": "probable",
-      "f": false,
-      "a": 65000.0,
-      "s": "2026-08-30",
-      "e": "2026-09-01",
-      "c": "2026-08-31",
-      "err": false,
-      "note": ""
-    },
-    {
       "n": "5654 Ashley Square N Memphis TN",
       "t": "Echo",
       "l": "onhold",
       "f": false,
-      "a": 242761.47,
+      "a": 243046.47,
       "s": "2026-09-23",
       "e": "2026-09-25",
       "c": "2026-09-24",
@@ -884,18 +872,6 @@
       "note": ""
     },
     {
-      "n": "1505 Coral Ave Vero Beach FL",
-      "t": "Stack",
-      "l": "onhold",
-      "f": false,
-      "a": 1792500.0,
-      "s": "2026-09-14",
-      "e": "2026-09-16",
-      "c": "2026-09-15",
-      "err": false,
-      "note": ""
-    },
-    {
       "n": "509 Ussery Street Bowie TX",
       "t": "Stack",
       "l": "onhold",
@@ -908,7 +884,7 @@
       "note": ""
     },
     {
-      "n": "1820 Colfax Ave S Minneapolis MN 55403",
+      "n": "1820 Colfax Ave S Minneapolis MN",
       "t": "Stack",
       "l": "onhold",
       "f": false,
@@ -956,7 +932,7 @@
       "note": ""
     },
     {
-      "n": "485 Northeast Jessup Street Portland Oregon 97211",
+      "n": "485 NE Jessup St Portland OR",
       "t": "Stack",
       "l": "onhold",
       "f": false,
@@ -968,7 +944,7 @@
       "note": ""
     },
     {
-      "n": "16517 Cherrylawn Street Detroit MI 48221 (Stack)",
+      "n": "16517 Cherrylawn St Detroit MI (Stack)",
       "t": "Stack",
       "l": "onhold",
       "f": false,
@@ -980,7 +956,7 @@
       "note": ""
     },
     {
-      "n": "7 Elati Street Denver Colorado 80223",
+      "n": "7 Elati St Denver CO",
       "t": "Stack",
       "l": "onhold",
       "f": false,
@@ -1040,7 +1016,7 @@
       "note": ""
     },
     {
-      "n": "509 Ussery Street Bowie Texas 76230",
+      "n": "509 Ussery St Bowie TX",
       "t": "Stack",
       "l": "onhold",
       "f": false,
@@ -1204,6 +1180,78 @@
       "s": "2026-09-28",
       "e": "2026-10-17",
       "c": "2026-10-16",
+      "err": false,
+      "note": ""
+    },
+    {
+      "n": "12 Charles Street Amsterdam New York 12010",
+      "t": "Echo",
+      "l": "onhold",
+      "f": false,
+      "a": 24000.0,
+      "s": "2026-10-08",
+      "e": "2026-10-10",
+      "c": "2026-10-09",
+      "err": false,
+      "note": ""
+    },
+    {
+      "n": "79 Wall Street Amsterdam New York 12010",
+      "t": "Echo",
+      "l": "onhold",
+      "f": false,
+      "a": 30400.0,
+      "s": "2026-10-08",
+      "e": "2026-10-10",
+      "c": "2026-10-09",
+      "err": false,
+      "note": ""
+    },
+    {
+      "n": "23 Brandt Place Amsterdam New York 12010",
+      "t": "Echo",
+      "l": "onhold",
+      "f": false,
+      "a": 27000.0,
+      "s": "2026-10-08",
+      "e": "2026-10-10",
+      "c": "2026-10-09",
+      "err": false,
+      "note": ""
+    },
+    {
+      "n": "10 Voorhees Street Amsterdam New York 12010",
+      "t": "Echo",
+      "l": "onhold",
+      "f": false,
+      "a": 59500.0,
+      "s": "2026-10-08",
+      "e": "2026-10-10",
+      "c": "2026-10-09",
+      "err": false,
+      "note": ""
+    },
+    {
+      "n": "127 Northampton Road Amsterdam New York 12010",
+      "t": "Echo",
+      "l": "onhold",
+      "f": false,
+      "a": 32250.0,
+      "s": "2026-10-02",
+      "e": "2026-10-04",
+      "c": "2026-10-03",
+      "err": false,
+      "note": ""
+    },
+    {
+      "n": "11303 North Country Club Green Drive Tomball TX 77375",
+      "t": "Stack",
+      "l": "onhold",
+      "f": false,
+      "a": 259677.0,
+      "s": "2026-10-01",
+      "e": "2026-10-03",
+      "c": "2026-10-02",
       "err": false,
       "note": ""
     }
