@@ -33,7 +33,7 @@
   ],
   "capital_in": 2020000.0,
   "capital_returned": 0.0,
-  "generated": "2026-09-28T12:23:41-06:00",
+  "generated": "2026-09-28T17:39:39-06:00",
   "source": "HubSpot RQF pipelines: EMD, POF, Stack, Double Close, Echo, GAP",
   "notes": "Pool = capital ledger (capital_events.json) summed to today: contributions in minus returns to investors. Deployed(confirmed,f=true)=Wired Amount out, no Return Wire Amount logged (GAP only if Signed&Funded after 2026-03-01); out from Signed&Funded until returned. err=true: HubSpot record inconsistent but still counted until corrected. probable=02-approved + committed-not-yet-wired. onhold=00/01 pipeline watch (not in math).",
   "deals": [
@@ -262,20 +262,6 @@
       "odd": 0
     },
     {
-      "n": "4067 County Road Southeast & 4250 Mount Vernon TX",
-      "t": "EMD",
-      "l": "confirmed",
-      "f": true,
-      "a": 32000.0,
-      "s": "2026-09-04",
-      "e": "2027-12-31",
-      "c": "2026-09-04",
-      "err": false,
-      "note": "",
-      "od": true,
-      "odd": 2
-    },
-    {
       "n": "3710 14th Street Vero Beach FL",
       "t": "EMD",
       "l": "confirmed",
@@ -312,6 +298,20 @@
       "s": "2026-09-25",
       "e": "2027-12-31",
       "c": "2026-09-25",
+      "err": false,
+      "note": "",
+      "od": false,
+      "odd": 0
+    },
+    {
+      "n": "3900 Marydale Way Modesto CA",
+      "t": "EMD",
+      "l": "confirmed",
+      "f": true,
+      "a": 7249.0,
+      "s": "2026-09-28",
+      "e": "2027-12-31",
+      "c": "2026-09-28",
       "err": false,
       "note": "",
       "od": false,
@@ -1004,18 +1004,6 @@
       "note": ""
     },
     {
-      "n": "3900 Marydale Way Modesto CA",
-      "t": "EMD",
-      "l": "probable",
-      "f": false,
-      "a": 7249.0,
-      "s": "2026-09-28",
-      "e": "2026-10-08",
-      "c": "2026-10-15",
-      "err": false,
-      "note": ""
-    },
-    {
       "n": "509 Ussery St Bowie TX",
       "t": "Stack",
       "l": "onhold",
@@ -1036,18 +1024,6 @@
       "s": "2026-10-27",
       "e": "2026-10-29",
       "c": "2026-10-28",
-      "err": false,
-      "note": ""
-    },
-    {
-      "n": "2122 Ridge Dr Winter Park FL",
-      "t": "EMD",
-      "l": "onhold",
-      "f": false,
-      "a": 6500.0,
-      "s": "2026-09-25",
-      "e": "2026-09-27",
-      "c": "2026-10-05",
       "err": false,
       "note": ""
     },
@@ -1252,6 +1228,30 @@
       "s": "2026-10-01",
       "e": "2026-10-03",
       "c": "2026-10-02",
+      "err": false,
+      "note": ""
+    },
+    {
+      "n": "66 Units in El Campo  El Campo Texas 77437",
+      "t": "EMD",
+      "l": "onhold",
+      "f": false,
+      "a": 30000.0,
+      "s": "2026-09-28",
+      "e": "2026-10-31",
+      "c": "2026-11-13",
+      "err": false,
+      "note": ""
+    },
+    {
+      "n": "El centro and bryte rd  Sacramento  California 95833",
+      "t": "Echo",
+      "l": "onhold",
+      "f": false,
+      "a": 150000.0,
+      "s": "2026-11-08",
+      "e": "2026-11-10",
+      "c": "2026-11-09",
       "err": false,
       "note": ""
     }
