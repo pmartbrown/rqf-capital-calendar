@@ -33,7 +33,7 @@
   ],
   "capital_in": 2020000.0,
   "capital_returned": 0.0,
-  "generated": "2026-09-29T05:02:29-06:00",
+  "generated": "2026-09-29T11:33:23-06:00",
   "source": "HubSpot RQF pipelines: EMD, POF, Stack, Double Close, Echo, GAP",
   "notes": "Pool = capital ledger (capital_events.json) summed to today: contributions in minus returns to investors. Deployed(confirmed,f=true)=Wired Amount out, no Return Wire Amount logged (GAP only if Signed&Funded after 2026-03-01); out from Signed&Funded until returned. err=true: HubSpot record inconsistent but still counted until corrected. probable=02-approved + committed-not-yet-wired. onhold=00/01 pipeline watch (not in math).",
   "deals": [
@@ -234,20 +234,6 @@
       "odd": 0
     },
     {
-      "n": "3250 Dodson Drive Connector East Point GA | 3128 Chateau Blvd East Point GA | 4060 Janice Dr Atlanta GA | 815 S Cobb Dr SE Marietta GA",
-      "t": "EMD",
-      "l": "confirmed",
-      "f": true,
-      "a": 240000.0,
-      "s": "2026-09-21",
-      "e": "2027-12-31",
-      "c": "2026-09-21",
-      "err": false,
-      "note": "",
-      "od": true,
-      "odd": 4
-    },
-    {
       "n": "3370, 3400 Mansfield Hwy & 3349, 3401 Bisbee St, Fort Worth, TX 76119",
       "t": "Stack",
       "l": "confirmed",
@@ -262,14 +248,28 @@
       "odd": 1
     },
     {
+      "n": "177 Empress Avenue Sebastian FL",
+      "t": "EMD",
+      "l": "confirmed",
+      "f": true,
+      "a": 40400.0,
+      "s": "2026-09-03",
+      "e": "2027-12-31",
+      "c": "2026-09-03",
+      "err": false,
+      "note": "",
+      "od": false,
+      "odd": 0
+    },
+    {
       "n": "3710 14th Street Vero Beach FL",
       "t": "EMD",
       "l": "confirmed",
       "f": true,
       "a": 60600.0,
-      "s": "2026-09-29",
+      "s": "2026-09-03",
       "e": "2027-12-31",
-      "c": "2026-09-29",
+      "c": "2026-09-03",
       "err": false,
       "note": "",
       "od": false,
@@ -824,18 +824,6 @@
       "note": ""
     },
     {
-      "n": "177 Empress Avenue Sebastian FL",
-      "t": "EMD",
-      "l": "probable",
-      "f": false,
-      "a": 40400.0,
-      "s": "2026-09-29",
-      "e": "2026-10-13",
-      "c": "2026-11-11",
-      "err": false,
-      "note": ""
-    },
-    {
       "n": "171 Lake Rd Huntington NY",
       "t": "Stack",
       "l": "onhold",
@@ -1252,6 +1240,30 @@
       "s": "2026-09-29",
       "e": "2026-11-10",
       "c": "2026-11-09",
+      "err": false,
+      "note": ""
+    },
+    {
+      "n": "1622 Linn Street Cincinnati Ohio 45214",
+      "t": "Echo",
+      "l": "onhold",
+      "f": false,
+      "a": 125000.0,
+      "s": "2026-09-30",
+      "e": "2026-10-02",
+      "c": "2026-10-01",
+      "err": false,
+      "note": ""
+    },
+    {
+      "n": "4518 Woodland Hills Boulevard Dayton Ohio 45414",
+      "t": "DC",
+      "l": "onhold",
+      "f": false,
+      "a": 155000.0,
+      "s": "2026-10-29",
+      "e": "2026-10-31",
+      "c": "2026-10-30",
       "err": false,
       "note": ""
     }
