@@ -33,7 +33,7 @@
   ],
   "capital_in": 2020000.0,
   "capital_returned": 0.0,
-  "generated": "2026-09-28T17:39:39-06:00",
+  "generated": "2026-09-28T22:02:20-06:00",
   "source": "HubSpot RQF pipelines: EMD, POF, Stack, Double Close, Echo, GAP",
   "notes": "Pool = capital ledger (capital_events.json) summed to today: contributions in minus returns to investors. Deployed(confirmed,f=true)=Wired Amount out, no Return Wire Amount logged (GAP only if Signed&Funded after 2026-03-01); out from Signed&Funded until returned. err=true: HubSpot record inconsistent but still counted until corrected. probable=02-approved + committed-not-yet-wired. onhold=00/01 pipeline watch (not in math).",
   "deals": [
@@ -49,7 +49,7 @@
       "err": false,
       "note": "",
       "od": true,
-      "odd": 483
+      "odd": 484
     },
     {
       "n": "124 S Mockingbird Cir #A & B, Cedar Creek, Texas 78612",
@@ -57,13 +57,13 @@
       "l": "confirmed",
       "f": true,
       "a": 1000.0,
-      "s": "2026-09-28",
+      "s": "2026-09-29",
       "e": "2027-12-31",
-      "c": "2026-09-28",
+      "c": "2026-09-29",
       "err": true,
       "note": "HubSpot: stage says returned/fell-through, no return amount",
       "od": true,
-      "odd": 444
+      "odd": 445
     },
     {
       "n": "1717 Crimson Cir Memphis TN",
@@ -77,7 +77,7 @@
       "err": false,
       "note": "",
       "od": true,
-      "odd": 283
+      "odd": 284
     },
     {
       "n": "415 Clark St Saginaw MI",
@@ -91,7 +91,7 @@
       "err": false,
       "note": "",
       "od": true,
-      "odd": 57
+      "odd": 58
     },
     {
       "n": "5213, 5216 & 5217 Collier Ct Jefferson City MO (EMD)",
@@ -105,7 +105,7 @@
       "err": false,
       "note": "",
       "od": true,
-      "odd": 17
+      "odd": 18
     },
     {
       "n": "601 E Beach Dr Galveston TX",
@@ -133,7 +133,7 @@
       "err": false,
       "note": "",
       "od": true,
-      "odd": 74
+      "odd": 75
     },
     {
       "n": "2909 N 3rd Way Ridgefield WA (1st Pos Gap)",
@@ -175,7 +175,7 @@
       "err": false,
       "note": "",
       "od": true,
-      "odd": 55
+      "odd": 56
     },
     {
       "n": "68, 78, and 44 E Bridge Street, Big Sandy TN (205)",
@@ -189,7 +189,7 @@
       "err": false,
       "note": "",
       "od": true,
-      "odd": 26
+      "odd": 27
     },
     {
       "n": "526 Jersey St Vallejo CA (EMD)",
@@ -245,7 +245,7 @@
       "err": false,
       "note": "",
       "od": true,
-      "odd": 3
+      "odd": 4
     },
     {
       "n": "3370, 3400 Mansfield Hwy & 3349, 3401 Bisbee St, Fort Worth, TX 76119",
@@ -258,8 +258,8 @@
       "c": "2026-09-18",
       "err": false,
       "note": "",
-      "od": false,
-      "odd": 0
+      "od": true,
+      "odd": 1
     },
     {
       "n": "3710 14th Street Vero Beach FL",
@@ -267,9 +267,9 @@
       "l": "confirmed",
       "f": true,
       "a": 60600.0,
-      "s": "2026-09-28",
+      "s": "2026-09-29",
       "e": "2027-12-31",
-      "c": "2026-09-28",
+      "c": "2026-09-29",
       "err": false,
       "note": "",
       "od": false,
@@ -829,7 +829,7 @@
       "l": "probable",
       "f": false,
       "a": 40400.0,
-      "s": "2026-09-28",
+      "s": "2026-09-29",
       "e": "2026-10-13",
       "c": "2026-11-11",
       "err": false,
@@ -925,7 +925,7 @@
       "l": "onhold",
       "f": false,
       "a": 29950.0,
-      "s": "2026-09-28",
+      "s": "2026-09-29",
       "e": "2026-11-01",
       "c": "2026-12-12",
       "err": false,
@@ -973,7 +973,7 @@
       "l": "onhold",
       "f": false,
       "a": 35000.0,
-      "s": "2026-09-28",
+      "s": "2026-09-29",
       "e": "2026-10-15",
       "c": "2026-11-11",
       "err": false,
@@ -1033,7 +1033,7 @@
       "l": "probable",
       "f": false,
       "a": 13000.0,
-      "s": "2026-09-28",
+      "s": "2026-09-29",
       "e": "2026-10-16",
       "c": "2026-10-15",
       "err": false,
@@ -1117,7 +1117,7 @@
       "l": "onhold",
       "f": false,
       "a": 142500.0,
-      "s": "2026-09-28",
+      "s": "2026-09-29",
       "e": "2026-10-18",
       "c": "2026-11-07",
       "err": false,
@@ -1153,7 +1153,7 @@
       "l": "onhold",
       "f": false,
       "a": 20000.0,
-      "s": "2026-09-28",
+      "s": "2026-09-29",
       "e": "2026-10-17",
       "c": "2026-10-16",
       "err": false,
@@ -1237,7 +1237,7 @@
       "l": "onhold",
       "f": false,
       "a": 30000.0,
-      "s": "2026-09-28",
+      "s": "2026-09-29",
       "e": "2026-10-31",
       "c": "2026-11-13",
       "err": false,
@@ -1245,11 +1245,11 @@
     },
     {
       "n": "El centro and bryte rd  Sacramento  California 95833",
-      "t": "Echo",
+      "t": "EMD",
       "l": "onhold",
       "f": false,
       "a": 150000.0,
-      "s": "2026-11-08",
+      "s": "2026-09-29",
       "e": "2026-11-10",
       "c": "2026-11-09",
       "err": false,
