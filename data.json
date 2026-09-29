@@ -33,7 +33,7 @@
   ],
   "capital_in": 2020000.0,
   "capital_returned": 0.0,
-  "generated": "2026-09-29T11:33:23-06:00",
+  "generated": "2026-09-29T15:48:20-06:00",
   "source": "HubSpot RQF pipelines: EMD, POF, Stack, Double Close, Echo, GAP",
   "notes": "Pool = capital ledger (capital_events.json) summed to today: contributions in minus returns to investors. Deployed(confirmed,f=true)=Wired Amount out, no Return Wire Amount logged (GAP only if Signed&Funded after 2026-03-01); out from Signed&Funded until returned. err=true: HubSpot record inconsistent but still counted until corrected. probable=02-approved + committed-not-yet-wired. onhold=00/01 pipeline watch (not in math).",
   "deals": [
@@ -318,20 +318,6 @@
       "odd": 0
     },
     {
-      "n": "5380 Somerlane Trail Southwest College Park GA",
-      "t": "Echo",
-      "l": "confirmed",
-      "f": true,
-      "a": 334688.49,
-      "s": "2026-09-25",
-      "e": "2027-12-31",
-      "c": "2026-09-25",
-      "err": false,
-      "note": "",
-      "od": false,
-      "odd": 0
-    },
-    {
       "n": "256 Yellow Snapdragon Davenport FL",
       "t": "EMD",
       "l": "probable",
@@ -440,18 +426,6 @@
       "note": ""
     },
     {
-      "n": "803 N Main St Spring Lake NC",
-      "t": "Stack",
-      "l": "onhold",
-      "f": false,
-      "a": 150000.0,
-      "s": "2026-08-24",
-      "e": "2026-08-26",
-      "c": "2026-08-25",
-      "err": false,
-      "note": ""
-    },
-    {
       "n": "Equity Carry Group  Knoxville Tennessee 37901",
       "t": "Stack",
       "l": "onhold",
@@ -548,18 +522,6 @@
       "note": ""
     },
     {
-      "n": "10315 Red Elm Rd Dallas TX",
-      "t": "Stack",
-      "l": "onhold",
-      "f": false,
-      "a": 220000.0,
-      "s": "2026-09-01",
-      "e": "2026-09-03",
-      "c": "2026-09-02",
-      "err": false,
-      "note": ""
-    },
-    {
       "n": "395 Main St, Providence, UT 55555",
       "t": "Stack",
       "l": "onhold",
@@ -613,9 +575,9 @@
       "l": "probable",
       "f": false,
       "a": 8450000.0,
-      "s": "2026-08-25",
-      "e": "2026-08-27",
-      "c": "2026-08-26",
+      "s": "2026-10-12",
+      "e": "2026-10-14",
+      "c": "2026-10-13",
       "err": false,
       "note": ""
     },
@@ -652,18 +614,6 @@
       "s": "2026-09-14",
       "e": "2026-09-16",
       "c": "2026-09-15",
-      "err": false,
-      "note": ""
-    },
-    {
-      "n": "5654 Ashley Square N Memphis TN",
-      "t": "Echo",
-      "l": "onhold",
-      "f": false,
-      "a": 243046.47,
-      "s": "2026-09-23",
-      "e": "2026-09-25",
-      "c": "2026-09-24",
       "err": false,
       "note": ""
     },
@@ -1264,6 +1214,54 @@
       "s": "2026-10-29",
       "e": "2026-10-31",
       "c": "2026-10-30",
+      "err": false,
+      "note": ""
+    },
+    {
+      "n": "2129 W Anderson Ave Phoenix AZ",
+      "t": "Stack",
+      "l": "onhold",
+      "f": false,
+      "a": 252137.0,
+      "s": "2026-04-09",
+      "e": "2026-04-11",
+      "c": "2026-04-10",
+      "err": false,
+      "note": ""
+    },
+    {
+      "n": "9018 Covent Garden  Houston Texas 77031",
+      "t": "Stack",
+      "l": "onhold",
+      "f": false,
+      "a": 250000.0,
+      "s": "2026-10-15",
+      "e": "2026-10-17",
+      "c": "2026-10-16",
+      "err": false,
+      "note": ""
+    },
+    {
+      "n": "3455 East 121st Street Cleveland Ohio 44120",
+      "t": "Stack",
+      "l": "onhold",
+      "f": false,
+      "a": 112000.0,
+      "s": "2026-10-08",
+      "e": "2026-10-10",
+      "c": "2026-10-09",
+      "err": false,
+      "note": ""
+    },
+    {
+      "n": "8210 Georgia Ave, Gulfport, MS, 39503 Gulfport Ms 39503",
+      "t": "Echo",
+      "l": "onhold",
+      "f": false,
+      "a": 50000.0,
+      "s": "2026-10-20",
+      "e": "2026-10-22",
+      "c": "2026-10-21",
       "err": false,
       "note": ""
     }
