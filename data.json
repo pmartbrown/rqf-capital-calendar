@@ -33,7 +33,7 @@
   ],
   "capital_in": 2020000.0,
   "capital_returned": 0.0,
-  "generated": "2026-09-29T15:48:20-06:00",
+  "generated": "2026-09-29T19:00:52-06:00",
   "source": "HubSpot RQF pipelines: EMD, POF, Stack, Double Close, Echo, GAP",
   "notes": "Pool = capital ledger (capital_events.json) summed to today: contributions in minus returns to investors. Deployed(confirmed,f=true)=Wired Amount out, no Return Wire Amount logged (GAP only if Signed&Funded after 2026-03-01); out from Signed&Funded until returned. err=true: HubSpot record inconsistent but still counted until corrected. probable=02-approved + committed-not-yet-wired. onhold=00/01 pipeline watch (not in math).",
   "deals": [
@@ -49,7 +49,7 @@
       "err": false,
       "note": "",
       "od": true,
-      "odd": 484
+      "odd": 485
     },
     {
       "n": "124 S Mockingbird Cir #A & B, Cedar Creek, Texas 78612",
@@ -57,13 +57,13 @@
       "l": "confirmed",
       "f": true,
       "a": 1000.0,
-      "s": "2026-09-29",
+      "s": "2026-09-30",
       "e": "2027-12-31",
-      "c": "2026-09-29",
+      "c": "2026-09-30",
       "err": true,
       "note": "HubSpot: stage says returned/fell-through, no return amount",
       "od": true,
-      "odd": 445
+      "odd": 446
     },
     {
       "n": "1717 Crimson Cir Memphis TN",
@@ -77,7 +77,7 @@
       "err": false,
       "note": "",
       "od": true,
-      "odd": 284
+      "odd": 285
     },
     {
       "n": "415 Clark St Saginaw MI",
@@ -91,7 +91,7 @@
       "err": false,
       "note": "",
       "od": true,
-      "odd": 58
+      "odd": 59
     },
     {
       "n": "5213, 5216 & 5217 Collier Ct Jefferson City MO (EMD)",
@@ -105,7 +105,7 @@
       "err": false,
       "note": "",
       "od": true,
-      "odd": 18
+      "odd": 19
     },
     {
       "n": "601 E Beach Dr Galveston TX",
@@ -133,7 +133,7 @@
       "err": false,
       "note": "",
       "od": true,
-      "odd": 75
+      "odd": 76
     },
     {
       "n": "2909 N 3rd Way Ridgefield WA (1st Pos Gap)",
@@ -146,8 +146,8 @@
       "c": "2026-07-01",
       "err": false,
       "note": "",
-      "od": false,
-      "odd": 0
+      "od": true,
+      "odd": 1
     },
     {
       "n": "Custer Crossing RV Park in SD w Mundo",
@@ -175,7 +175,7 @@
       "err": false,
       "note": "",
       "od": true,
-      "odd": 56
+      "odd": 57
     },
     {
       "n": "68, 78, and 44 E Bridge Street, Big Sandy TN (205)",
@@ -189,7 +189,7 @@
       "err": false,
       "note": "",
       "od": true,
-      "odd": 27
+      "odd": 28
     },
     {
       "n": "526 Jersey St Vallejo CA (EMD)",
@@ -245,7 +245,7 @@
       "err": false,
       "note": "",
       "od": true,
-      "odd": 1
+      "odd": 2
     },
     {
       "n": "177 Empress Avenue Sebastian FL",
@@ -666,42 +666,6 @@
       "note": ""
     },
     {
-      "n": "175 Fish Hook Rd Broken Bow OK",
-      "t": "Stack",
-      "l": "onhold",
-      "f": false,
-      "a": 285831.0,
-      "s": "2026-08-27",
-      "e": "2026-08-29",
-      "c": "2026-08-28",
-      "err": false,
-      "note": ""
-    },
-    {
-      "n": "83 Ginseng Circle Broken Bow OK",
-      "t": "Stack",
-      "l": "onhold",
-      "f": false,
-      "a": 390420.0,
-      "s": "2026-08-27",
-      "e": "2026-08-29",
-      "c": "2026-08-28",
-      "err": false,
-      "note": ""
-    },
-    {
-      "n": "238 Rutty Pine Ridge Broken Bow OK",
-      "t": "Stack",
-      "l": "onhold",
-      "f": false,
-      "a": 291330.0,
-      "s": "2026-08-27",
-      "e": "2026-08-29",
-      "c": "2026-08-28",
-      "err": false,
-      "note": ""
-    },
-    {
       "n": "1175 Barron Court Memphis TN 38114",
       "t": "DC",
       "l": "probable",
@@ -863,7 +827,7 @@
       "l": "onhold",
       "f": false,
       "a": 29950.0,
-      "s": "2026-09-29",
+      "s": "2026-09-30",
       "e": "2026-11-01",
       "c": "2026-12-12",
       "err": false,
@@ -911,7 +875,7 @@
       "l": "onhold",
       "f": false,
       "a": 35000.0,
-      "s": "2026-09-29",
+      "s": "2026-09-30",
       "e": "2026-10-15",
       "c": "2026-11-11",
       "err": false,
@@ -971,7 +935,7 @@
       "l": "probable",
       "f": false,
       "a": 13000.0,
-      "s": "2026-09-29",
+      "s": "2026-09-30",
       "e": "2026-10-16",
       "c": "2026-10-15",
       "err": false,
@@ -1055,7 +1019,7 @@
       "l": "onhold",
       "f": false,
       "a": 142500.0,
-      "s": "2026-09-29",
+      "s": "2026-09-30",
       "e": "2026-10-18",
       "c": "2026-11-07",
       "err": false,
@@ -1091,14 +1055,14 @@
       "l": "onhold",
       "f": false,
       "a": 20000.0,
-      "s": "2026-09-29",
+      "s": "2026-09-30",
       "e": "2026-10-17",
       "c": "2026-10-16",
       "err": false,
       "note": ""
     },
     {
-      "n": "12 Charles Street Amsterdam New York 12010",
+      "n": "12 Charles St Amsterdam NY",
       "t": "Echo",
       "l": "onhold",
       "f": false,
@@ -1175,7 +1139,7 @@
       "l": "onhold",
       "f": false,
       "a": 30000.0,
-      "s": "2026-09-29",
+      "s": "2026-09-30",
       "e": "2026-10-31",
       "c": "2026-11-13",
       "err": false,
@@ -1187,7 +1151,7 @@
       "l": "onhold",
       "f": false,
       "a": 150000.0,
-      "s": "2026-09-29",
+      "s": "2026-09-30",
       "e": "2026-11-10",
       "c": "2026-11-09",
       "err": false,
@@ -1262,6 +1226,18 @@
       "s": "2026-10-20",
       "e": "2026-10-22",
       "c": "2026-10-21",
+      "err": false,
+      "note": ""
+    },
+    {
+      "n": "7310 South Hatch Road Spokane Washington 99224",
+      "t": "Stack",
+      "l": "onhold",
+      "f": false,
+      "a": 923000.0,
+      "s": "2026-10-26",
+      "e": "2026-10-28",
+      "c": "2026-10-27",
       "err": false,
       "note": ""
     }
