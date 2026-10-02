@@ -33,7 +33,7 @@
   ],
   "capital_in": 2020000.0,
   "capital_returned": 0.0,
-  "generated": "2026-10-02T09:19:27-06:00",
+  "generated": "2026-10-02T14:18:26-06:00",
   "source": "HubSpot RQF pipelines: EMD, POF, Stack, Double Close, Echo, GAP",
   "notes": "Pool = capital ledger (capital_events.json) summed to today: contributions in minus returns to investors. Deployed(confirmed,f=true)=Wired Amount out, no Return Wire Amount logged (GAP only if Signed&Funded after 2026-03-01); out from Signed&Funded until returned. err=true: HubSpot record inconsistent but still counted until corrected. probable=02-approved + committed-not-yet-wired. onhold=00/01 pipeline watch (not in math).",
   "deals": [
@@ -426,7 +426,7 @@
       "note": ""
     },
     {
-      "n": "24660 Tehama Vina Road San Francisco CA",
+      "n": "Riverside Mobile Home Park / 24660 Tehama Vina Road San Francisco CA",
       "t": "Stack",
       "l": "onhold",
       "f": false,
@@ -654,18 +654,6 @@
       "note": ""
     },
     {
-      "n": "4960 Dogwood Dr Everett WA",
-      "t": "DC",
-      "l": "probable",
-      "f": false,
-      "a": 300000.0,
-      "s": "2026-09-08",
-      "e": "2026-09-10",
-      "c": "2026-09-09",
-      "err": false,
-      "note": ""
-    },
-    {
       "n": "171 Lake Rd Huntington NY",
       "t": "Stack",
       "l": "onhold",
@@ -690,26 +678,14 @@
       "note": ""
     },
     {
-      "n": "821 North Jackson St Arlington VA",
+      "n": "509 Ussery St Bowie TX",
       "t": "Stack",
       "l": "onhold",
       "f": false,
-      "a": 1500000.0,
-      "s": "2026-10-15",
-      "e": "2026-10-17",
-      "c": "2026-10-16",
-      "err": false,
-      "note": ""
-    },
-    {
-      "n": "509 Ussery Street Bowie TX",
-      "t": "Stack",
-      "l": "onhold",
-      "f": false,
-      "a": 300000.0,
-      "s": "2026-10-08",
-      "e": "2026-10-10",
-      "c": "2026-10-09",
+      "a": 780000.0,
+      "s": "2026-10-30",
+      "e": "2026-11-01",
+      "c": "2026-10-31",
       "err": false,
       "note": ""
     },
@@ -734,18 +710,6 @@
       "s": "2026-10-29",
       "e": "2026-10-31",
       "c": "2026-10-30",
-      "err": false,
-      "note": ""
-    },
-    {
-      "n": "1245 2410 West Provo Utah 84601",
-      "t": "Stack",
-      "l": "onhold",
-      "f": false,
-      "a": 200000.0,
-      "s": "2026-10-10",
-      "e": "2026-10-12",
-      "c": "2026-10-11",
       "err": false,
       "note": ""
     },
@@ -818,18 +782,6 @@
       "s": "2026-10-03",
       "e": "2026-10-05",
       "c": "2026-10-04",
-      "err": false,
-      "note": ""
-    },
-    {
-      "n": "509 Ussery St Bowie TX",
-      "t": "Stack",
-      "l": "onhold",
-      "f": false,
-      "a": 780000.0,
-      "s": "2026-10-30",
-      "e": "2026-11-01",
-      "c": "2026-10-31",
       "err": false,
       "note": ""
     },
@@ -990,7 +942,7 @@
       "note": ""
     },
     {
-      "n": "79 Wall Street Amsterdam New York 12010",
+      "n": "79 Wall St Amsterdam NY",
       "t": "Echo",
       "l": "onhold",
       "f": false,
@@ -1002,7 +954,7 @@
       "note": ""
     },
     {
-      "n": "23 Brandt Place Amsterdam New York 12010",
+      "n": "23 Brandt Pl Amsterdam NY",
       "t": "Echo",
       "l": "onhold",
       "f": false,
@@ -1014,7 +966,7 @@
       "note": ""
     },
     {
-      "n": "10 Voorhees Street Amsterdam New York 12010",
+      "n": "10 Voorhees St Amsterdam NY",
       "t": "Echo",
       "l": "onhold",
       "f": false,
@@ -1026,7 +978,7 @@
       "note": ""
     },
     {
-      "n": "127 Northampton Road Amsterdam New York 12010",
+      "n": "127 Northampton Rd Amsterdam NY",
       "t": "Echo",
       "l": "onhold",
       "f": false,
@@ -1074,7 +1026,7 @@
       "note": ""
     },
     {
-      "n": "1622 Linn Street Cincinnati Ohio 45214",
+      "n": "1622 Linn St Cincinnati OH",
       "t": "Echo",
       "l": "onhold",
       "f": false,
@@ -1134,7 +1086,7 @@
       "note": ""
     },
     {
-      "n": "8210 Georgia Ave, Gulfport, MS, 39503 Gulfport Ms 39503",
+      "n": "8210 Georgia Ave Gulfport MS",
       "t": "Echo",
       "l": "onhold",
       "f": false,
