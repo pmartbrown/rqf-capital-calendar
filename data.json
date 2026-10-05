@@ -33,7 +33,7 @@
   ],
   "capital_in": 2020000.0,
   "capital_returned": 0.0,
-  "generated": "2026-10-05T11:48:59-06:00",
+  "generated": "2026-10-05T17:40:49-06:00",
   "source": "HubSpot RQF pipelines: EMD, POF, Stack, Double Close, Echo, GAP",
   "notes": "Pool = capital ledger (capital_events.json) summed to today: contributions in minus returns to investors. Deployed(confirmed,f=true)=Wired Amount out, no Return Wire Amount logged (GAP only if Signed&Funded after 2026-03-01); out from Signed&Funded until returned. err=true: HubSpot record inconsistent but still counted until corrected. probable=02-approved + committed-not-yet-wired. onhold=00/01 pipeline watch (not in math).",
   "deals": [
@@ -870,18 +870,6 @@
       "note": ""
     },
     {
-      "n": "El Centro Road at Bryte Bend Road Sacramento CA",
-      "t": "EMD",
-      "l": "onhold",
-      "f": false,
-      "a": 142500.0,
-      "s": "2026-10-05",
-      "e": "2026-10-18",
-      "c": "2026-11-07",
-      "err": false,
-      "note": ""
-    },
-    {
       "n": "1454 Northwest Fresno Avenue Bend Oregon 97703",
       "t": "EMD",
       "l": "onhold",
@@ -998,18 +986,6 @@
       "s": "2026-10-05",
       "e": "2026-10-25",
       "c": "2026-10-24",
-      "err": false,
-      "note": ""
-    },
-    {
-      "n": "El centro and bryte rd  Sacramento  California 95833",
-      "t": "EMD",
-      "l": "onhold",
-      "f": false,
-      "a": 150000.0,
-      "s": "2026-10-05",
-      "e": "2026-11-10",
-      "c": "2026-11-09",
       "err": false,
       "note": ""
     },
@@ -1214,6 +1190,18 @@
       "s": "2026-10-07",
       "e": "2026-10-09",
       "c": "2026-10-08",
+      "err": false,
+      "note": ""
+    },
+    {
+      "n": "901 West 7th Street Texarkana TX 75501",
+      "t": "Echo",
+      "l": "onhold",
+      "f": false,
+      "a": 200000.0,
+      "s": "2026-10-22",
+      "e": "2026-10-24",
+      "c": "2026-10-23",
       "err": false,
       "note": ""
     }
