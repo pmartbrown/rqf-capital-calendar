@@ -33,7 +33,7 @@
   ],
   "capital_in": 2020000.0,
   "capital_returned": 0.0,
-  "generated": "2026-10-06T11:51:47-06:00",
+  "generated": "2026-10-06T16:15:56-06:00",
   "source": "HubSpot RQF pipelines: EMD, POF, Stack, Double Close, Echo, GAP",
   "notes": "Pool = capital ledger (capital_events.json) summed to today: contributions in minus returns to investors. Deployed(confirmed,f=true)=Wired Amount out, no Return Wire Amount logged (GAP only if Signed&Funded after 2026-03-01); out from Signed&Funded until returned. err=true: HubSpot record inconsistent but still counted until corrected. probable=02-approved + committed-not-yet-wired. onhold=00/01 pipeline watch (not in math).",
   "deals": [
@@ -764,12 +764,12 @@
     {
       "n": "430 & 440, 450 Historic State Hwy 165, Branson MO 65616",
       "t": "EMD",
-      "l": "onhold",
+      "l": "probable",
       "f": false,
       "a": 50000.0,
-      "s": "2026-09-27",
-      "e": "2026-09-29",
-      "c": "2026-11-27",
+      "s": "2026-10-06",
+      "e": "2026-11-04",
+      "c": "2026-11-03",
       "err": false,
       "note": ""
     },
@@ -810,7 +810,7 @@
       "note": ""
     },
     {
-      "n": "4610 Grove Street West Palm Beach FL 33415",
+      "n": "4610 Grove Street West Palm Beach FL (DC)",
       "t": "DC",
       "l": "onhold",
       "f": false,
@@ -1062,13 +1062,13 @@
       "note": ""
     },
     {
-      "n": "4610 Grove Street West Palm Beach FL",
+      "n": "4610 Grove Street West Palm Beach FL (EMD)",
       "t": "EMD",
       "l": "onhold",
       "f": false,
       "a": 32000.0,
-      "s": "2026-10-04",
-      "e": "2026-10-06",
+      "s": "2026-10-06",
+      "e": "2026-11-02",
       "c": "2026-11-17",
       "err": false,
       "note": ""
@@ -1110,7 +1110,7 @@
       "note": ""
     },
     {
-      "n": "304 North Porter Street Lampasas Texas 76550",
+      "n": "304 N Porter St Lampasas TX (Echo)",
       "t": "Echo",
       "l": "onhold",
       "f": false,
@@ -1122,7 +1122,7 @@
       "note": ""
     },
     {
-      "n": "304 N Porter St Lampasas TX",
+      "n": "304 N Porter St Lampasas TX (DC)",
       "t": "DC",
       "l": "probable",
       "f": false,
@@ -1154,6 +1154,78 @@
       "s": "2026-10-14",
       "e": "2026-10-16",
       "c": "2026-10-15",
+      "err": false,
+      "note": ""
+    },
+    {
+      "n": "4697 Roundleaf Rd Ramseur NC",
+      "t": "Stack",
+      "l": "probable",
+      "f": false,
+      "a": 293000.0,
+      "s": "2026-11-02",
+      "e": "2026-11-04",
+      "c": "2026-11-03",
+      "err": false,
+      "note": ""
+    },
+    {
+      "n": "9208 Bowen Drive San Antonio TX 78250",
+      "t": "EMD",
+      "l": "onhold",
+      "f": false,
+      "a": 9000.0,
+      "s": "2026-10-06",
+      "e": "2026-10-10",
+      "c": "2026-11-06",
+      "err": false,
+      "note": ""
+    },
+    {
+      "n": "5814 Cinnabar Cove San Antonio TX 78222",
+      "t": "EMD",
+      "l": "onhold",
+      "f": false,
+      "a": 8000.0,
+      "s": "2026-10-06",
+      "e": "2026-10-10",
+      "c": "2026-11-06",
+      "err": false,
+      "note": ""
+    },
+    {
+      "n": "8283 Broussard San Antonio TX 78253",
+      "t": "EMD",
+      "l": "onhold",
+      "f": false,
+      "a": 8000.0,
+      "s": "2026-10-06",
+      "e": "2026-10-10",
+      "c": "2026-11-06",
+      "err": false,
+      "note": ""
+    },
+    {
+      "n": "309 2nd Street South Virginia Minnesota 55792",
+      "t": "Stack",
+      "l": "onhold",
+      "f": false,
+      "a": 1018865.0,
+      "s": "2026-11-13",
+      "e": "2026-11-15",
+      "c": "2026-11-14",
+      "err": false,
+      "note": ""
+    },
+    {
+      "n": "2313 Natchez Ave  Cleveland  Ohio 44109",
+      "t": "DC",
+      "l": "onhold",
+      "f": false,
+      "a": 175000.0,
+      "s": "2026-10-08",
+      "e": "2026-10-10",
+      "c": "2026-10-09",
       "err": false,
       "note": ""
     }
