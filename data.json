@@ -33,7 +33,7 @@
   ],
   "capital_in": 2020000.0,
   "capital_returned": 0.0,
-  "generated": "2026-10-08T11:09:59-06:00",
+  "generated": "2026-10-08T16:49:29-06:00",
   "source": "HubSpot RQF pipelines: EMD, POF, Stack, Double Close, Echo, GAP",
   "notes": "Pool = capital ledger (capital_events.json) summed to today: contributions in minus returns to investors. Deployed(confirmed,f=true)=Wired Amount out, no Return Wire Amount logged (GAP only if Signed&Funded after 2026-03-01); out from Signed&Funded until returned. err=true: HubSpot record inconsistent but still counted until corrected. probable=02-approved + committed-not-yet-wired. onhold=00/01 pipeline watch (not in math).",
   "deals": [
@@ -318,7 +318,7 @@
       "odd": 1
     },
     {
-      "n": "4314 N Suncoast Blvd Crystal River FL",
+      "n": "4314 N Suncoast Blvd Crystal River FL (EMD)",
       "t": "EMD",
       "l": "confirmed",
       "f": true,
@@ -326,6 +326,20 @@
       "s": "2026-10-06",
       "e": "2027-12-31",
       "c": "2026-10-06",
+      "err": false,
+      "note": "",
+      "od": false,
+      "odd": 0
+    },
+    {
+      "n": "430 & 440, 450 Historic State Hwy 165, Branson MO",
+      "t": "EMD",
+      "l": "confirmed",
+      "f": true,
+      "a": 50000.0,
+      "s": "2026-10-08",
+      "e": "2027-12-31",
+      "c": "2026-10-08",
       "err": false,
       "note": "",
       "od": false,
@@ -656,18 +670,6 @@
       "note": ""
     },
     {
-      "n": "211 Vanshire Rd E Lakeside TX",
-      "t": "EMD",
-      "l": "onhold",
-      "f": false,
-      "a": 29950.0,
-      "s": "2026-10-08",
-      "e": "2026-11-01",
-      "c": "2026-12-12",
-      "err": false,
-      "note": ""
-    },
-    {
       "n": "485 NE Jessup St Portland OR",
       "t": "Stack",
       "l": "onhold",
@@ -728,38 +730,14 @@
       "note": ""
     },
     {
-      "n": "430 & 440, 450 Historic State Hwy 165, Branson MO 65616",
-      "t": "EMD",
-      "l": "probable",
-      "f": false,
-      "a": 50000.0,
-      "s": "2026-10-08",
-      "e": "2026-11-04",
-      "c": "2026-11-03",
-      "err": false,
-      "note": ""
-    },
-    {
-      "n": "2083 North Taylor Road Cleveland Ohio 44112 (DC)",
-      "t": "DC",
+      "n": "4314 N Suncoast Blvd Crystal River FL (Stack)",
+      "t": "Stack",
       "l": "onhold",
       "f": false,
-      "a": 70000.0,
-      "s": "2026-10-24",
-      "e": "2026-10-26",
-      "c": "2026-10-25",
-      "err": false,
-      "note": ""
-    },
-    {
-      "n": "624 Northwest Hill Street Bend Oregon 97703",
-      "t": "EMD",
-      "l": "onhold",
-      "f": false,
-      "a": 13000.0,
-      "s": "2026-09-27",
-      "e": "2026-09-29",
-      "c": "2026-10-08",
+      "a": 500000.0,
+      "s": "2026-10-14",
+      "e": "2026-10-16",
+      "c": "2026-10-15",
       "err": false,
       "note": ""
     },
@@ -772,30 +750,6 @@
       "s": "2026-10-21",
       "e": "2026-10-23",
       "c": "2026-10-22",
-      "err": false,
-      "note": ""
-    },
-    {
-      "n": "1454 Northwest Fresno Avenue Bend Oregon 97703",
-      "t": "EMD",
-      "l": "onhold",
-      "f": false,
-      "a": 7000.0,
-      "s": "2026-09-28",
-      "e": "2026-09-30",
-      "c": "2026-10-08",
-      "err": false,
-      "note": ""
-    },
-    {
-      "n": "521 Southwest Hill Street Bend Oregon 97702",
-      "t": "EMD",
-      "l": "onhold",
-      "f": false,
-      "a": 6000.0,
-      "s": "2026-09-28",
-      "e": "2026-09-30",
-      "c": "2026-10-08",
       "err": false,
       "note": ""
     },
