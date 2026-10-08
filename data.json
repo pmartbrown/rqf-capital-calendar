@@ -33,7 +33,7 @@
   ],
   "capital_in": 2020000.0,
   "capital_returned": 0.0,
-  "generated": "2026-10-07T20:27:06-06:00",
+  "generated": "2026-10-08T03:54:52-06:00",
   "source": "HubSpot RQF pipelines: EMD, POF, Stack, Double Close, Echo, GAP",
   "notes": "Pool = capital ledger (capital_events.json) summed to today: contributions in minus returns to investors. Deployed(confirmed,f=true)=Wired Amount out, no Return Wire Amount logged (GAP only if Signed&Funded after 2026-03-01); out from Signed&Funded until returned. err=true: HubSpot record inconsistent but still counted until corrected. probable=02-approved + committed-not-yet-wired. onhold=00/01 pipeline watch (not in math).",
   "deals": [
@@ -1168,6 +1168,18 @@
       "s": "2026-10-24",
       "e": "2026-10-26",
       "c": "2026-10-25",
+      "err": false,
+      "note": ""
+    },
+    {
+      "n": "2007 Northwest 21st Street Cape Coral Florida 33993",
+      "t": "Stack",
+      "l": "onhold",
+      "f": false,
+      "a": 336750.0,
+      "s": "2026-11-01",
+      "e": "2026-11-03",
+      "c": "2026-11-02",
       "err": false,
       "note": ""
     }
