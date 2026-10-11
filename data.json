@@ -33,7 +33,7 @@
   ],
   "capital_in": 2020000.0,
   "capital_returned": 0.0,
-  "generated": "2026-10-10T17:10:45-06:00",
+  "generated": "2026-10-10T21:47:04-06:00",
   "source": "HubSpot RQF pipelines: EMD, POF, Stack, Double Close, Echo, GAP",
   "notes": "Pool = capital ledger (capital_events.json) summed to today: contributions in minus returns to investors. Deployed(confirmed,f=true)=Wired Amount out, no Return Wire Amount logged (GAP only if Signed&Funded after 2026-03-01); out from Signed&Funded until returned. err=true: HubSpot record inconsistent but still counted until corrected. probable=02-approved + committed-not-yet-wired. onhold=00/01 pipeline watch (not in math).",
   "deals": [
@@ -49,7 +49,7 @@
       "err": false,
       "note": "",
       "od": true,
-      "odd": 495
+      "odd": 496
     },
     {
       "n": "124 S Mockingbird Cir #A & B, Cedar Creek, Texas 78612",
@@ -57,13 +57,13 @@
       "l": "confirmed",
       "f": true,
       "a": 1000.0,
-      "s": "2026-10-10",
+      "s": "2026-10-11",
       "e": "2027-12-31",
-      "c": "2026-10-10",
+      "c": "2026-10-11",
       "err": true,
       "note": "HubSpot: stage says returned/fell-through, no return amount",
       "od": true,
-      "odd": 456
+      "odd": 457
     },
     {
       "n": "1717 Crimson Cir Memphis TN",
@@ -77,7 +77,7 @@
       "err": false,
       "note": "",
       "od": true,
-      "odd": 295
+      "odd": 296
     },
     {
       "n": "415 Clark St Saginaw MI",
@@ -91,7 +91,7 @@
       "err": false,
       "note": "",
       "od": true,
-      "odd": 69
+      "odd": 70
     },
     {
       "n": "5213, 5216 & 5217 Collier Ct Jefferson City MO (EMD)",
@@ -105,7 +105,7 @@
       "err": false,
       "note": "",
       "od": true,
-      "odd": 29
+      "odd": 30
     },
     {
       "n": "601 E Beach Dr Galveston TX",
@@ -133,7 +133,7 @@
       "err": false,
       "note": "",
       "od": true,
-      "odd": 86
+      "odd": 87
     },
     {
       "n": "2909 N 3rd Way Ridgefield WA (1st Pos Gap)",
@@ -147,7 +147,7 @@
       "err": false,
       "note": "",
       "od": true,
-      "odd": 11
+      "odd": 12
     },
     {
       "n": "Custer Crossing RV Park in SD w Mundo",
@@ -175,7 +175,7 @@
       "err": false,
       "note": "",
       "od": true,
-      "odd": 67
+      "odd": 68
     },
     {
       "n": "68, 78, and 44 E Bridge Street, Big Sandy TN (205)",
@@ -189,7 +189,7 @@
       "err": false,
       "note": "",
       "od": true,
-      "odd": 38
+      "odd": 39
     },
     {
       "n": "526 Jersey St Vallejo CA (EMD)",
@@ -245,7 +245,7 @@
       "err": false,
       "note": "",
       "od": true,
-      "odd": 12
+      "odd": 13
     },
     {
       "n": "177 Empress Avenue Sebastian FL",
@@ -301,7 +301,7 @@
       "err": false,
       "note": "",
       "od": true,
-      "odd": 1
+      "odd": 2
     },
     {
       "n": "3900 Marydale Way Modesto CA",
@@ -315,7 +315,7 @@
       "err": false,
       "note": "",
       "od": true,
-      "odd": 3
+      "odd": 4
     },
     {
       "n": "4314 N Suncoast Blvd Crystal River FL (EMD)",
@@ -699,7 +699,7 @@
       "l": "onhold",
       "f": false,
       "a": 35000.0,
-      "s": "2026-10-10",
+      "s": "2026-10-11",
       "e": "2026-10-15",
       "c": "2026-11-11",
       "err": false,
@@ -819,7 +819,7 @@
       "l": "onhold",
       "f": false,
       "a": 30000.0,
-      "s": "2026-10-10",
+      "s": "2026-10-11",
       "e": "2026-10-25",
       "c": "2026-10-24",
       "err": false,
@@ -927,7 +927,7 @@
       "l": "onhold",
       "f": false,
       "a": 32000.0,
-      "s": "2026-10-10",
+      "s": "2026-10-11",
       "e": "2026-11-02",
       "c": "2026-11-17",
       "err": false,
@@ -1119,7 +1119,7 @@
       "l": "onhold",
       "f": false,
       "a": 400.0,
-      "s": "2026-10-10",
+      "s": "2026-10-11",
       "e": "2026-10-16",
       "c": "2026-10-26",
       "err": false,
@@ -1131,7 +1131,7 @@
       "l": "onhold",
       "f": false,
       "a": 5000.0,
-      "s": "2026-10-10",
+      "s": "2026-10-11",
       "e": "2026-10-24",
       "c": "2026-10-23",
       "err": false,
