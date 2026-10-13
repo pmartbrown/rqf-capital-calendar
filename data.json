@@ -33,7 +33,7 @@
   ],
   "capital_in": 2020000.0,
   "capital_returned": 0.0,
-  "generated": "2026-10-13T07:29:04-06:00",
+  "generated": "2026-10-13T14:02:55-06:00",
   "source": "HubSpot RQF pipelines: EMD, POF, Stack, Double Close, Echo, GAP",
   "notes": "Pool = capital ledger (capital_events.json) summed to today: contributions in minus returns to investors. Deployed(confirmed,f=true)=Wired Amount out, no Return Wire Amount logged (GAP only if Signed&Funded after 2026-03-01); out from Signed&Funded until returned. err=true: HubSpot record inconsistent but still counted until corrected. probable=02-approved + committed-not-yet-wired. onhold=00/01 pipeline watch (not in math).",
   "deals": [
@@ -394,18 +394,6 @@
       "note": ""
     },
     {
-      "n": "34 East 63rd St N Tulsa OK (DC)",
-      "t": "DC",
-      "l": "onhold",
-      "f": false,
-      "a": 80400.0,
-      "s": "2026-05-31",
-      "e": "2026-06-02",
-      "c": "2026-06-01",
-      "err": false,
-      "note": ""
-    },
-    {
       "n": "7061 W Vienna Rd Clio MI",
       "t": "POF",
       "l": "probable",
@@ -414,18 +402,6 @@
       "s": "2026-07-16",
       "e": "2026-07-18",
       "c": "2026-07-17",
-      "err": false,
-      "note": ""
-    },
-    {
-      "n": "265 Kenolio Rd Kihei HI",
-      "t": "Stack",
-      "l": "onhold",
-      "f": false,
-      "a": 1500000.0,
-      "s": "2026-07-05",
-      "e": "2026-07-07",
-      "c": "2026-07-06",
       "err": false,
       "note": ""
     },
@@ -519,9 +495,9 @@
       "l": "probable",
       "f": false,
       "a": 1049600.0,
-      "s": "2026-09-24",
-      "e": "2026-09-26",
-      "c": "2026-09-25",
+      "s": "2026-10-19",
+      "e": "2026-10-21",
+      "c": "2026-10-20",
       "err": false,
       "note": ""
     },
@@ -531,9 +507,9 @@
       "l": "probable",
       "f": false,
       "a": 506250.0,
-      "s": "2026-09-24",
-      "e": "2026-09-26",
-      "c": "2026-09-25",
+      "s": "2026-10-19",
+      "e": "2026-10-21",
+      "c": "2026-10-20",
       "err": false,
       "note": ""
     },
@@ -582,18 +558,6 @@
       "s": "2026-09-13",
       "e": "2026-09-15",
       "c": "2026-09-14",
-      "err": false,
-      "note": ""
-    },
-    {
-      "n": "1175 Barron Court Memphis TN",
-      "t": "DC",
-      "l": "probable",
-      "f": false,
-      "a": 3750000.0,
-      "s": "2026-09-24",
-      "e": "2026-09-26",
-      "c": "2026-09-25",
       "err": false,
       "note": ""
     },
@@ -1062,18 +1026,6 @@
       "s": "2026-10-08",
       "e": "2026-10-10",
       "c": "2026-10-09",
-      "err": false,
-      "note": ""
-    },
-    {
-      "n": "8321 Old Plank Road Jacksonville FL 32220",
-      "t": "EMD",
-      "l": "onhold",
-      "f": false,
-      "a": 400.0,
-      "s": "2026-10-13",
-      "e": "2026-10-16",
-      "c": "2026-10-26",
       "err": false,
       "note": ""
     },
