@@ -33,7 +33,7 @@
   ],
   "capital_in": 2020000.0,
   "capital_returned": 0.0,
-  "generated": "2026-10-15T02:48:00-06:00",
+  "generated": "2026-10-15T07:53:47-06:00",
   "source": "HubSpot RQF pipelines: EMD, POF, Stack, Double Close, Echo, GAP",
   "notes": "Pool = capital ledger (capital_events.json) summed to today: contributions in minus returns to investors. Deployed(confirmed,f=true)=Wired Amount out, no Return Wire Amount logged (GAP only if Signed&Funded after 2026-03-01); out from Signed&Funded until returned. err=true: HubSpot record inconsistent but still counted until corrected. probable=02-approved + committed-not-yet-wired. onhold=00/01 pipeline watch (not in math).",
   "deals": [
@@ -772,18 +772,6 @@
       "note": ""
     },
     {
-      "n": "1622 Linn St Cincinnati OH",
-      "t": "Echo",
-      "l": "onhold",
-      "f": false,
-      "a": 125000.0,
-      "s": "2026-09-30",
-      "e": "2026-10-02",
-      "c": "2026-10-01",
-      "err": false,
-      "note": ""
-    },
-    {
       "n": "2129 W Anderson Ave Phoenix AZ",
       "t": "Stack",
       "l": "onhold",
@@ -804,18 +792,6 @@
       "s": "2026-10-15",
       "e": "2026-10-17",
       "c": "2026-10-16",
-      "err": false,
-      "note": ""
-    },
-    {
-      "n": "8210 Georgia Ave Gulfport MS",
-      "t": "Echo",
-      "l": "onhold",
-      "f": false,
-      "a": 50000.0,
-      "s": "2026-10-20",
-      "e": "2026-10-22",
-      "c": "2026-10-21",
       "err": false,
       "note": ""
     },
@@ -952,7 +928,7 @@
       "note": ""
     },
     {
-      "n": "309 2nd Street South Virginia Minnesota 55792",
+      "n": "309 2nd St S Virginia MN",
       "t": "Stack",
       "l": "onhold",
       "f": false,
