@@ -33,7 +33,7 @@
   ],
   "capital_in": 2020000.0,
   "capital_returned": 0.0,
-  "generated": "2026-10-19T06:00:35-06:00",
+  "generated": "2026-10-19T12:57:52-06:00",
   "source": "HubSpot RQF pipelines: EMD, POF, Stack, Double Close, Echo, GAP",
   "notes": "Pool = capital ledger (capital_events.json) summed to today: contributions in minus returns to investors. Deployed(confirmed,f=true)=Wired Amount out, no Return Wire Amount logged (GAP only if Signed&Funded after 2026-03-01); out from Signed&Funded until returned. err=true: HubSpot record inconsistent but still counted until corrected. probable=02-approved + committed-not-yet-wired. onhold=00/01 pipeline watch (not in math).",
   "deals": [
@@ -281,9 +281,9 @@
       "l": "confirmed",
       "f": true,
       "a": 5000.0,
-      "s": "2026-10-16",
+      "s": "2026-10-05",
       "e": "2027-12-31",
-      "c": "2026-10-16",
+      "c": "2026-10-05",
       "err": false,
       "note": "",
       "od": true,
@@ -298,18 +298,6 @@
       "s": "2025-08-10",
       "e": "2025-08-12",
       "c": "2025-08-29",
-      "err": false,
-      "note": ""
-    },
-    {
-      "n": "1000 County Rd 78 Bremen AL",
-      "t": "Stack",
-      "l": "probable",
-      "f": false,
-      "a": 1850000.0,
-      "s": "2026-09-24",
-      "e": "2026-09-26",
-      "c": "2026-09-25",
       "err": false,
       "note": ""
     },
@@ -499,9 +487,9 @@
       "l": "onhold",
       "f": false,
       "a": 576000.0,
-      "s": "2026-08-26",
-      "e": "2026-08-28",
-      "c": "2026-08-27",
+      "s": "2026-10-22",
+      "e": "2026-10-24",
+      "c": "2026-10-23",
       "err": false,
       "note": ""
     },
@@ -746,6 +734,18 @@
       "note": ""
     },
     {
+      "n": "1622 Linn St Cincinnati OH",
+      "t": "Echo",
+      "l": "onhold",
+      "f": false,
+      "a": 125000.0,
+      "s": "2026-09-30",
+      "e": "2026-10-02",
+      "c": "2026-10-01",
+      "err": false,
+      "note": ""
+    },
+    {
       "n": "2129 W Anderson Ave Phoenix AZ",
       "t": "Stack",
       "l": "onhold",
@@ -758,7 +758,7 @@
       "note": ""
     },
     {
-      "n": "9018 Covent Garden St Houston TX",
+      "n": "9018 Covent Garden St Houston TX (Stack)",
       "t": "Stack",
       "l": "onhold",
       "f": false,
@@ -1030,18 +1030,6 @@
       "s": "2026-10-15",
       "e": "2026-10-17",
       "c": "2026-10-16",
-      "err": false,
-      "note": ""
-    },
-    {
-      "n": "690 North Street Sebastopol Mississippi 39359",
-      "t": "DC",
-      "l": "probable",
-      "f": false,
-      "a": 460000.0,
-      "s": "2026-10-20",
-      "e": "2026-10-22",
-      "c": "2026-10-21",
       "err": false,
       "note": ""
     },
