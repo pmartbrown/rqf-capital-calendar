@@ -33,7 +33,7 @@
   ],
   "capital_in": 2020000.0,
   "capital_returned": 0.0,
-  "generated": "2026-10-22T05:05:46-06:00",
+  "generated": "2026-10-22T10:34:01-06:00",
   "source": "HubSpot RQF pipelines: EMD, POF, Stack, Double Close, Echo, GAP",
   "notes": "Pool = capital ledger (capital_events.json) summed to today: contributions in minus returns to investors. Deployed(confirmed,f=true)=Wired Amount out, no Return Wire Amount logged (GAP only if Signed&Funded after 2026-03-01); out from Signed&Funded until returned. err=true: HubSpot record inconsistent but still counted until corrected. probable=02-approved + committed-not-yet-wired. onhold=00/01 pipeline watch (not in math).",
   "deals": [
@@ -866,18 +866,6 @@
       "note": ""
     },
     {
-      "n": "1112 Hibbard St Detroit MI",
-      "t": "Echo",
-      "l": "onhold",
-      "f": false,
-      "a": 50000.0,
-      "s": "2026-10-14",
-      "e": "2026-10-16",
-      "c": "2026-10-15",
-      "err": false,
-      "note": ""
-    },
-    {
       "n": "4697 Roundleaf Rd Ramseur NC",
       "t": "Stack",
       "l": "probable",
@@ -1114,6 +1102,18 @@
       "s": "2026-11-08",
       "e": "2026-11-10",
       "c": "2026-11-09",
+      "err": false,
+      "note": ""
+    },
+    {
+      "n": "905 Nerium Trail Evans GA 30809",
+      "t": "Stack",
+      "l": "onhold",
+      "f": false,
+      "a": 6000.0,
+      "s": "2026-11-12",
+      "e": "2026-11-14",
+      "c": "2026-11-13",
       "err": false,
       "note": ""
     }
