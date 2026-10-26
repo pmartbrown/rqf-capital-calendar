@@ -33,7 +33,7 @@
   ],
   "capital_in": 2020000.0,
   "capital_returned": 0.0,
-  "generated": "2026-10-26T10:26:33-06:00",
+  "generated": "2026-10-26T15:18:18-06:00",
   "source": "HubSpot RQF pipelines: EMD, POF, Stack, Double Close, Echo, GAP",
   "notes": "Pool = capital ledger (capital_events.json) summed to today: contributions in minus returns to investors. Deployed(confirmed,f=true)=Wired Amount out, no Return Wire Amount logged (GAP only if Signed&Funded after 2026-03-01); out from Signed&Funded until returned. err=true: HubSpot record inconsistent but still counted until corrected. probable=02-approved + committed-not-yet-wired. onhold=00/01 pipeline watch (not in math).",
   "deals": [
@@ -228,6 +228,20 @@
       "s": "2026-09-21",
       "e": "2027-12-31",
       "c": "2026-09-21",
+      "err": false,
+      "note": "",
+      "od": false,
+      "odd": 0
+    },
+    {
+      "n": "3370, 3400 Mansfield Hwy & 3349, 3401 Bisbee St, Fort Worth, TX 76119 (2nd closing)",
+      "t": "Stack",
+      "l": "confirmed",
+      "f": true,
+      "a": 598313.99,
+      "s": "2026-10-26",
+      "e": "2027-12-31",
+      "c": "2026-10-26",
       "err": false,
       "note": "",
       "od": false,
@@ -1164,6 +1178,30 @@
       "s": "2026-12-01",
       "e": "2026-12-03",
       "c": "2026-12-02",
+      "err": false,
+      "note": ""
+    },
+    {
+      "n": "8615 Buttercup Street Jacksonville Florida 32210",
+      "t": "EMD",
+      "l": "onhold",
+      "f": false,
+      "a": 50000.0,
+      "s": "2026-10-26",
+      "e": "2026-12-20",
+      "c": "2027-01-04",
+      "err": false,
+      "note": ""
+    },
+    {
+      "n": "25015 475th Avenue Dell Rapids SD 57022",
+      "t": "EMD",
+      "l": "onhold",
+      "f": false,
+      "a": 15000.0,
+      "s": "2026-10-26",
+      "e": "2026-11-07",
+      "c": "2026-11-20",
       "err": false,
       "note": ""
     }
