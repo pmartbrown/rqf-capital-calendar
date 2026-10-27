@@ -33,7 +33,7 @@
   ],
   "capital_in": 2020000.0,
   "capital_returned": 0.0,
-  "generated": "2026-10-27T07:54:27-06:00",
+  "generated": "2026-10-27T13:11:36-06:00",
   "source": "HubSpot RQF pipelines: EMD, POF, Stack, Double Close, Echo, GAP",
   "notes": "Pool = capital ledger (capital_events.json) summed to today: contributions in minus returns to investors. Deployed(confirmed,f=true)=Wired Amount out, no Return Wire Amount logged (GAP only if Signed&Funded after 2026-03-01); out from Signed&Funded until returned. err=true: HubSpot record inconsistent but still counted until corrected. probable=02-approved + committed-not-yet-wired. onhold=00/01 pipeline watch (not in math).",
   "deals": [
@@ -1050,7 +1050,7 @@
       "note": ""
     },
     {
-      "n": "1525 North Reid Street Clovis New Mexico 88101",
+      "n": "1525 N Reid Street Clovis NM (Stack)",
       "t": "Stack",
       "l": "onhold",
       "f": false,
@@ -1110,11 +1110,11 @@
       "note": ""
     },
     {
-      "n": "7533 Laxey Street Magna UT 84044",
+      "n": "7533 Laxey Street Magna UT",
       "t": "Echo",
       "l": "onhold",
       "f": false,
-      "a": 122500.0,
+      "a": 120100.0,
       "s": "2026-10-22",
       "e": "2026-10-24",
       "c": "2026-10-23",
@@ -1190,6 +1190,18 @@
       "s": "2026-10-27",
       "e": "2026-11-04",
       "c": "2026-11-20",
+      "err": false,
+      "note": ""
+    },
+    {
+      "n": "20128 & 20132 Schaefer Hwy Detroit MI",
+      "t": "Echo",
+      "l": "onhold",
+      "f": false,
+      "a": 72900.0,
+      "s": "2026-11-11",
+      "e": "2026-11-13",
+      "c": "2026-11-12",
       "err": false,
       "note": ""
     }
