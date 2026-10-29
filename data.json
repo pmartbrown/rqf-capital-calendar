@@ -33,7 +33,7 @@
   ],
   "capital_in": 2020000.0,
   "capital_returned": 0.0,
-  "generated": "2026-10-29T09:03:12-06:00",
+  "generated": "2026-10-29T14:49:41-06:00",
   "source": "HubSpot RQF pipelines: EMD, POF, Stack, Double Close, Echo, GAP",
   "notes": "Pool = capital ledger (capital_events.json) summed to today: contributions in minus returns to investors. Deployed(confirmed,f=true)=Wired Amount out, no Return Wire Amount logged (GAP only if Signed&Funded after 2026-03-01); out from Signed&Funded until returned. err=true: HubSpot record inconsistent but still counted until corrected. probable=02-approved + committed-not-yet-wired. onhold=00/01 pipeline watch (not in math).",
   "deals": [
@@ -940,18 +940,6 @@
       "note": ""
     },
     {
-      "n": "8949 Rialto Avenue Hesperia CA 92344",
-      "t": "EMD",
-      "l": "onhold",
-      "f": false,
-      "a": 300000.0,
-      "s": "2026-10-21",
-      "e": "2026-11-01",
-      "c": "2026-11-30",
-      "err": false,
-      "note": ""
-    },
-    {
       "n": "229 Lowell Road Columbus Ohio 43209",
       "t": "DC",
       "l": "onhold",
@@ -988,14 +976,14 @@
       "note": ""
     },
     {
-      "n": "381 East Colorado Drive Bayfield Colorado 81122",
+      "n": "381 E Colorado Dr Bayfield CO",
       "t": "EMD",
       "l": "onhold",
       "f": false,
       "a": 100000.0,
       "s": "2026-10-29",
-      "e": "2026-12-20",
-      "c": "2026-12-19",
+      "e": "2026-12-19",
+      "c": "2026-12-18",
       "err": false,
       "note": ""
     },
@@ -1188,6 +1176,18 @@
       "s": "2026-11-11",
       "e": "2026-11-13",
       "c": "2026-11-12",
+      "err": false,
+      "note": ""
+    },
+    {
+      "n": "2961 Stone Mountain Street Lithonia GA 30058",
+      "t": "Stack",
+      "l": "onhold",
+      "f": false,
+      "a": 130000.0,
+      "s": "2026-10-29",
+      "e": "2026-10-31",
+      "c": "2026-10-30",
       "err": false,
       "note": ""
     }
