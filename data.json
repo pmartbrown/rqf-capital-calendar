@@ -33,7 +33,7 @@
   ],
   "capital_in": 2020000.0,
   "capital_returned": 0.0,
-  "generated": "2026-11-03T11:29:31-06:00",
+  "generated": "2026-11-03T16:50:58-06:00",
   "source": "HubSpot RQF pipelines: EMD, POF, Stack, Double Close, Echo, GAP",
   "notes": "Pool = capital ledger (capital_events.json) summed to today: contributions in minus returns to investors. Deployed(confirmed,f=true)=Wired Amount out, no Return Wire Amount logged (GAP only if Signed&Funded after 2026-03-01); out from Signed&Funded until returned. err=true: HubSpot record inconsistent but still counted until corrected. probable=02-approved + committed-not-yet-wired. onhold=00/01 pipeline watch (not in math).",
   "deals": [
@@ -312,6 +312,20 @@
       "s": "2026-10-22",
       "e": "2027-12-31",
       "c": "2026-10-22",
+      "err": false,
+      "note": "",
+      "od": false,
+      "odd": 0
+    },
+    {
+      "n": "5295 Hollister St Houston TX",
+      "t": "EMD",
+      "l": "confirmed",
+      "f": true,
+      "a": 27000.0,
+      "s": "2026-11-03",
+      "e": "2027-12-31",
+      "c": "2026-11-03",
       "err": false,
       "note": "",
       "od": false,
@@ -1026,18 +1040,6 @@
       "note": ""
     },
     {
-      "n": "5295 Hollister St Houston TX",
-      "t": "EMD",
-      "l": "probable",
-      "f": false,
-      "a": 27000.0,
-      "s": "2026-11-03",
-      "e": "2026-12-04",
-      "c": "2027-12-18",
-      "err": false,
-      "note": ""
-    },
-    {
       "n": "Portfolio Deal Honolulu HI 96813",
       "t": "Stack",
       "l": "onhold",
@@ -1046,30 +1048,6 @@
       "s": "2026-12-01",
       "e": "2026-12-03",
       "c": "2026-12-02",
-      "err": false,
-      "note": ""
-    },
-    {
-      "n": "8615 Buttercup Street Jacksonville Florida 32210",
-      "t": "EMD",
-      "l": "onhold",
-      "f": false,
-      "a": 50000.0,
-      "s": "2026-11-03",
-      "e": "2026-12-20",
-      "c": "2027-01-04",
-      "err": false,
-      "note": ""
-    },
-    {
-      "n": "25015 475th Avenue Dell Rapids SD 57022",
-      "t": "EMD",
-      "l": "onhold",
-      "f": false,
-      "a": 15000.0,
-      "s": "2026-11-02",
-      "e": "2026-11-04",
-      "c": "2026-11-20",
       "err": false,
       "note": ""
     },
@@ -1122,11 +1100,11 @@
       "note": ""
     },
     {
-      "n": "1104 East Warren Street Plant City Florida 33563",
+      "n": "1104 East Warren Street Plant City Florida (EMD)",
       "t": "EMD",
       "l": "onhold",
       "f": false,
-      "a": 250000.0,
+      "a": 3000.0,
       "s": "2026-10-30",
       "e": "2026-11-01",
       "c": "2026-11-07",
@@ -1158,9 +1136,9 @@
       "note": ""
     },
     {
-      "n": "16039 Shellcracker Road Jacksonville Florida 32226",
+      "n": "16039 Shellcracker Rd Jacksonville FL",
       "t": "Stack",
-      "l": "onhold",
+      "l": "probable",
       "f": false,
       "a": 275800.0,
       "s": "2026-11-30",
@@ -1170,9 +1148,9 @@
       "note": ""
     },
     {
-      "n": "117 North Valhalla Lane Cordele Georgia 31015",
+      "n": "117 North Valhalla Lane Cordele GA",
       "t": "Stack",
-      "l": "onhold",
+      "l": "probable",
       "f": false,
       "a": 177800.0,
       "s": "2026-12-11",
@@ -1190,6 +1168,30 @@
       "s": "2026-11-03",
       "e": "2026-11-05",
       "c": "2026-11-20",
+      "err": false,
+      "note": ""
+    },
+    {
+      "n": "19067 East Carmel Drive Aurora CO 80011",
+      "t": "DC",
+      "l": "onhold",
+      "f": false,
+      "a": 274000.0,
+      "s": "2026-11-29",
+      "e": "2026-12-01",
+      "c": "2026-11-30",
+      "err": false,
+      "note": ""
+    },
+    {
+      "n": "7334 Placid Valley Drive San Antonio TX 78242",
+      "t": "DC",
+      "l": "onhold",
+      "f": false,
+      "a": 90000.0,
+      "s": "2026-11-29",
+      "e": "2026-12-01",
+      "c": "2026-11-30",
       "err": false,
       "note": ""
     }
