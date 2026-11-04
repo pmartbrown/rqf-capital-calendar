@@ -33,7 +33,7 @@
   ],
   "capital_in": 2020000.0,
   "capital_returned": 0.0,
-  "generated": "2026-11-03T16:50:58-06:00",
+  "generated": "2026-11-03T20:52:37-06:00",
   "source": "HubSpot RQF pipelines: EMD, POF, Stack, Double Close, Echo, GAP",
   "notes": "Pool = capital ledger (capital_events.json) summed to today: contributions in minus returns to investors. Deployed(confirmed,f=true)=Wired Amount out, no Return Wire Amount logged (GAP only if Signed&Funded after 2026-03-01); out from Signed&Funded until returned. err=true: HubSpot record inconsistent but still counted until corrected. probable=02-approved + committed-not-yet-wired. onhold=00/01 pipeline watch (not in math).",
   "deals": [
@@ -49,7 +49,7 @@
       "err": false,
       "note": "",
       "od": true,
-      "odd": 519
+      "odd": 520
     },
     {
       "n": "124 S Mockingbird Cir #A & B, Cedar Creek, Texas 78612",
@@ -57,13 +57,13 @@
       "l": "confirmed",
       "f": true,
       "a": 1000.0,
-      "s": "2026-11-03",
+      "s": "2026-11-04",
       "e": "2027-12-31",
-      "c": "2026-11-03",
+      "c": "2026-11-04",
       "err": true,
       "note": "HubSpot: stage says returned/fell-through, no return amount",
       "od": true,
-      "odd": 480
+      "odd": 481
     },
     {
       "n": "1717 Crimson Cir Memphis TN",
@@ -77,7 +77,7 @@
       "err": false,
       "note": "",
       "od": true,
-      "odd": 319
+      "odd": 320
     },
     {
       "n": "415 Clark St Saginaw MI",
@@ -91,7 +91,7 @@
       "err": false,
       "note": "",
       "od": true,
-      "odd": 93
+      "odd": 94
     },
     {
       "n": "5213, 5216 & 5217 Collier Ct Jefferson City MO (EMD)",
@@ -105,7 +105,7 @@
       "err": false,
       "note": "",
       "od": true,
-      "odd": 53
+      "odd": 54
     },
     {
       "n": "601 E Beach Dr Galveston TX",
@@ -133,7 +133,7 @@
       "err": false,
       "note": "",
       "od": true,
-      "odd": 110
+      "odd": 111
     },
     {
       "n": "2909 N 3rd Way Ridgefield WA (1st Pos Gap)",
@@ -147,7 +147,7 @@
       "err": false,
       "note": "",
       "od": true,
-      "odd": 35
+      "odd": 36
     },
     {
       "n": "Custer Crossing RV Park in SD w Mundo",
@@ -161,7 +161,7 @@
       "err": false,
       "note": "",
       "od": true,
-      "odd": 22
+      "odd": 23
     },
     {
       "n": "68, 78, and 44 E Bridge Street, Big Sandy TN (148)",
@@ -175,7 +175,7 @@
       "err": false,
       "note": "",
       "od": true,
-      "odd": 91
+      "odd": 92
     },
     {
       "n": "68, 78, and 44 E Bridge Street, Big Sandy TN (205)",
@@ -189,7 +189,7 @@
       "err": false,
       "note": "",
       "od": true,
-      "odd": 62
+      "odd": 63
     },
     {
       "n": "2802 Shaver St Pasadena TX",
@@ -203,7 +203,7 @@
       "err": false,
       "note": "",
       "od": true,
-      "odd": 1
+      "odd": 2
     },
     {
       "n": "4914 357th St S Roy WA",
@@ -231,7 +231,7 @@
       "err": false,
       "note": "",
       "od": true,
-      "odd": 27
+      "odd": 28
     },
     {
       "n": "4314 N Suncoast Blvd Crystal River FL (EMD)",
@@ -258,8 +258,8 @@
       "c": "2026-10-08",
       "err": false,
       "note": "",
-      "od": false,
-      "odd": 0
+      "od": true,
+      "odd": 1
     },
     {
       "n": "66 Units in El Campo  El Campo Texas 77437",
@@ -1033,7 +1033,7 @@
       "l": "onhold",
       "f": false,
       "a": 6000.0,
-      "s": "2026-11-03",
+      "s": "2026-11-04",
       "e": "2026-11-14",
       "c": "2026-11-13",
       "err": false,
@@ -1081,7 +1081,7 @@
       "l": "onhold",
       "f": false,
       "a": 15000.0,
-      "s": "2026-11-03",
+      "s": "2026-11-04",
       "e": "2026-11-07",
       "c": "2026-11-13",
       "err": false,
@@ -1192,6 +1192,30 @@
       "s": "2026-11-29",
       "e": "2026-12-01",
       "c": "2026-11-30",
+      "err": false,
+      "note": ""
+    },
+    {
+      "n": "1702 East Eva Street Phoenix AZ 85020",
+      "t": "Stack",
+      "l": "onhold",
+      "f": false,
+      "a": 180000.0,
+      "s": "2026-11-09",
+      "e": "2026-11-11",
+      "c": "2026-11-10",
+      "err": false,
+      "note": ""
+    },
+    {
+      "n": "4316 6th Avenue Birmingham Alabama 35224",
+      "t": "DC",
+      "l": "onhold",
+      "f": false,
+      "a": 75000.0,
+      "s": "2026-12-10",
+      "e": "2026-12-12",
+      "c": "2026-12-11",
       "err": false,
       "note": ""
     }
