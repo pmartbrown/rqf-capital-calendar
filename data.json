@@ -33,7 +33,7 @@
   ],
   "capital_in": 2020000.0,
   "capital_returned": 0.0,
-  "generated": "2026-11-06T05:45:44-06:00",
+  "generated": "2026-11-06T12:50:01-06:00",
   "source": "HubSpot RQF pipelines: EMD, POF, Stack, Double Close, Echo, GAP",
   "notes": "Pool = capital ledger (capital_events.json) summed to today: contributions in minus returns to investors. Deployed(confirmed,f=true)=Wired Amount out, no Return Wire Amount logged (GAP only if Signed&Funded after 2026-03-01); out from Signed&Funded until returned. err=true: HubSpot record inconsistent but still counted until corrected. probable=02-approved + committed-not-yet-wired. onhold=00/01 pipeline watch (not in math).",
   "deals": [
@@ -762,18 +762,6 @@
       "note": ""
     },
     {
-      "n": "1501 Barchester St Westland MI",
-      "t": "DC",
-      "l": "probable",
-      "f": false,
-      "a": 150000.0,
-      "s": "2026-10-15",
-      "e": "2026-10-17",
-      "c": "2026-10-16",
-      "err": false,
-      "note": ""
-    },
-    {
       "n": "4604 Grove Street West Palm Beach FL (EMD)",
       "t": "EMD",
       "l": "onhold",
@@ -990,18 +978,6 @@
       "note": ""
     },
     {
-      "n": "7533 Laxey Street Magna UT",
-      "t": "Echo",
-      "l": "onhold",
-      "f": false,
-      "a": 120100.0,
-      "s": "2026-10-22",
-      "e": "2026-10-24",
-      "c": "2026-10-23",
-      "err": false,
-      "note": ""
-    },
-    {
       "n": "905 Nerium Trail Evans GA (EMD)",
       "t": "EMD",
       "l": "onhold",
@@ -1076,7 +1052,7 @@
     {
       "n": "15190 White Creek Ave NE Cedar Springs MI",
       "t": "Stack",
-      "l": "onhold",
+      "l": "probable",
       "f": false,
       "a": 1450000.0,
       "s": "2026-11-09",
@@ -1158,7 +1134,7 @@
       "note": ""
     },
     {
-      "n": "1702 East Eva Street Phoenix AZ 85020",
+      "n": "1702 East Eva St Phoenix AZ",
       "t": "Echo",
       "l": "onhold",
       "f": false,
@@ -1254,18 +1230,6 @@
       "note": ""
     },
     {
-      "n": "641 Ridge Top Circle Birmingham Alabama 35206",
-      "t": "EMD",
-      "l": "onhold",
-      "f": false,
-      "a": 1000.0,
-      "s": "2026-11-06",
-      "e": "2026-11-10",
-      "c": "2026-11-22",
-      "err": false,
-      "note": ""
-    },
-    {
       "n": "4105 Julie Drive Amarillo TX 79109",
       "t": "EMD",
       "l": "onhold",
@@ -1286,6 +1250,18 @@
       "s": "2026-11-12",
       "e": "2026-11-14",
       "c": "2026-11-13",
+      "err": false,
+      "note": ""
+    },
+    {
+      "n": "1403 South Marsalis Avenue Dallas TX 75216",
+      "t": "EMD",
+      "l": "onhold",
+      "f": false,
+      "a": 5250.0,
+      "s": "2026-11-03",
+      "e": "2026-11-05",
+      "c": "2026-11-19",
       "err": false,
       "note": ""
     }
